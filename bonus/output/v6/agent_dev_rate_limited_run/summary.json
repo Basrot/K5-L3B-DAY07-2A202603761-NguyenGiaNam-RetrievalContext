@@ -1,0 +1,13 @@
+{
+  "mode": "dev",
+  "total_cases": 21,
+  "recorded_cases": 21,
+  "status_counts": {
+    "answered": 17,
+    "abstained": 4
+  },
+  "answer_accuracy": "pending_human_review",
+  "citation_support": "pending_human_review",
+  "unanswerable_accuracy": "provisional",
+  "benchmark_sha256": "0ba8ffd5dfe952f01d407744bf896eac3ab98d09a442acac0f8112d64cd3dcbd"
+}

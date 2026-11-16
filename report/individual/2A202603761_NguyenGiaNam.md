@@ -265,9 +265,206 @@ and `submission_evidence/agent/baseline_test_reviews_provisional.json`.
 
 <!-- LAB07_AGENT_BASELINE_COMPARISON -->
 
-## 4. Thử thách nâng cao
+## 4. Thử thách nâng cao — Bonus Multimodal RAG V6
 
-Chưa thực hiện đánh giá riêng với bảng, ảnh, biểu đồ và multi-hop. Không báo cáo điểm cho các hạng mục chưa thử nghiệm.
+<!-- BONUS V6 FINAL REPORT -->
+
+### 4.1. Mục tiêu và dữ liệu
+
+Phần Bonus mở rộng Lab 07 từ truy xuất đoạn văn sang
+Retrieval-Augmented Generation trên nhiều dạng nội dung
+trong sách *Introduction to Computer Programming with
+Python* của Harris Wang (2023).
+
+- Nguồn dữ liệu: `python_wang_2023`.
+- Corpus V6: 1.006 records.
+- Vector store: ChromaDB, collection `bonus_multimodal_v6`.
+- Embedding: MiniLM, 384 chiều.
+- Kiểu record gồm text, table, image, diagram và chart.
+- Mỗi record chứa ID, source, trang PDF và nội dung truy xuất.
+- Các hình/sơ đồ/biểu đồ được biểu diễn bằng caption mô tả
+  dựa trên việc kiểm tra thủ công các trang PDF.
+
+Hệ thống **không sử dụng vision model để trực tiếp phân tích
+pixel ảnh**. Kết quả với nhóm hình ảnh vì vậy phản ánh khả
+năng truy xuất và suy luận trên caption được biên soạn,
+không chứng minh năng lực Visual Question Answering
+end-to-end.
+
+### 4.2. Retrieval và Context Engineering
+
+Cấu hình Bonus sử dụng:
+
+1. TF-IDF để tìm kiếm theo từ khóa.
+2. Dense Retrieval dùng MiniLM và ChromaDB.
+3. Hybrid Retrieval kết hợp hai phương pháp bằng RRF.
+4. Routing theo loại thông tin được suy ra từ truy vấn.
+5. Top-k = 5, candidate depth = 10 trong công cụ Bonus.
+
+Benchmark DEV V4 (sử dụng với corpus V6) có 21 câu,
+gồm 18 câu answerable và 3 câu unanswerable.
+
+| DEV Retrieval | All Evidence Hit@5 |
+|---|---:|
+| Hybrid gốc | 11/18 (61,1%) |
+| Hybrid + Routing | 18/18 (100,0%) |
+
+Sau routing, All Evidence Hit@3 đạt 15/18 (83,3%).
+Ba câu unanswerable không được tính vào mẫu số
+Retrieval Hit@k.
+
+Kết quả này đo khả năng tìm đủ Gold Evidence của
+Retrieval, không phải Answer Accuracy của Agent.
+
+### 4.3. Benchmark TEST V6 đã đóng băng
+
+Bộ TEST được đóng băng trước khi chạy Agent chính thức
+và không bị chỉnh sửa theo kết quả TEST.
+
+| Loại câu | Số lượng |
+|---|---:|
+| Table | 6 |
+| Diagram | 5 |
+| Chart | 5 |
+| Multi-hop | 4 |
+| Text | 4 |
+| Unanswerable | 6 |
+| **Tổng** | **30** |
+
+Có 24 câu answerable và 6 câu unanswerable.
+Các câu answerable được gán Gold Evidence theo record ID,
+trang PDF và loại nội dung.
+
+File benchmark:
+`bonus/output/benchmark_test_30_v6_FROZEN.json`
+
+SHA-256:
+
+`8afea6f54074f6dadf2559e985f6db52d8d9ed33b48eb2bf400d256868bf52fc`
+
+Việc kiểm tra tự động không phát hiện lỗi cấu trúc
+hoặc cảnh báo trùng lặp theo các tiêu chí đã triển khai.
+Tuy nhiên, sáu nhãn unanswerable vẫn ở trạng thái
+**provisional**: không tìm thấy bằng chứng qua quá trình
+rà soát hiện có, nhưng chưa có xác minh độc lập toàn diện
+về sự vắng mặt thông tin trong tài liệu.
+
+### 4.4. Đánh giá Agent trên DEV
+
+Model: `gemini-3.5-flash-lite`.
+
+Agent có thể tìm kiếm tối đa hai lần cho mỗi câu,
+sau đó trả lời kèm citation hoặc abstain khi
+không đủ bằng chứng.
+
+Lượt DEV ban đầu gặp lỗi 429 RESOURCE_EXHAUSTED
+do giới hạn Gemini API Free Tier. Lỗi vận hành này
+được ghi nhận riêng, không tính thành lỗi kiến thức.
+
+Một lượt DEV khác được chạy với cơ chế pacing
+và retry, lưu tách biệt với lượt đầu.
+
+| DEV Agent | Kết quả |
+|---|---:|
+| Tổng số câu | 21 |
+| Answered | 17 |
+| Abstained | 4 |
+| API errors | 0 |
+| Đúng trong 18 câu answerable | 17/18 (94,4%) |
+| Abstain đúng theo nhãn tạm thời | 3/3 |
+| Tổng đúng sơ bộ | 20/21 (95,2%) |
+
+Trường hợp thất bại đáng chú ý là `bonus_dev_007`:
+Agent abstain khi được hỏi về xu hướng dân số trong
+Figure 8-6, dù record liên quan đã có trong evidence.
+
+Kết quả này cho thấy việc truy xuất được bằng chứng
+không đồng nghĩa Agent sẽ quyết định trả lời.
+
+### 4.5. Kết quả TEST chính thức
+
+TEST V6 được chạy với benchmark đã đóng băng,
+sử dụng runner có giới hạn tốc độ và retry API.
+Kết quả lượt TEST đầu tiên được lưu lại,
+không điều chỉnh Agent dựa trên câu trả lời TEST.
+
+| Chỉ số TEST | Kết quả |
+|---|---:|
+| Tổng số câu | 30 |
+| Answered | 22 |
+| Abstained | 8 |
+| API errors | 0 |
+| Answer Accuracy (answerable) | 20/24 (83,3%) |
+| Citation hỗ trợ câu trả lời đúng | 19/20 (95,0%) |
+| Abstention đúng theo nhãn tạm thời | 6/6 |
+| Tổng đúng sơ bộ | 26/30 (86,7%) |
+
+Các chỉ số trên được tính từ bản chấm thủ công
+lưu riêng sau lượt chạy TEST. Chỉ số 26/30 phụ
+thuộc vào việc chấp nhận sáu nhãn unanswerable
+đang ở trạng thái provisional.
+
+**TEST Answer Accuracy là 83,3%, chưa đạt ngưỡng 90%
+nếu xét riêng 24 câu có đáp án.** Không được suy diễn
+từ DEV Retrieval 100% thành TEST Accuracy 100%.
+
+### 4.6. Phân tích lỗi TEST
+
+Có bốn câu answerable chưa đạt:
+
+- `bonus_v4_test_table_01`: không trả lời được
+  từ khóa `break` dù câu hỏi có đáp án trong tài liệu.
+- `bonus_v4_test_table_02`: không đưa ra được
+  kết quả liên quan đến `license()`.
+- `bonus_v4_test_multi_hop_01`: abstain thay vì
+  tính ra kết quả `12`.
+- `bonus_v4_test_multi_hop_03`: abstain thay vì
+  kết hợp bằng chứng về `Canvas` và
+  `create_rectangle`.
+
+Ngoài ra, câu `bonus_v4_test_text_02` trả lời
+đúng kiểu `complex`, nhưng citation được đánh giá
+là chưa hỗ trợ trực tiếp cho phép chia.
+
+Các lỗi trên cho thấy còn tồn tại tình huống
+Retrieval bỏ sót Gold Evidence, hoặc Agent thiếu
+căn cứ để đưa ra kết luận dù có thông tin liên quan.
+
+### 4.7. Hạn chế và khả năng tái lập
+
+- Caption hình ảnh được kiểm tra và biên soạn thủ công;
+  hệ thống không triển khai mô hình thị giác.
+- Chất lượng OCR/table extraction có thể ảnh hưởng
+  đến độ chính xác và xếp hạng truy xuất.
+- Routing dựa trên từ khóa trong truy vấn, chưa phải
+  bộ phân loại loại tài liệu được học tự động.
+- Các câu hỏi về cùng một figure có thể sử dụng
+  chung Gold Evidence; vì vậy không hoàn toàn
+  độc lập về nguồn.
+- Nhãn unanswerable chưa được xác minh độc lập
+  toàn diện trên toàn bộ tài liệu.
+- Điểm số phụ thuộc benchmark, model và điều kiện API.
+- Việc chạy lại LLM có thể cho kết quả khác;
+  không sử dụng TEST để tối ưu rồi chấm lại như
+  một lượt TEST độc lập.
+
+Các tệp quan trọng:
+
+- `bonus/hybrid_index_v6.py`
+- `bonus/eval_dev_v6.py`
+- `bonus/run_v6_agent.py`
+- `bonus/run_v6_agent_rate_limited.py`
+- `bonus/output/benchmark_dev_21_v4.json`
+- `bonus/output/benchmark_test_30_v6_FROZEN.json`
+- `bonus/output/v6/dev_retrieval_first_run.json`
+- `bonus/output/v6/test_freeze_manifest.json`
+- `bonus/output/v6/agent_test_first_run/summary.json`
+- `bonus/output/v6/agent_test_first_run/human_scoring_summary.json`
+- `bonus/output/v6/agent_test_first_run/human_review_scored.csv`
+
+Cần cấu hình `.env`, truy cập được nguồn PDF
+và ChromaDB/embedding tương ứng để tái lập
+đầy đủ các lượt chạy. Không đưa API key vào GitHub.
 
 ## 5. Khả năng tái lập
 
@@ -299,5 +496,7 @@ Trên TEST, hệ thống đạt Grounded Answer Mean 1,60/2 và 4/4 citation đ�
 Hướng cải thiện sau bài lab gồm truy vấn song ngữ, tăng khả năng tìm candidate phù hợp và đánh giá định lượng riêng cho độ trễ/chi phí khi mở rộng context.
 
 Báo cáo giữ nguyên kết quả TEST lần đầu, không điều chỉnh thuật toán theo TEST.
+
+Phần Bonus V6 mở rộng sang bảng, sơ đồ, biểu đồ và câu hỏi multi-hop. DEV Retrieval đạt 18/18 All Evidence Hit@5; TEST đạt 20/24 câu answerable đúng (83,3%) và 19/20 citation hỗ trợ câu trả lời đúng. Kết quả abstention vẫn dựa trên các nhãn chưa được xác minh độc lập toàn diện.
 
 <!-- LAB07_FORM_TABLES_V1 -->

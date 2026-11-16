@@ -1,0 +1,2456 @@
+{
+  "summary": {
+    "split": "dev",
+    "version": "v6",
+    "corpus_records": 1006,
+    "benchmark_cases": 21,
+    "answerable_cases": 18,
+    "unanswerable_cases": 3,
+    "original": {
+      "denominator": 18,
+      "any_hit_at_3": 11,
+      "all_hit_at_3": 11,
+      "all_hit_at_5": 11
+    },
+    "routed": {
+      "denominator": 18,
+      "any_hit_at_3": 16,
+      "all_hit_at_3": 15,
+      "all_hit_at_5": 18
+    },
+    "by_type": {
+      "chart": {
+        "total": 1,
+        "original_all_hit_at_5": 0,
+        "routed_all_hit_at_5": 1
+      },
+      "diagram": {
+        "total": 1,
+        "original_all_hit_at_5": 1,
+        "routed_all_hit_at_5": 1
+      },
+      "image": {
+        "total": 5,
+        "original_all_hit_at_5": 4,
+        "routed_all_hit_at_5": 5
+      },
+      "multi_hop": {
+        "total": 1,
+        "original_all_hit_at_5": 0,
+        "routed_all_hit_at_5": 1
+      },
+      "table": {
+        "total": 8,
+        "original_all_hit_at_5": 4,
+        "routed_all_hit_at_5": 8
+      },
+      "text": {
+        "total": 2,
+        "original_all_hit_at_5": 2,
+        "routed_all_hit_at_5": 2
+      }
+    },
+    "human_review_status": "18 answerable sources reviewed; 3 unanswerable labels provisional",
+    "note": "DEV-only retrieval evaluation. Unanswerables excluded from Hit denominators. TEST V3 remains frozen."
+  },
+  "traces": [
+    {
+      "query_id": "bonus_dev_001",
+      "type": "image",
+      "answerable": true,
+      "question": "What traditional calculating device is pictured?",
+      "route": "image",
+      "gold_ids": [
+        "bonus_p17_image_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p17_image_0",
+          "pdf_page": 17,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Traditional abacus used as a computing device.",
+          "image_path": "visual_pages/page_017.png"
+        },
+        {
+          "id": "bonus_p17_text_2",
+          "pdf_page": 17,
+          "kind": "text",
+          "score": 0.032258,
+          "preview": "ave taken using traditional methods, as in the previous census. In 1896, Herman Hollerith established a company called the Tabulating Machine Company to make the machines. This company ultimately became IBM. Figure 1-­1:",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p24_text_0",
+          "pdf_page": 24,
+          "kind": "text",
+          "score": 0.029199,
+          "preview": "Introduction 9 https://doi.org/10.15215/remix/9781998944088.01 which is needed for multiplication and division. Moreover, counting itself can be done by addition when counting up or subtraction when counting down. This i",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p108_text_0",
+          "pdf_page": 108,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Essential Building Blocks of Computer Programs 93 https://doi.org/10.15215/remix/9781998944088.01 Dec Char Dec Char Dec Char Dec Char 15 SI (shift in) 47 / 79 O 111 o 16 DLE (data link escape) 48 0 80 P 112 p 17 DC1 (dev",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p28_text_1",
+          "pdf_page": 28,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "n the real implementation and construction of digital com­ puters, all basic arithmetic operations, including bitwise operations on integer binary numbers such as the operations needed to find 2’s complements, are hardwi",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p17_image_0",
+          "pdf_page": 17,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Traditional abacus used as a computing device.",
+          "image_path": "visual_pages/page_017.png"
+        },
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.016129,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p481_image_0",
+          "pdf_page": 481,
+          "kind": "image",
+          "score": 0.015873,
+          "preview": "Examples of Tkinter GUI applications with widgets.",
+          "image_path": "visual_pages/page_481.png"
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.015625,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.015385,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p17_image_0",
+          "bonus_p17_text_2",
+          "bonus_p24_text_0",
+          "bonus_p108_text_0",
+          "bonus_p28_text_1"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p17_image_0",
+          "bonus_p480_image_0",
+          "bonus_p481_image_0",
+          "bonus_p498_image_0",
+          "bonus_p42_image_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_002",
+      "type": "image",
+      "answerable": true,
+      "question": "Which notebook interface is shown in the screenshot?",
+      "route": "image",
+      "gold_ids": [
+        "bonus_p42_image_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.031754,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.015873,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        },
+        {
+          "id": "bonus_p497_text_0",
+          "pdf_page": 497,
+          "kind": "text",
+          "score": 0.015625,
+          "preview": "482 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Chapter Summary • Terminal-­based applications are those started and rendered within a terminal. • A terminal is a syst",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.031754,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p53_image_0",
+          "pdf_page": 53,
+          "kind": "image",
+          "score": 0.03055,
+          "preview": "Athabasca University logo rendered in a Markdown image example.",
+          "image_path": "visual_pages/page_053.png"
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.015873,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p42_image_0",
+          "bonus_p480_image_0",
+          "bonus_p46_image_0",
+          "bonus_p498_image_0",
+          "bonus_p497_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p42_image_0",
+          "bonus_p480_image_0",
+          "bonus_p46_image_0",
+          "bonus_p53_image_0",
+          "bonus_p498_image_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_003",
+      "type": "image",
+      "answerable": true,
+      "question": "Which code editor appears in the screenshot?",
+      "route": "image",
+      "gold_ids": [
+        "bonus_p46_image_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p346_text_1",
+          "pdf_page": 346,
+          "kind": "text",
+          "score": 0.015625,
+          "preview": "the circumference of the circle is 219.8 In the example above, __init__ is a reserved name for a special method in a class definition. It is called when creating new objects of the class. Please remember, however, that y",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p479_text_0",
+          "pdf_page": 479,
+          "kind": "text",
+          "score": 0.015625,
+          "preview": "464 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Within this frame/window, we can place specific objects, called widgets, to serve their designated purposes, as detaile",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032002,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p53_image_0",
+          "pdf_page": 53,
+          "kind": "image",
+          "score": 0.030777,
+          "preview": "Athabasca University logo rendered in a Markdown image example.",
+          "image_path": "visual_pages/page_053.png"
+        },
+        {
+          "id": "bonus_p481_image_0",
+          "pdf_page": 481,
+          "kind": "image",
+          "score": 0.015625,
+          "preview": "Examples of Tkinter GUI applications with widgets.",
+          "image_path": "visual_pages/page_481.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p46_image_0",
+          "bonus_p42_image_0",
+          "bonus_p480_image_0",
+          "bonus_p346_text_1",
+          "bonus_p479_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p46_image_0",
+          "bonus_p42_image_0",
+          "bonus_p480_image_0",
+          "bonus_p53_image_0",
+          "bonus_p481_image_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_004",
+      "type": "image",
+      "answerable": true,
+      "question": "What GUI library is illustrated by the application screenshot?",
+      "route": "image",
+      "gold_ids": [
+        "bonus_p480_image_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.031514,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.031258,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p476_text_0",
+          "pdf_page": 476,
+          "kind": "text",
+          "score": 0.031054,
+          "preview": "Develop GUI-­Based Applications 461 https://doi.org/10.15215/remix/9781998944088.01 9.2 Designing and Developing GUI-­Based Applications in Python The key component of a GUI-­based application is a graphical user interfa",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.015873,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032787,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.031754,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.031514,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p481_image_0",
+          "pdf_page": 481,
+          "kind": "image",
+          "score": 0.031498,
+          "preview": "Examples of Tkinter GUI applications with widgets.",
+          "image_path": "visual_pages/page_481.png"
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.031258,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p480_image_0",
+          "bonus_p46_image_0",
+          "bonus_p42_image_0",
+          "bonus_p476_text_0",
+          "bonus_p498_image_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p480_image_0",
+          "bonus_p46_image_0",
+          "bonus_p42_image_0",
+          "bonus_p481_image_0",
+          "bonus_p498_image_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_005",
+      "type": "image",
+      "answerable": true,
+      "question": "What kind of software interface is illustrated on page 481?",
+      "route": "image",
+      "gold_ids": [
+        "bonus_p481_image_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p3_text_0",
+          "pdf_page": 3,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "This page intentionally left blank",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p474_text_0",
+          "pdf_page": 474,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "https://doi.org/10.15215/remix/9781998944088.01 Chapter 9 Develop GUI-­Based Applications In terms of user interface, there are two types of computer systems or appli­ cations: terminal-­based, which can be run from a te",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p15_text_0",
+          "pdf_page": 15,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "This page intentionally left blank",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p478_text_0",
+          "pdf_page": 478,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Develop GUI-­Based Applications 463 https://doi.org/10.15215/remix/9781998944088.01 (0,0) (0,1) (0,2) (0,3) (0,4) (0,5) (1,0) (1,1) (1,2) (1,3) (1,4) (1,5) (2,0) (2,1) (2,0) (2,3) (2,4) (2,5) (3,0) (3,1) (3,2) (3,3) (3,4",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p215_text_0",
+          "pdf_page": 215,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "This page intentionally left blank",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p480_image_0",
+          "pdf_page": 480,
+          "kind": "image",
+          "score": 0.032522,
+          "preview": "Screenshot of a basic Tkinter GUI application.",
+          "image_path": "visual_pages/page_480.png"
+        },
+        {
+          "id": "bonus_p42_image_0",
+          "pdf_page": 42,
+          "kind": "image",
+          "score": 0.031754,
+          "preview": "Screenshot of Jupyter Notebook in a browser.",
+          "image_path": "visual_pages/page_042.png"
+        },
+        {
+          "id": "bonus_p481_image_0",
+          "pdf_page": 481,
+          "kind": "image",
+          "score": 0.031258,
+          "preview": "Examples of Tkinter GUI applications with widgets.",
+          "image_path": "visual_pages/page_481.png"
+        },
+        {
+          "id": "bonus_p46_image_0",
+          "pdf_page": 46,
+          "kind": "image",
+          "score": 0.030777,
+          "preview": "Screenshot of a Python program in Visual Studio Code.",
+          "image_path": "visual_pages/page_046.png"
+        },
+        {
+          "id": "bonus_p498_image_0",
+          "pdf_page": 498,
+          "kind": "image",
+          "score": 0.016393,
+          "preview": "GUI examples with widgets and a login/register screen.",
+          "image_path": "visual_pages/page_498.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p3_text_0",
+          "bonus_p474_text_0",
+          "bonus_p15_text_0",
+          "bonus_p478_text_0",
+          "bonus_p215_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p480_image_0",
+          "bonus_p42_image_0",
+          "bonus_p481_image_0",
+          "bonus_p46_image_0",
+          "bonus_p498_image_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_006",
+      "type": "diagram",
+      "answerable": true,
+      "question": "What conditional structure is illustrated by the flowcharts?",
+      "route": "diagram",
+      "gold_ids": [
+        "bonus_p193_diagram_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p193_diagram_0",
+          "pdf_page": 193,
+          "kind": "diagram",
+          "score": 0.032787,
+          "preview": "Two flowcharts illustrating if-elif-else decisions.",
+          "image_path": "visual_pages/page_193.png"
+        },
+        {
+          "id": "bonus_p210_text_0",
+          "pdf_page": 210,
+          "kind": "text",
+          "score": 0.03031,
+          "preview": "Flow Control of Statements 195 https://doi.org/10.15215/remix/9781998944088.01 Chapter Summary • Knowing what to do at a given time and under certain conditions is important for any intelligent being. • Conditional state",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p192_text_1",
+          "pdf_page": 192,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "make multiple selections. The flowchart in Figure 3-­4 illustrates the logic flow of an if-­elif-­elif…else statement for mul­ tiple selections. ? Code block Yes No Figure 3-­1: Flowchart of an if statement ? Code block ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p272_text_1",
+          "pdf_page": 272,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "tion on its employees. We can use a list containing the name, birthdate, department, start date at the company, and level of employment to represent information on each employee, then use another list to represent a coll",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p160_text_0",
+          "pdf_page": 160,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Essential Building Blocks of Computer Programs 145 https://doi.org/10.15215/remix/9781998944088.01 In the last example above, *l, *y tells PVM that variable l and y can take a variable-­length list of values. CONDITIONAL",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p180_diagram_0",
+          "pdf_page": 180,
+          "kind": "diagram",
+          "score": 0.032522,
+          "preview": "Figure 2-4 is a flowchart of a while statement. A condition is tested before executing the loop body. If the condition is true, the suite executes and control returns to test the condition. If false, the flow exits the l",
+          "image_path": "visual_pages/page_180.png"
+        },
+        {
+          "id": "bonus_p193_diagram_0",
+          "pdf_page": 193,
+          "kind": "diagram",
+          "score": 0.032522,
+          "preview": "Two flowcharts illustrating if-elif-else decisions.",
+          "image_path": "visual_pages/page_193.png"
+        },
+        {
+          "id": "bonus_p72_diagram_0",
+          "pdf_page": 72,
+          "kind": "diagram",
+          "score": 0.031258,
+          "preview": "Figure 1-8: Summation algorithm flowchart. Initialize i = 1 and s = 0. Update s = s + i and i = i + 1. Check i <= 10000. When true, repeat the update; otherwise print s.",
+          "image_path": "visual_pages/page_72.png"
+        },
+        {
+          "id": "bonus_p89_diagram_0",
+          "pdf_page": 89,
+          "kind": "diagram",
+          "score": 0.030798,
+          "preview": "Figure 2-1: The variable grade and its memory location. An arrow from grade points to a memory box containing the value 98.",
+          "image_path": "visual_pages/page_89.png"
+        },
+        {
+          "id": "bonus_p19_diagram_0",
+          "pdf_page": 19,
+          "kind": "diagram",
+          "score": 0.030777,
+          "preview": "Figure 1-2: Von Neumann architecture. The Central Processing Unit contains a Control Unit and an Arithmetic/Logic Unit. The diagram also shows Input, Output, Memory, and Storage with connecting arrows.",
+          "image_path": "visual_pages/page_19.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p193_diagram_0",
+          "bonus_p210_text_0",
+          "bonus_p192_text_1",
+          "bonus_p272_text_1",
+          "bonus_p160_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p180_diagram_0",
+          "bonus_p193_diagram_0",
+          "bonus_p72_diagram_0",
+          "bonus_p89_diagram_0",
+          "bonus_p19_diagram_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_007",
+      "type": "chart",
+      "answerable": true,
+      "question": "What general trend is illustrated by Figure 8-6?",
+      "route": "chart",
+      "gold_ids": [
+        "bonus_p469_chart_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p400_chart_0",
+          "pdf_page": 400,
+          "kind": "chart",
+          "score": 0.031754,
+          "preview": "Figure 8-1: Visualization of Randomness. A line plot showing random integer values over 1000 runs. The horizontal axis is labeled Run # and the vertical axis is labeled Random Integer. The values fluctuate irregularly wi",
+          "image_path": "visual_pages/page_400.png"
+        },
+        {
+          "id": "bonus_p458_image_0",
+          "pdf_page": 458,
+          "kind": "image",
+          "score": 0.016393,
+          "preview": "Figure 8-2 illustrates a blank Tkinter Canvas window.",
+          "image_path": "visual_pages/page_458.png"
+        },
+        {
+          "id": "bonus_p467_chart_0",
+          "pdf_page": 467,
+          "kind": "chart",
+          "score": 0.016393,
+          "preview": "Figure 8-5, titled Visualization of Square Root, plots y = sqrt(x) for x values from 1 to 100. The horizontal axis is labeled x and the vertical axis is labeled y. The curve increases as x increases but becomes gradually",
+          "image_path": "visual_pages/page_467.png"
+        },
+        {
+          "id": "bonus_p472_text_0",
+          "pdf_page": 472,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Modules and Packages 457 https://doi.org/10.15215/remix/9781998944088.01 3. Search the internet for tutorials or other web documents related to web scraping with Python and choose some to watch or read. Take some coding ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p410_text_0",
+          "pdf_page": 410,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Modules and Packages 395 https://doi.org/10.15215/remix/9781998944088.01 Out [ ]: 1.0 1.41 1.73 2.0 2.24 2.45 2.65 2.83 3.0 3.16 3.32 3.46 3.61 3.74 3.87 4.0 4.12 4.24 4.36 4.47 4.58 4.69 4.8 4.9 5.0 5.1 5.2 5.29 5.39 5.",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p467_chart_0",
+          "pdf_page": 467,
+          "kind": "chart",
+          "score": 0.032266,
+          "preview": "Figure 8-5, titled Visualization of Square Root, plots y = sqrt(x) for x values from 1 to 100. The horizontal axis is labeled x and the vertical axis is labeled y. The curve increases as x increases but becomes gradually",
+          "image_path": "visual_pages/page_467.png"
+        },
+        {
+          "id": "bonus_p63_chart_0",
+          "pdf_page": 63,
+          "kind": "chart",
+          "score": 0.032266,
+          "preview": "Figure 1-6 is a vertical bar chart generated by Python Matplotlib. It shows the distribution of student letter grades, with letter-grade categories on the horizontal axis and number of students on the vertical axis. The ",
+          "image_path": "visual_pages/page_063.png"
+        },
+        {
+          "id": "bonus_p400_chart_0",
+          "pdf_page": 400,
+          "kind": "chart",
+          "score": 0.032258,
+          "preview": "Figure 8-1: Visualization of Randomness. A line plot showing random integer values over 1000 runs. The horizontal axis is labeled Run # and the vertical axis is labeled Random Integer. The values fluctuate irregularly wi",
+          "image_path": "visual_pages/page_400.png"
+        },
+        {
+          "id": "bonus_p469_chart_0",
+          "pdf_page": 469,
+          "kind": "chart",
+          "score": 0.015625,
+          "preview": "Line chart of world population and regional population over time, with separate lines for geographic regions.",
+          "image_path": "visual_pages/page_469.png"
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p400_chart_0",
+          "bonus_p458_image_0",
+          "bonus_p467_chart_0",
+          "bonus_p472_text_0",
+          "bonus_p410_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p467_chart_0",
+          "bonus_p63_chart_0",
+          "bonus_p400_chart_0",
+          "bonus_p469_chart_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_008",
+      "type": "table",
+      "answerable": true,
+      "question": "Which sequence operator repeats a sequence multiple times?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p131_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p131_text_0",
+          "pdf_page": 131,
+          "kind": "text",
+          "score": 0.032787,
+          "preview": "116 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Table 2-­13: Python sequence operators Operator Operation Code sample in Python interactive mode * Repeat a sequence su",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p305_text_0",
+          "pdf_page": 305,
+          "kind": "text",
+          "score": 0.030118,
+          "preview": "290 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 • A string is a sequence of characters (ASCII, Unicode, or another encoding standard). • A list is a sequence of data i",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p284_text_0",
+          "pdf_page": 284,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Use Sequences, Sets, Dictionaries, and Text Files 269 https://doi.org/10.15215/remix/9781998944088.01 REVERSED(DT) To return a reverse iterator over the keys of the dictionary. Same effect as reversed(dt.keys()). This is",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p304_text_0",
+          "pdf_page": 304,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Use Sequences, Sets, Dictionaries, and Text Files 289 https://doi.org/10.15215/remix/9781998944088.01 The result The article has 926 words in total The number of unique words used is 467 word \"will\" used 20 times. word \"",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p137_text_0",
+          "pdf_page": 137,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "122 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 >>> list(range(5)) [0, 1, 2, 3, 4] RANGE(START, STOP, STEP) This returns a sequence of numbers starting from 0 by defau",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p131_table_0",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n* | Repeatasequencesuchasstring , | >>> \"Python \" * 3\n | listortuplemultipletimes | 'Python Python Python '\n |  | >>> [1 2 3] * 5 , ,\n |  | [1 2 3 1 2 3 1 2 ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p130_table_0",
+          "pdf_page": 130,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p483_table_0",
+          "pdf_page": 483,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "Lettergrade | % | Lettergrade | %\nA+ | 90–100 ­ | C+ | 67–69 ­\nA | 85–89 ­ | C | 64–66 ­\nA - ­ | 8084 - ­ | C - ­ | 6063 - ­\nB+ | 76–79 ­ | D+ | 55–59 ­\nB | 73–75 ­ | D | 50–54 ­\nB− | 70–72 ­ | F | 0–49 ­",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_1",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p208_table_0",
+          "pdf_page": 208,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Lettergrade | Percentage\nA+ | 90–100% ­\nA | 95–89% ­\nA− | 80–84% ­\nB+ | 77–79% ­\nB | 73–76% ­\nB− | 70–72% ­\nC+ | 67–69% ­\nC | 63–66% ­\nC− | 60–62% ­\nD | 55–59% ­\nD | 50–54% ­\nF | 0–49% ­",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p131_text_0",
+          "bonus_p305_text_0",
+          "bonus_p284_text_0",
+          "bonus_p304_text_0",
+          "bonus_p137_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p131_table_0",
+          "bonus_p130_table_0",
+          "bonus_p483_table_0",
+          "bonus_p131_table_1",
+          "bonus_p208_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_009",
+      "type": "table",
+      "answerable": true,
+      "question": "What does Python's 'in' membership operator check?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p131_table_1"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p132_text_0",
+          "pdf_page": 132,
+          "kind": "text",
+          "score": 0.032266,
+          "preview": "Essential Building Blocks of Computer Programs 117 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code sample in Python interactive mode v not in s Checks whether value/variable is not found in the se",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_text_0",
+          "pdf_page": 131,
+          "kind": "text",
+          "score": 0.030886,
+          "preview": "116 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Table 2-­13: Python sequence operators Operator Operation Code sample in Python interactive mode * Repeat a sequence su",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p238_text_0",
+          "pdf_page": 238,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Use Sequences, Sets, Dictionaries, and Text Files 223 https://doi.org/10.15215/remix/9781998944088.01 >>> s = \"intro to programming with python\" >>> s_capitalized = s.capitalize() >>> s_capitalized 'Intro to programming ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p9_text_0",
+          "pdf_page": 9,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "viii Contents Sequence Operators 115 Membership Operator 116 Built-­In Functions 117 Expressions 135 2.2 Higher-­Level Constructs of Python Programs 137 Structure of Python Programs 137 Documentation and Comments 139 Sim",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p123_text_1",
+          "pdf_page": 123,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "with samples. Table 2-­8: Python comparison operators Operator Operation Code sample in Python interactive mode > Greater than—­True if left operand is greater than the right >>> x, y = 23, 53 >>> x > y False >>> l1 = ('",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p131_table_0",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.032018,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n* | Repeatasequencesuchasstring , | >>> \"Python \" * 3\n | listortuplemultipletimes | 'Python Python Python '\n |  | >>> [1 2 3] * 5 , ,\n |  | [1 2 3 1 2 3 1 2 ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.031746,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p132_table_0",
+          "pdf_page": 132,
+          "kind": "table",
+          "score": 0.030622,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvnotins | Checkswhethervalue/variableis | >>> l\n | notfoundinthesequence | [0 1 2 3 4 5 6 7 8 9] , , , , , , , , ,\n |  | >>> 30 in l\n |  | False\n |  | >>> 30",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_1",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p67_table_0",
+          "pdf_page": 67,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "-a--- ­ ­­­ | 2022- ­12- ­06 8:12 PM 1463681 NEWS .txt\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 101752 python .exe\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 65912 python3 .dll\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 5761912 python31",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p132_text_0",
+          "bonus_p131_text_0",
+          "bonus_p238_text_0",
+          "bonus_p9_text_0",
+          "bonus_p123_text_1"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p131_table_0",
+          "bonus_p253_table_0",
+          "bonus_p132_table_0",
+          "bonus_p131_table_1",
+          "bonus_p67_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_010",
+      "type": "table",
+      "answerable": true,
+      "question": "What does the 'not in' operator check?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p132_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p132_text_0",
+          "pdf_page": 132,
+          "kind": "text",
+          "score": 0.032002,
+          "preview": "Essential Building Blocks of Computer Programs 117 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code sample in Python interactive mode v not in s Checks whether value/variable is not found in the se",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p132_table_0",
+          "pdf_page": 132,
+          "kind": "table",
+          "score": 0.031498,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvnotins | Checkswhethervalue/variableis | >>> l\n | notfoundinthesequence | [0 1 2 3 4 5 6 7 8 9] , , , , , , , , ,\n |  | >>> 30 in l\n |  | False\n |  | >>> 30",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p130_table_0",
+          "pdf_page": 130,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p374_text_0",
+          "pdf_page": 374,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Object-­Oriented Programming with Python 359 https://doi.org/10.15215/remix/9781998944088.01 • Some important and interesting dunder methods include __repr__, __init__, __call__, __new__, and __len__. • Class can also be",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p150_text_1",
+          "pdf_page": 150,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "ors. 3. Membership operators, identity operators, and comparison operators take precedence over logic operators. 4. Among logic operators, the order of precedence, from high to low, is not > and > or.",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p132_table_0",
+          "pdf_page": 132,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvnotins | Checkswhethervalue/variableis | >>> l\n | notfoundinthesequence | [0 1 2 3 4 5 6 7 8 9] , , , , , , , , ,\n |  | >>> 30 in l\n |  | False\n |  | >>> 30",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_1",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.030366,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p130_table_0",
+          "pdf_page": 130,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p361_table_1",
+          "pdf_page": 361,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Operator | Dundermethod\n< | object lt (self other) .__ __ ,\n<= | object le (self other) .__ __ ,\n== | object eq (self other) .__ __ ,\n!= | object ne (self other) .__ __ ,\n>= | object ge (self other) .__ __ ,\n> | object g",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p132_text_0",
+          "bonus_p132_table_0",
+          "bonus_p130_table_0",
+          "bonus_p374_text_0",
+          "bonus_p150_text_1"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p132_table_0",
+          "bonus_p131_table_1",
+          "bonus_p130_table_0",
+          "bonus_p253_table_0",
+          "bonus_p361_table_1"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_011",
+      "type": "table",
+      "answerable": true,
+      "question": "What result type does integer divided by integer produce in the division table?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p118_table_1"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p121_text_1",
+          "pdf_page": 121,
+          "kind": "text",
+          "score": 0.031099,
+          "preview": "ltiply two operands >>> x, y = 10, 20 >>> y * x 200 / Divide left operand by the right one (always results into float) >>> x, y = 10, 20 >>> y / x 2.0 // Floor division—­division that results into integer number by omitt",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_text_0",
+          "pdf_page": 118,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Essential Building Blocks of Computer Programs 103 https://doi.org/10.15215/remix/9781998944088.01 pi = 3.1415 r = 10 circumference = 2 * pi * r print(\"The circumference of a circle with radius {:d} is {:f}\".format(r, ci",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p256_text_1",
+          "pdf_page": 256,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "or integer c. f for float number d. x or X for hex number e. o for octal number f. b for binary number g. #x, #X, #o, and #b to prefix the numbers 0x, 0X, 0o, and 0b, respectively The following example shows how the data",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p54_text_1",
+          "pdf_page": 54,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "o include a code sample within a single sentence, enclose the code within a pair of backticks `, as shown below: The ` range(start, end, step) ` function is used to produce a sequence of integer numbers. The rendered res",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p117_text_0",
+          "pdf_page": 117,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "102 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Unlike other programming languages, in Python, there is no need to declare its type before a variable is introduced and",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.030886,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p127_table_0",
+          "pdf_page": 127,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx=e | Expressioneisevaluated andthe , | >>> m , n = 23 , 12\n | valueisassignedtovariablex . | >>> m n ,\n | NotethatinPythonandin | (23 12) ,\n | previouscode",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p193_table_0",
+          "pdf_page": 193,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "Numberofselections |  | \nneeded | Numericgrade(%) | Alpha/lettergrade\n1 | 90–100 ­ | A+\n2 | 85–89 ­ | A\n3 | 80–84 ­ | A−\n4 | 76–79 ­ | B+\n5 | 73–75 ­ | B\n6 | 70–72 ­ | B−\n7 | 67–69 ­ | C+\n8 | 64–66 ­ | C\n9 | 60–63 ­ | C−",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p128_table_0",
+          "pdf_page": 128,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx/=e | Expressionx/eisevaluated , | >>> x, m , n = (1225 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x/e | (1225 23 12) , ,\n ",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p121_text_1",
+          "bonus_p118_text_0",
+          "bonus_p256_text_1",
+          "bonus_p54_text_1",
+          "bonus_p117_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p127_table_0",
+          "bonus_p118_table_1",
+          "bonus_p193_table_0",
+          "bonus_p128_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_012",
+      "type": "table",
+      "answerable": true,
+      "question": "What result type is shown for integer plus float?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p118_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p160_text_1",
+          "pdf_page": 160,
+          "kind": "text",
+          "score": 0.030303,
+          "preview": "done by annotating the variable using a colon followed by the name of the data type, as shown in the following example: marks: float = 86.5 # variable marks will hold a float number However, Python will not complain if o",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.030159,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_text_0",
+          "pdf_page": 118,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Essential Building Blocks of Computer Programs 103 https://doi.org/10.15215/remix/9781998944088.01 pi = 3.1415 r = 10 circumference = 2 * pi * r print(\"The circumference of a circle with radius {:d} is {:f}\".format(r, ci",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p256_text_1",
+          "pdf_page": 256,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "or integer c. f for float number d. x or X for hex number e. o for octal number f. b for binary number g. #x, #X, #o, and #b to prefix the numbers 0x, 0X, 0o, and 0b, respectively The following example shows how the data",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p117_text_0",
+          "pdf_page": 117,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "102 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Unlike other programming languages, in Python, there is no need to declare its type before a variable is introduced and",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032787,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p130_table_0",
+          "pdf_page": 130,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p124_table_0",
+          "pdf_page": 124,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n< | Lessthan—Trueifleftoperandis ­ | >>> x, y = 23 , 53\n | lessthantheright | >>> x, y\n |  | (23 53) ,\n |  | >>> x < y\n |  | True\n |  | >>> s1 = \"Albert\"\n | ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p194_table_0",
+          "pdf_page": 194,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Theproblem | In this case study , design a program using an if - ­elif - ­else statement\n | toconvertnumericgradestoalpha/lettergrades .\nTheanalysis | As the above grade-c ­onversion table shows the program needs to ,\nan",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p160_text_1",
+          "bonus_p118_table_0",
+          "bonus_p118_text_0",
+          "bonus_p256_text_1",
+          "bonus_p117_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p118_table_1",
+          "bonus_p130_table_0",
+          "bonus_p124_table_0",
+          "bonus_p194_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_013",
+      "type": "multi_hop",
+      "answerable": true,
+      "question": "How do 'in' and 'not in' differ in Python?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p131_table_1",
+        "bonus_p132_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p132_text_0",
+          "pdf_page": 132,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Essential Building Blocks of Computer Programs 117 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code sample in Python interactive mode v not in s Checks whether value/variable is not found in the se",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p32_text_2",
+          "pdf_page": 32,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p33_text_1",
+          "pdf_page": 33,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "written in Python are clean and easy to read. Yet Python is a general-­purpose programming language and very powerful to code in. Programming in Python has the least overhead, especially when compared to Java. Let’s take",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p93_text_0",
+          "pdf_page": 93,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "78 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 classes, and modules. These names are collectively called built-­in names. It is grammatically fine to use built-­in nam",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p151_text_0",
+          "pdf_page": 151,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "136 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 CODING ALERT Python language is case-­sensitive. Be sure to use the right case when typing! Expressions are used almost",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p132_table_0",
+          "pdf_page": 132,
+          "kind": "table",
+          "score": 0.031319,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvnotins | Checkswhethervalue/variableis | >>> l\n | notfoundinthesequence | [0 1 2 3 4 5 6 7 8 9] , , , , , , , , ,\n |  | >>> 30 in l\n |  | False\n |  | >>> 30",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_0",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.030835,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n* | Repeatasequencesuchasstring , | >>> \"Python \" * 3\n | listortuplemultipletimes | 'Python Python Python '\n |  | >>> [1 2 3] * 5 , ,\n |  | [1 2 3 1 2 3 1 2 ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.030366,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p67_table_0",
+          "pdf_page": 67,
+          "kind": "table",
+          "score": 0.016393,
+          "preview": "-a--- ­ ­­­ | 2022- ­12- ­06 8:12 PM 1463681 NEWS .txt\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 101752 python .exe\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 65912 python3 .dll\n-a--- ­ ­­­ | 2022- ­12- ­06 8:10 PM 5761912 python31",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_1",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n ",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p132_text_0",
+          "bonus_p32_text_2",
+          "bonus_p33_text_1",
+          "bonus_p93_text_0",
+          "bonus_p151_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": false,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p132_table_0",
+          "bonus_p131_table_0",
+          "bonus_p253_table_0",
+          "bonus_p67_table_0",
+          "bonus_p131_table_1"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_014",
+      "type": "text",
+      "answerable": true,
+      "question": "What are the main steps to calculate the sum of two numbers?",
+      "route": null,
+      "gold_ids": [
+        "bonus_p70_text_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p70_text_1",
+          "pdf_page": 70,
+          "kind": "text",
+          "score": 0.032522,
+          "preview": "n the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem solving and computing, conditional operations and repetitive operations are often needed. An exampl",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p70_text_0",
+          "pdf_page": 70,
+          "kind": "text",
+          "score": 0.031099,
+          "preview": "Introduction 55 https://doi.org/10.15215/remix/9781998944088.01 [algorithm 1] Get two numbers from user, calculate, and print out the sum. Step 1. Get the first number to n1. Step 2. Get the second number to n2. Step 3. ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p229_text_1",
+          "pdf_page": 229,
+          "kind": "text",
+          "score": 0.029851,
+          "preview": "follows: 1. Get two integers from user to set the range, assigned to a and b, respectively. If a is greater than b, then we swap their values. 2. Loop through all the numbers between a and b, including a and b, and test ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p201_text_1",
+          "pdf_page": 201,
+          "kind": "text",
+          "score": 0.02967,
+          "preview": "but you do know there will be no negative marks. You can then use a negative number, input by the user, to end the application and use the while loop to iterate. To calculate the average, you need to know the sum of all ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p213_text_2",
+          "pdf_page": 213,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "splay all the factors of the number given by the user. * By definition, a perfect number is a positive integer that is equal to the sum of all its divisors, excluding itself but including 1. The smallest perfect number i",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p70_text_1",
+          "pdf_page": 70,
+          "kind": "text",
+          "score": 0.032522,
+          "preview": "n the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem solving and computing, conditional operations and repetitive operations are often needed. An exampl",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p70_text_0",
+          "pdf_page": 70,
+          "kind": "text",
+          "score": 0.031099,
+          "preview": "Introduction 55 https://doi.org/10.15215/remix/9781998944088.01 [algorithm 1] Get two numbers from user, calculate, and print out the sum. Step 1. Get the first number to n1. Step 2. Get the second number to n2. Step 3. ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p229_text_1",
+          "pdf_page": 229,
+          "kind": "text",
+          "score": 0.029851,
+          "preview": "follows: 1. Get two integers from user to set the range, assigned to a and b, respectively. If a is greater than b, then we swap their values. 2. Loop through all the numbers between a and b, including a and b, and test ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p201_text_1",
+          "pdf_page": 201,
+          "kind": "text",
+          "score": 0.02967,
+          "preview": "but you do know there will be no negative marks. You can then use a negative number, input by the user, to end the application and use the while loop to iterate. To calculate the average, you need to know the sum of all ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p213_text_2",
+          "pdf_page": 213,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "splay all the factors of the number given by the user. * By definition, a perfect number is a positive integer that is equal to the sum of all its divisors, excluding itself but including 1. The smallest perfect number i",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p70_text_1",
+          "bonus_p70_text_0",
+          "bonus_p229_text_1",
+          "bonus_p201_text_1",
+          "bonus_p213_text_2"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p70_text_1",
+          "bonus_p70_text_0",
+          "bonus_p229_text_1",
+          "bonus_p201_text_1",
+          "bonus_p213_text_2"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_015",
+      "type": "text",
+      "answerable": true,
+      "question": "Which computational resources are mentioned when discussing algorithm complexity?",
+      "route": null,
+      "gold_ids": [
+        "bonus_p25_text_1"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p25_text_1",
+          "pdf_page": 25,
+          "kind": "text",
+          "score": 0.032266,
+          "preview": "er of resources—­CPU time and memory, in particular—­needed to run the algorithm on a computer. A problem may be solved in different ways using different algorithms with different computational complexities. Sometimes it",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p83_text_1",
+          "pdf_page": 83,
+          "kind": "text",
+          "score": 0.032258,
+          "preview": "Alan Turing is credited as a father of modern computing. • There is also the question of how difficult it is to solve a problem with computers, which is the study of computational complexity. The computational complexity",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p26_text_0",
+          "pdf_page": 26,
+          "kind": "text",
+          "score": 0.031258,
+          "preview": "Introduction 11 https://doi.org/10.15215/remix/9781998944088.01 In computer science, problems can be classified as P (for polynomial), NP (for nondeterministic polynomial), NP-­complete, or NP-­hard problems. A problem i",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p24_text_1",
+          "pdf_page": 24,
+          "kind": "text",
+          "score": 0.03031,
+          "preview": "uctions (the program) and data needed during the computation. For the central processing unit (CPU) and memory (RAM) to com­ municate and work together, a communication channel and control unit need to be added. For huma",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p323_text_0",
+          "pdf_page": 323,
+          "kind": "text",
+          "score": 0.029437,
+          "preview": "308 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 As you can see, for the same numbers, the improved algorithm took only six recursions, whereas the original took 30. An",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p25_text_1",
+          "pdf_page": 25,
+          "kind": "text",
+          "score": 0.032266,
+          "preview": "er of resources—­CPU time and memory, in particular—­needed to run the algorithm on a computer. A problem may be solved in different ways using different algorithms with different computational complexities. Sometimes it",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p83_text_1",
+          "pdf_page": 83,
+          "kind": "text",
+          "score": 0.032258,
+          "preview": "Alan Turing is credited as a father of modern computing. • There is also the question of how difficult it is to solve a problem with computers, which is the study of computational complexity. The computational complexity",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p26_text_0",
+          "pdf_page": 26,
+          "kind": "text",
+          "score": 0.031258,
+          "preview": "Introduction 11 https://doi.org/10.15215/remix/9781998944088.01 In computer science, problems can be classified as P (for polynomial), NP (for nondeterministic polynomial), NP-­complete, or NP-­hard problems. A problem i",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p24_text_1",
+          "pdf_page": 24,
+          "kind": "text",
+          "score": 0.03031,
+          "preview": "uctions (the program) and data needed during the computation. For the central processing unit (CPU) and memory (RAM) to com­ municate and work together, a communication channel and control unit need to be added. For huma",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p323_text_0",
+          "pdf_page": 323,
+          "kind": "text",
+          "score": 0.029437,
+          "preview": "308 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 As you can see, for the same numbers, the improved algorithm took only six recursions, whereas the original took 30. An",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p25_text_1",
+          "bonus_p83_text_1",
+          "bonus_p26_text_0",
+          "bonus_p24_text_1",
+          "bonus_p323_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p25_text_1",
+          "bonus_p83_text_1",
+          "bonus_p26_text_0",
+          "bonus_p24_text_1",
+          "bonus_p323_text_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_016",
+      "type": "table",
+      "answerable": true,
+      "question": "According to the arithmetic type table, what is the result type of complex plus float?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p118_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032266,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.031281,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p104_text_0",
+          "pdf_page": 104,
+          "kind": "text",
+          "score": 0.029412,
+          "preview": "Essential Building Blocks of Computer Programs 89 https://doi.org/10.15215/remix/9781998944088.01 COMPLEX (COMPLEX) If you have never heard about complex numbers, quickly search the internet for complex numbers and read ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_text_0",
+          "pdf_page": 118,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Essential Building Blocks of Computer Programs 103 https://doi.org/10.15215/remix/9781998944088.01 pi = 3.1415 r = 10 circumference = 2 * pi * r print(\"The circumference of a circle with radius {:d} is {:f}\".format(r, ci",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p23_text_1",
+          "pdf_page": 23,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "ely, but with a mechanism to deal with carrying from the fraction to the integer in the case of addition, and a mechanism to deal with borrowing from the integer to the fraction in the case of subtraction. This would be ",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p124_table_0",
+          "pdf_page": 124,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n< | Lessthan—Trueifleftoperandis ­ | >>> x, y = 23 , 53\n | lessthantheright | >>> x, y\n |  | (23 53) ,\n |  | >>> x < y\n |  | True\n |  | >>> s1 = \"Albert\"\n | ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p130_table_0",
+          "pdf_page": 130,
+          "kind": "table",
+          "score": 0.015625,
+          "preview": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p118_table_1",
+          "bonus_p104_text_0",
+          "bonus_p118_text_0",
+          "bonus_p23_text_1"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p118_table_1",
+          "bonus_p124_table_0",
+          "bonus_p253_table_0",
+          "bonus_p130_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_017",
+      "type": "table",
+      "answerable": true,
+      "question": "According to the division table, what is the result type of float divided by complex?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p118_table_1"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032266,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032002,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_text_1",
+          "pdf_page": 118,
+          "kind": "text",
+          "score": 0.03031,
+          "preview": "is divided by a complex number: In [ ]: i = 12 cx = 23 + 35j icx = i / cx print(icx, type(icx)) Out [ ]: (0.1573546180159635-­0.2394526795895097j) <class 'complex'> You may copy and modify the code above to check other c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_text_0",
+          "pdf_page": 118,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "Essential Building Blocks of Computer Programs 103 https://doi.org/10.15215/remix/9781998944088.01 pi = 3.1415 r = 10 circumference = 2 * pi * r print(\"The circumference of a circle with radius {:d} is {:f}\".format(r, ci",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p121_text_1",
+          "pdf_page": 121,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "ltiply two operands >>> x, y = 10, 20 >>> y * x 200 / Divide left operand by the right one (always results into float) >>> x, y = 10, 20 >>> y / x 2.0 // Floor division—­division that results into integer number by omitt",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p118_table_0",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p118_table_1",
+          "pdf_page": 118,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p361_table_0",
+          "pdf_page": 361,
+          "kind": "table",
+          "score": 0.029437,
+          "preview": "Overriddenoperator | Dundermethod\n- ­ | object neg (self) .__ __\n+ | object pos (self) .__ __\nabs() | object abs (self) .__ __\n~ | object invert (self) .__ __\ncomplex() | object complex (self) .__ __\nint() | object int (",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p483_table_0",
+          "pdf_page": 483,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Lettergrade | % | Lettergrade | %\nA+ | 90–100 ­ | C+ | 67–69 ­\nA | 85–89 ­ | C | 64–66 ­\nA - ­ | 8084 - ­ | C - ­ | 6063 - ­\nB+ | 76–79 ­ | D+ | 55–59 ­\nB | 73–75 ­ | D | 50–54 ­\nB− | 70–72 ­ | F | 0–49 ­",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p118_table_1",
+          "bonus_p118_text_1",
+          "bonus_p118_text_0",
+          "bonus_p121_text_1"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p118_table_0",
+          "bonus_p118_table_1",
+          "bonus_p361_table_0",
+          "bonus_p253_table_0",
+          "bonus_p483_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_018",
+      "type": "table",
+      "answerable": true,
+      "question": "Which Python operator joins two sequences?",
+      "route": "table",
+      "gold_ids": [
+        "bonus_p131_table_0"
+      ],
+      "original_hits": [
+        {
+          "id": "bonus_p131_text_0",
+          "pdf_page": 131,
+          "kind": "text",
+          "score": 0.032787,
+          "preview": "116 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Table 2-­13: Python sequence operators Operator Operation Code sample in Python interactive mode * Repeat a sequence su",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p61_text_0",
+          "pdf_page": 61,
+          "kind": "text",
+          "score": 0.029418,
+          "preview": "46 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 #Operators and expressions in Python In the next cell we will show the use of operators and expressions in Python. #Oper",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p282_text_0",
+          "pdf_page": 282,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Use Sequences, Sets, Dictionaries, and Text Files 267 https://doi.org/10.15215/remix/9781998944088.01 >>> d1 = dict(zip(['one', 'two', 'three'], [1, 2, 3])) >>> d2 = dict(zip([1, 2, 3], ['one', 'two', 'three'])) >>> d1 {",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p9_text_0",
+          "pdf_page": 9,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "viii Contents Sequence Operators 115 Membership Operator 116 Built-­In Functions 117 Expressions 135 2.2 Higher-­Level Constructs of Python Programs 137 Structure of Python Programs 137 Documentation and Comments 139 Sim",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p132_text_0",
+          "pdf_page": 132,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Essential Building Blocks of Computer Programs 117 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code sample in Python interactive mode v not in s Checks whether value/variable is not found in the se",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p131_table_0",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.032522,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n* | Repeatasequencesuchasstring , | >>> \"Python \" * 3\n | listortuplemultipletimes | 'Python Python Python '\n |  | >>> [1 2 3] * 5 , ,\n |  | [1 2 3 1 2 3 1 2 ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p131_table_1",
+          "pdf_page": 131,
+          "kind": "table",
+          "score": 0.031099,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p123_table_0",
+          "pdf_page": 123,
+          "kind": "table",
+          "score": 0.030159,
+          "preview": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n> | Greaterthan—Trueifleftoperand ­ | >>> x, y = 23 , 53\n | isgreaterthantheright | >>> x > y\n |  | False\n |  | >>> l1 = ('apple' ,\n |  | 'orange' 'peach') ,",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p253_table_0",
+          "pdf_page": 253,
+          "kind": "table",
+          "score": 0.016129,
+          "preview": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p110_table_0",
+          "pdf_page": 110,
+          "kind": "table",
+          "score": 0.015873,
+          "preview": "Flag | Whatitdoes | CodesampleinJupyterNotebook\nU u , | U/uforUnicode indicating , | In:\n | Unicodeliteralsinastring . | print(u\"秦时明月汉时关\" end=\":\") ,\n | IthasnoeffectinPython | print(\"秦时明月汉时关\")\n | 3sincePython3’sdefault |",
+          "image_path": null
+        }
+      ],
+      "original": {
+        "any_hit_at_3": false,
+        "all_hit_at_3": false,
+        "all_hit_at_5": false,
+        "retrieved_ids": [
+          "bonus_p131_text_0",
+          "bonus_p61_text_0",
+          "bonus_p282_text_0",
+          "bonus_p9_text_0",
+          "bonus_p132_text_0"
+        ]
+      },
+      "routed": {
+        "any_hit_at_3": true,
+        "all_hit_at_3": true,
+        "all_hit_at_5": true,
+        "retrieved_ids": [
+          "bonus_p131_table_0",
+          "bonus_p131_table_1",
+          "bonus_p123_table_0",
+          "bonus_p253_table_0",
+          "bonus_p110_table_0"
+        ]
+      }
+    },
+    {
+      "query_id": "bonus_dev_abs_001",
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "According to PEP 750, what prefix introduces a template string literal in Python 3.14?",
+      "route": null,
+      "gold_ids": [],
+      "original_hits": [
+        {
+          "id": "bonus_p32_text_2",
+          "pdf_page": 32,
+          "kind": "text",
+          "score": 0.031498,
+          "preview": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p157_text_0",
+          "pdf_page": 157,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "142 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15 3 94.2 4 >>> 3.14 * 15 ** 2 5 706.5 6 >>> 7 8 So if you ar",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p241_text_0",
+          "pdf_page": 241,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "226 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 S.ISALNUM() Returns True if all characters in the string are alphanumeric. >>> \"98765\".isalnum() True >>> \"98765abcde\".",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p117_text_0",
+          "pdf_page": 117,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "102 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Unlike other programming languages, in Python, there is no need to declare its type before a variable is introduced and",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p158_text_0",
+          "pdf_page": 158,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Essential Building Blocks of Computer Programs 143 https://doi.org/10.15215/remix/9781998944088.01 In [ ]: 2 * 3.14 * 15; 3.14 * 15 ** 2 Out [ ]: 706.5 Again, in Jupyter Notebook, even if multiple expression statements a",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p32_text_2",
+          "pdf_page": 32,
+          "kind": "text",
+          "score": 0.031498,
+          "preview": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p157_text_0",
+          "pdf_page": 157,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "142 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15 3 94.2 4 >>> 3.14 * 15 ** 2 5 706.5 6 >>> 7 8 So if you ar",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p241_text_0",
+          "pdf_page": 241,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "226 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 S.ISALNUM() Returns True if all characters in the string are alphanumeric. >>> \"98765\".isalnum() True >>> \"98765abcde\".",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p117_text_0",
+          "pdf_page": 117,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "102 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Unlike other programming languages, in Python, there is no need to declare its type before a variable is introduced and",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p158_text_0",
+          "pdf_page": 158,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "Essential Building Blocks of Computer Programs 143 https://doi.org/10.15215/remix/9781998944088.01 In [ ]: 2 * 3.14 * 15; 3.14 * 15 ** 2 Out [ ]: 706.5 Again, in Jupyter Notebook, even if multiple expression statements a",
+          "image_path": null
+        }
+      ],
+      "retrieval_score": null,
+      "note": "Unanswerable: retrieval hits are not scored. Agent abstention must be evaluated separately."
+    },
+    {
+      "query_id": "bonus_dev_abs_002",
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "What Python 3.13 feature allows running CPython without the traditional GIL?",
+      "route": null,
+      "gold_ids": [],
+      "original_hits": [
+        {
+          "id": "bonus_p33_text_0",
+          "pdf_page": 33,
+          "kind": "text",
+          "score": 0.032258,
+          "preview": "18 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 bytecodes, then executed by a Python Virtual Machine (PVM), which is built into the Python interpreter. Python language ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p32_text_2",
+          "pdf_page": 32,
+          "kind": "text",
+          "score": 0.032018,
+          "preview": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p38_text_0",
+          "pdf_page": 38,
+          "kind": "text",
+          "score": 0.03009,
+          "preview": "Introduction 23 https://doi.org/10.15215/remix/9781998944088.01 the box to install pip, Python package manager, and other components within the distribution, as shown here: Python 3.11.1 (64-­bit) Setup Optional Features",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p17_image_0",
+          "pdf_page": 17,
+          "kind": "image",
+          "score": 0.016393,
+          "preview": "Traditional abacus used as a computing device.",
+          "image_path": "visual_pages/page_017.png"
+        },
+        {
+          "id": "bonus_p17_text_2",
+          "pdf_page": 17,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "ave taken using traditional methods, as in the previous census. In 1896, Herman Hollerith established a company called the Tabulating Machine Company to make the machines. This company ultimately became IBM. Figure 1-­1:",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p33_text_0",
+          "pdf_page": 33,
+          "kind": "text",
+          "score": 0.032258,
+          "preview": "18 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 bytecodes, then executed by a Python Virtual Machine (PVM), which is built into the Python interpreter. Python language ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p32_text_2",
+          "pdf_page": 32,
+          "kind": "text",
+          "score": 0.032018,
+          "preview": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine c",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p38_text_0",
+          "pdf_page": 38,
+          "kind": "text",
+          "score": 0.03009,
+          "preview": "Introduction 23 https://doi.org/10.15215/remix/9781998944088.01 the box to install pip, Python package manager, and other components within the distribution, as shown here: Python 3.11.1 (64-­bit) Setup Optional Features",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p17_image_0",
+          "pdf_page": 17,
+          "kind": "image",
+          "score": 0.016393,
+          "preview": "Traditional abacus used as a computing device.",
+          "image_path": "visual_pages/page_017.png"
+        },
+        {
+          "id": "bonus_p17_text_2",
+          "pdf_page": 17,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "ave taken using traditional methods, as in the previous census. In 1896, Herman Hollerith established a company called the Tabulating Machine Company to make the machines. This company ultimately became IBM. Figure 1-­1:",
+          "image_path": null
+        }
+      ],
+      "retrieval_score": null,
+      "note": "Unanswerable: retrieval hits are not scored. Agent abstention must be evaluated separately."
+    },
+    {
+      "query_id": "bonus_dev_abs_003",
+      "type": "unanswerable",
+      "answerable": false,
+      "question": "According to PEP 649, how are annotation values evaluated in Python 3.14?",
+      "route": null,
+      "gold_ids": [],
+      "original_hits": [
+        {
+          "id": "bonus_p157_text_0",
+          "pdf_page": 157,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "142 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15 3 94.2 4 >>> 3.14 * 15 ** 2 5 706.5 6 >>> 7 8 So if you ar",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p69_text_0",
+          "pdf_page": 69,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "54 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 3. ValueError, when an incorrect value is used in a function call or expression. 4. NameError, when an identifier is use",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p122_text_1",
+          "pdf_page": 122,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "e evaluated from left to right, hence left association. 8. Parentheses can be used to change the order of evaluation. The following are some examples of how expressions are evaluated. >>> 12 + 3 * 21 75 In the expression",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p209_text_0",
+          "pdf_page": 209,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "194 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 The code \"\"\" Design a program using an if-­elif-­else statement to convert numeric grades to alpha/ letter grades. \"\"\" ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p158_text_0",
+          "pdf_page": 158,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Essential Building Blocks of Computer Programs 143 https://doi.org/10.15215/remix/9781998944088.01 In [ ]: 2 * 3.14 * 15; 3.14 * 15 ** 2 Out [ ]: 706.5 Again, in Jupyter Notebook, even if multiple expression statements a",
+          "image_path": null
+        }
+      ],
+      "routed_hits": [
+        {
+          "id": "bonus_p157_text_0",
+          "pdf_page": 157,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "142 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15 3 94.2 4 >>> 3.14 * 15 ** 2 5 706.5 6 >>> 7 8 So if you ar",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p69_text_0",
+          "pdf_page": 69,
+          "kind": "text",
+          "score": 0.016393,
+          "preview": "54 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 3. ValueError, when an incorrect value is used in a function call or expression. 4. NameError, when an identifier is use",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p122_text_1",
+          "pdf_page": 122,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "e evaluated from left to right, hence left association. 8. Parentheses can be used to change the order of evaluation. The following are some examples of how expressions are evaluated. >>> 12 + 3 * 21 75 In the expression",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p209_text_0",
+          "pdf_page": 209,
+          "kind": "text",
+          "score": 0.016129,
+          "preview": "194 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 The code \"\"\" Design a program using an if-­elif-­else statement to convert numeric grades to alpha/ letter grades. \"\"\" ",
+          "image_path": null
+        },
+        {
+          "id": "bonus_p158_text_0",
+          "pdf_page": 158,
+          "kind": "text",
+          "score": 0.015873,
+          "preview": "Essential Building Blocks of Computer Programs 143 https://doi.org/10.15215/remix/9781998944088.01 In [ ]: 2 * 3.14 * 15; 3.14 * 15 ** 2 Out [ ]: 706.5 Again, in Jupyter Notebook, even if multiple expression statements a",
+          "image_path": null
+        }
+      ],
+      "retrieval_score": null,
+      "note": "Unanswerable: retrieval hits are not scored. Agent abstention must be evaluated separately."
+    }
+  ]
+}

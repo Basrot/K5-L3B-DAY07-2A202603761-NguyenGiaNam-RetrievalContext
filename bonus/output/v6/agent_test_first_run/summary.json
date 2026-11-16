@@ -1,0 +1,13 @@
+{
+  "mode": "test",
+  "total_cases": 30,
+  "recorded_cases": 30,
+  "status_counts": {
+    "answered": 22,
+    "abstained": 8
+  },
+  "answer_accuracy": "pending_human_review",
+  "citation_support": "pending_human_review",
+  "unanswerable_accuracy": "provisional",
+  "benchmark_sha256": "8afea6f54074f6dadf2559e985f6db52d8d9ed33b48eb2bf400d256868bf52fc"
+}

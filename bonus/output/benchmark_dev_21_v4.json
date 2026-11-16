@@ -1,0 +1,365 @@
+[
+  {
+    "id": "bonus_dev_001",
+    "split": "dev",
+    "type": "image",
+    "question": "What traditional calculating device is pictured?",
+    "answerable": true,
+    "expected_answer": "A traditional abacus.",
+    "gold": [
+      {
+        "record_id": "bonus_p17_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 17,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_002",
+    "split": "dev",
+    "type": "image",
+    "question": "Which notebook interface is shown in the screenshot?",
+    "answerable": true,
+    "expected_answer": "Jupyter Notebook in a web browser.",
+    "gold": [
+      {
+        "record_id": "bonus_p42_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 42,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_003",
+    "split": "dev",
+    "type": "image",
+    "question": "Which code editor appears in the screenshot?",
+    "answerable": true,
+    "expected_answer": "Visual Studio Code.",
+    "gold": [
+      {
+        "record_id": "bonus_p46_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 46,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_004",
+    "split": "dev",
+    "type": "image",
+    "question": "What GUI library is illustrated by the application screenshot?",
+    "answerable": true,
+    "expected_answer": "Tkinter.",
+    "gold": [
+      {
+        "record_id": "bonus_p480_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 480,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_005",
+    "split": "dev",
+    "type": "image",
+    "question": "What kind of software interface is illustrated on page 481?",
+    "answerable": true,
+    "expected_answer": "A GUI application containing widgets.",
+    "gold": [
+      {
+        "record_id": "bonus_p481_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 481,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_006",
+    "split": "dev",
+    "type": "diagram",
+    "question": "What conditional structure is illustrated by the flowcharts?",
+    "answerable": true,
+    "expected_answer": "An if-elif-else conditional structure.",
+    "gold": [
+      {
+        "record_id": "bonus_p193_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 193,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_007",
+    "split": "dev",
+    "type": "chart",
+    "question": "What general trend is illustrated by Figure 8-6?",
+    "answerable": true,
+    "expected_answer": "World and regional populations generally increase over time, with the world total showing the largest absolute increase.",
+    "gold": [
+      {
+        "record_id": "bonus_p469_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 469,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Expected answer refined after visual review of the source chart on PDF page 469."
+  },
+  {
+    "id": "bonus_dev_008",
+    "split": "dev",
+    "type": "table",
+    "question": "Which sequence operator repeats a sequence multiple times?",
+    "answerable": true,
+    "expected_answer": "The multiplication operator (*).",
+    "gold": [
+      {
+        "record_id": "bonus_p131_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 131,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_009",
+    "split": "dev",
+    "type": "table",
+    "question": "What does Python's 'in' membership operator check?",
+    "answerable": true,
+    "expected_answer": "Whether a value occurs in a sequence.",
+    "gold": [
+      {
+        "record_id": "bonus_p131_table_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 131,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_010",
+    "split": "dev",
+    "type": "table",
+    "question": "What does the 'not in' operator check?",
+    "answerable": true,
+    "expected_answer": "Whether a value is absent from a sequence.",
+    "gold": [
+      {
+        "record_id": "bonus_p132_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 132,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_011",
+    "split": "dev",
+    "type": "table",
+    "question": "What result type does integer divided by integer produce in the division table?",
+    "answerable": true,
+    "expected_answer": "float.",
+    "gold": [
+      {
+        "record_id": "bonus_p118_table_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 118,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_012",
+    "split": "dev",
+    "type": "table",
+    "question": "What result type is shown for integer plus float?",
+    "answerable": true,
+    "expected_answer": "float.",
+    "gold": [
+      {
+        "record_id": "bonus_p118_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 118,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_013",
+    "split": "dev",
+    "type": "multi_hop",
+    "question": "How do 'in' and 'not in' differ in Python?",
+    "answerable": true,
+    "expected_answer": "'in' checks membership; 'not in' checks non-membership.",
+    "gold": [
+      {
+        "record_id": "bonus_p131_table_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 131,
+        "kind": "table"
+      },
+      {
+        "record_id": "bonus_p132_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 132,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending evidence and answer verification"
+  },
+  {
+    "id": "bonus_dev_014",
+    "split": "dev",
+    "type": "text",
+    "question": "What are the main steps to calculate the sum of two numbers?",
+    "answerable": true,
+    "expected_answer": "Get two numbers, calculate their sum and print it.",
+    "gold": [
+      {
+        "record_id": "bonus_p70_text_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 70,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending source verification"
+  },
+  {
+    "id": "bonus_dev_015",
+    "split": "dev",
+    "type": "text",
+    "question": "Which computational resources are mentioned when discussing algorithm complexity?",
+    "answerable": true,
+    "expected_answer": "CPU time and memory.",
+    "gold": [
+      {
+        "record_id": "bonus_p25_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 25,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending source verification"
+  },
+  {
+    "id": "bonus_dev_016",
+    "split": "dev",
+    "type": "table",
+    "question": "According to the arithmetic type table, what is the result type of complex plus float?",
+    "answerable": true,
+    "expected_answer": "complex",
+    "gold": [
+      {
+        "record_id": "bonus_p118_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 118,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending source verification"
+  },
+  {
+    "id": "bonus_dev_017",
+    "split": "dev",
+    "type": "table",
+    "question": "According to the division table, what is the result type of float divided by complex?",
+    "answerable": true,
+    "expected_answer": "complex",
+    "gold": [
+      {
+        "record_id": "bonus_p118_table_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 118,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Replaced a duplicate question; evidence is the float row and complex column on PDF page 118."
+  },
+  {
+    "id": "bonus_dev_018",
+    "split": "dev",
+    "type": "table",
+    "question": "Which Python operator joins two sequences?",
+    "answerable": true,
+    "expected_answer": "The plus operator (+).",
+    "gold": [
+      {
+        "record_id": "bonus_p131_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 131,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Pending source verification"
+  },
+  {
+    "id": "bonus_dev_abs_001",
+    "split": "dev",
+    "type": "unanswerable",
+    "question": "According to PEP 750, what prefix introduces a template string literal in Python 3.14?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "Provisional unanswerable. Keyword screening completed; full semantic/manual source absence verification remains pending."
+  },
+  {
+    "id": "bonus_dev_abs_002",
+    "split": "dev",
+    "type": "unanswerable",
+    "question": "What Python 3.13 feature allows running CPython without the traditional GIL?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "Provisional unanswerable. Keyword screening completed; full semantic/manual source absence verification remains pending."
+  },
+  {
+    "id": "bonus_dev_abs_003",
+    "split": "dev",
+    "type": "unanswerable",
+    "question": "According to PEP 649, how are annotation values evaluated in Python 3.14?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "Provisional unanswerable. Keyword screening completed; full semantic/manual source absence verification remains pending."
+  }
+]

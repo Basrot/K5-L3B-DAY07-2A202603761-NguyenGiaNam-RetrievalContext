@@ -1,0 +1,19 @@
+{
+  "test_cases": 30,
+  "answerable_correct": 20,
+  "answerable_total": 24,
+  "answer_accuracy": 0.8333333333333334,
+  "provisional_unanswerable_correct": 6,
+  "provisional_unanswerable_total": 6,
+  "correct_citation_support": 19,
+  "correct_answer_citation_denominator": 20,
+  "total_correct_provisional": 26,
+  "total": 30,
+  "status_counts": {
+    "answered": 22,
+    "abstained": 8
+  },
+  "scoring_method": "manual_review_of_first_run",
+  "unanswerable_labels": "provisional",
+  "note": "Original first-run files preserved."
+}
