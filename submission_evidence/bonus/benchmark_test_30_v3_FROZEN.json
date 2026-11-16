@@ -1,0 +1,507 @@
+[
+  {
+    "id": "bonus_test_candidate_001",
+    "split": "test",
+    "type": "text",
+    "question": "What base is the everyday decimal number system?",
+    "answerable": true,
+    "expected_answer": "Base 10.",
+    "gold": [
+      {
+        "record_id": "bonus_p21_text_0",
+        "pdf_page": 21,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "The text explicitly states the base-10 system uses ten digits 0 to 9."
+  },
+  {
+    "id": "bonus_test_candidate_002",
+    "split": "test",
+    "type": "text",
+    "question": "What are two functions of vacuum tubes described in the textbook?",
+    "answerable": true,
+    "expected_answer": "They can function as switches or amplifiers.",
+    "gold": [
+      {
+        "record_id": "bonus_p29_text_0",
+        "pdf_page": 29,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Both functions explicitly stated."
+  },
+  {
+    "id": "bonus_test_candidate_003",
+    "split": "test",
+    "type": "text",
+    "question": "What two Windows installation choices does the textbook describe for Python?",
+    "answerable": true,
+    "expected_answer": "Install Now and Customize installation.",
+    "gold": [
+      {
+        "record_id": "bonus_p37_text_0",
+        "pdf_page": 37,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Both installation choices are explicit in the text."
+  },
+  {
+    "id": "bonus_test_candidate_004",
+    "split": "test",
+    "type": "text",
+    "question": "What does the interactive Python example print for 8 + 9?",
+    "answerable": true,
+    "expected_answer": "8 + 9 = 17.",
+    "gold": [
+      {
+        "record_id": "bonus_p45_text_0",
+        "pdf_page": 45,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Exact interpreter example."
+  },
+  {
+    "id": "bonus_test_candidate_005",
+    "split": "test",
+    "type": "text",
+    "question": "What character precedes the opening square bracket when embedding a Markdown image?",
+    "answerable": true,
+    "expected_answer": "An exclamation mark (!).",
+    "gold": [
+      {
+        "record_id": "bonus_p53_text_0",
+        "pdf_page": 53,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "The syntax explanation and example support the answer; treat as text-based rather than visual evidence."
+  },
+  {
+    "id": "bonus_test_candidate_006",
+    "split": "test",
+    "type": "text",
+    "question": "Which Python operator performs floor division in the examples?",
+    "answerable": true,
+    "expected_answer": "//.",
+    "gold": [
+      {
+        "record_id": "bonus_p61_text_0",
+        "pdf_page": 61,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit operator reference in extracted source."
+  },
+  {
+    "id": "bonus_test_candidate_007",
+    "split": "test",
+    "type": "text",
+    "question": "Which error is described when an incorrect dictionary key is accessed?",
+    "answerable": true,
+    "expected_answer": "KeyError.",
+    "gold": [
+      {
+        "record_id": "bonus_p69_text_0",
+        "pdf_page": 69,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit definition, distinct from DEV examples."
+  },
+  {
+    "id": "bonus_test_candidate_008",
+    "split": "test",
+    "type": "text",
+    "question": "What file is used to specify paths that Git should ignore?",
+    "answerable": true,
+    "expected_answer": ".gitignore.",
+    "gold": [
+      {
+        "record_id": "bonus_p77_text_0",
+        "pdf_page": 77,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit text."
+  },
+  {
+    "id": "bonus_test_candidate_009",
+    "split": "test",
+    "type": "chart",
+    "question": "According to the bar chart in Figure 1-6, what information does the chart visualize?",
+    "expected_answer": "The distribution of student letter grades, with bars showing the number of students in each grade category.",
+    "answerable": true,
+    "gold": [
+      {
+        "record_id": "bonus_p63_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 63,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_candidate_010",
+    "split": "test",
+    "type": "text",
+    "question": "What does underscore (_) hold in an interactive Python session in the example?",
+    "answerable": true,
+    "expected_answer": "The result of the last evaluation.",
+    "gold": [
+      {
+        "record_id": "bonus_p93_text_0",
+        "pdf_page": 93,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit description and example."
+  },
+  {
+    "id": "bonus_test_candidate_011",
+    "split": "test",
+    "type": "text",
+    "question": "Which argument allows negative integers to be converted with int.to_bytes in the example?",
+    "answerable": true,
+    "expected_answer": "signed=True.",
+    "gold": [
+      {
+        "record_id": "bonus_p101_text_0",
+        "pdf_page": 101,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit corrective example."
+  },
+  {
+    "id": "bonus_test_candidate_012",
+    "split": "test",
+    "type": "text",
+    "question": "What function is described as creating a character from a Unicode code point?",
+    "answerable": true,
+    "expected_answer": "chr(M).",
+    "gold": [
+      {
+        "record_id": "bonus_p109_text_0",
+        "pdf_page": 109,
+        "kind": "text",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit in the passage; do not adopt the apparent typo order() as an answer."
+  },
+  {
+    "id": "bonus_test_candidate_013",
+    "split": "test",
+    "type": "table",
+    "question": "Which reserved keyword is described as a conditional statement?",
+    "answerable": true,
+    "expected_answer": "if.",
+    "gold": [
+      {
+        "record_id": "bonus_p91_table_0",
+        "pdf_page": 91,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Clear pair of table cells despite merged columns."
+  },
+  {
+    "id": "bonus_test_candidate_014",
+    "split": "test",
+    "type": "table",
+    "question": "Which ASCII character is listed for decimal value 65?",
+    "answerable": true,
+    "expected_answer": "A.",
+    "gold": [
+      {
+        "record_id": "bonus_p107_table_0",
+        "pdf_page": 107,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Clear ASCII table cell."
+  },
+  {
+    "id": "bonus_test_candidate_015",
+    "split": "test",
+    "type": "diagram",
+    "question": "In the while-loop flowchart in Figure 2-4, what happens when the condition is false?",
+    "expected_answer": "Control exits the while loop without executing its body again.",
+    "answerable": true,
+    "gold": [
+      {
+        "record_id": "bonus_p180_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 180,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_candidate_016",
+    "split": "test",
+    "type": "table",
+    "question": "What is the default value of the sep argument listed for print?",
+    "answerable": true,
+    "expected_answer": "A space.",
+    "gold": [
+      {
+        "record_id": "bonus_p163_table_0",
+        "pdf_page": 163,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit default in the table."
+  },
+  {
+    "id": "bonus_test_candidate_017",
+    "split": "test",
+    "type": "table",
+    "question": "Which branch is used for numeric grades at least 90 in the grade conversion example?",
+    "answerable": true,
+    "expected_answer": "A+.",
+    "gold": [
+      {
+        "record_id": "bonus_p194_table_0",
+        "pdf_page": 194,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit conditional branch in table; code formatting may be noisy."
+  },
+  {
+    "id": "bonus_test_candidate_018",
+    "split": "test",
+    "type": "table",
+    "question": "According to the marks-list case study, what happens after the marks are collected?",
+    "answerable": true,
+    "expected_answer": "The marks list is sorted.",
+    "gold": [
+      {
+        "record_id": "bonus_p202_table_0",
+        "pdf_page": 202,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Step 3 says sort the list."
+  },
+  {
+    "id": "bonus_test_candidate_019",
+    "split": "test",
+    "type": "table",
+    "question": "Which string operation joins two strings together?",
+    "answerable": true,
+    "expected_answer": "s1 + s2.",
+    "gold": [
+      {
+        "record_id": "bonus_p249_table_0",
+        "pdf_page": 249,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Explicit string operator table row."
+  },
+  {
+    "id": "bonus_test_candidate_020",
+    "split": "test",
+    "type": "table",
+    "question": "Which regular-expression symbol is described as matching the start of a string?",
+    "answerable": true,
+    "expected_answer": "^.",
+    "gold": [
+      {
+        "record_id": "bonus_p258_table_0",
+        "pdf_page": 258,
+        "kind": "table",
+        "source_id": "python_wang_2023"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Clear extracted definition for start-of-string anchor."
+  },
+  {
+    "id": "bonus_test_candidate_021",
+    "split": "test",
+    "type": "image",
+    "question": "Which university logo is rendered in the Markdown example?",
+    "answerable": true,
+    "expected_answer": "Athabasca University.",
+    "gold": [
+      {
+        "record_id": "bonus_p53_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 53,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "record_status": "NOT_IN_INDEX_YET",
+    "review_notes": "Seen in source screenshot, but planned visual record must be created and indexed before TEST. Do not use this draft for TEST scoring."
+  },
+  {
+    "id": "bonus_test_candidate_022",
+    "split": "test",
+    "type": "image",
+    "question": "Which Tkinter widget is illustrated in Figure 8-2?",
+    "answerable": true,
+    "expected_answer": "Canvas.",
+    "gold": [
+      {
+        "record_id": "bonus_p458_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 458,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "record_status": "NOT_IN_INDEX_YET",
+    "review_notes": "Seen in source screenshot, but planned visual record must be created and indexed before TEST. Do not use this draft for TEST scoring."
+  },
+  {
+    "id": "bonus_test_candidate_023",
+    "split": "test",
+    "type": "image",
+    "question": "What two actions appear on the login/registration mockup on PDF page 498?",
+    "answerable": true,
+    "expected_answer": "Login and register.",
+    "gold": [
+      {
+        "record_id": "bonus_p498_image_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 498,
+        "kind": "image"
+      }
+    ],
+    "human_verified": false,
+    "record_status": "NOT_IN_INDEX_YET",
+    "review_notes": "Seen in source screenshot, but planned visual record must be created and indexed before TEST. Do not use this draft for TEST scoring."
+  },
+  {
+    "id": "bonus_test_candidate_024",
+    "split": "test",
+    "type": "multi_hop",
+    "question": "According to the two examples, what is printed for 8 + 9 in the interactive shell, and which operator performs floor division?",
+    "answerable": true,
+    "expected_answer": "8 + 9 = 17; the floor-division operator is //.",
+    "gold": [
+      {
+        "record_id": "bonus_p45_text_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 45,
+        "kind": "text"
+      },
+      {
+        "record_id": "bonus_p61_text_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 61,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Cross-page two-evidence question draft; both source facts shown, but require manual validation and all-evidence retrieval."
+  },
+  {
+    "id": "bonus_test_abs_001",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "How is Python 3.13 free-threading configured to disable the GIL?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: free-threading, GIL, Python 3.13",
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_abs_002",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "How is the experimental JIT enabled in Python 3.13?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: experimental JIT, Python 3.13",
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_abs_003",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What is the syntax for generic type parameters introduced in Python 3.12?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: generic type parameters, Python 3.12",
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_abs_004",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "How does asyncio.TaskGroup aggregate simultaneous failures?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: asyncio.TaskGroup exception handling",
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_abs_005",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What changed in the Python 3.14 template string literal feature?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: template string literals, Python 3.14",
+    "human_verified": false
+  },
+  {
+    "id": "bonus_test_abs_006",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "According to this textbook, what is the official CPython 3.14 release date?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "absence_reason": "Candidate for absence review: CPython 3.14 release date",
+    "human_verified": false
+  }
+]

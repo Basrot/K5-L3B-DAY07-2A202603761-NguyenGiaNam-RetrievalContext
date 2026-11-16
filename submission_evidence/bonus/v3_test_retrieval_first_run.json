@@ -1,0 +1,472 @@
+{
+  "split": "test",
+  "run_type": "first_frozen_retrieval_evaluation",
+  "index": "bonus_multimodal_v3",
+  "corpus_records": 999,
+  "benchmark_sha256": "3681d6fcddee641c6ae8767e9b431307cc032693d9ab2e67c751bbee9134f11e",
+  "answerable": 24,
+  "unanswerable_not_scored": 6,
+  "top_k": 5,
+  "candidate_depth": 10,
+  "all_evidence_at_3": 14,
+  "all_evidence_at_5": 16,
+  "grounded_answer_scored": false,
+  "citations_scored": false,
+  "abstention_scored": false,
+  "human_absence_audit_complete": false,
+  "by_type": {
+    "chart": {
+      "total": 1,
+      "all_evidence_at_5": 1
+    },
+    "diagram": {
+      "total": 1,
+      "all_evidence_at_5": 1
+    },
+    "image": {
+      "total": 3,
+      "all_evidence_at_5": 3
+    },
+    "multi_hop": {
+      "total": 1,
+      "all_evidence_at_5": 0
+    },
+    "table": {
+      "total": 7,
+      "all_evidence_at_5": 1
+    },
+    "text": {
+      "total": 11,
+      "all_evidence_at_5": 10
+    }
+  },
+  "results": [
+    {
+      "id": "bonus_test_candidate_001",
+      "type": "text",
+      "question": "What base is the everyday decimal number system?",
+      "route": null,
+      "gold": [
+        "bonus_p21_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p22_text_0",
+        "bonus_p21_text_1",
+        "bonus_p133_text_0",
+        "bonus_p114_text_1",
+        "bonus_p21_text_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_002",
+      "type": "text",
+      "question": "What are two functions of vacuum tubes described in the textbook?",
+      "route": null,
+      "gold": [
+        "bonus_p29_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p29_text_0",
+        "bonus_p29_text_1",
+        "bonus_p310_text_1",
+        "bonus_p132_text_1",
+        "bonus_p310_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_003",
+      "type": "text",
+      "question": "What two Windows installation choices does the textbook describe for Python?",
+      "route": null,
+      "gold": [
+        "bonus_p37_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p37_text_0",
+        "bonus_p37_text_1",
+        "bonus_p39_text_0",
+        "bonus_p38_text_0",
+        "bonus_p63_text_1"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_004",
+      "type": "text",
+      "question": "What does the interactive Python example print for 8 + 9?",
+      "route": null,
+      "gold": [
+        "bonus_p45_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p45_text_0",
+        "bonus_p157_text_0",
+        "bonus_p374_text_0",
+        "bonus_p306_text_1",
+        "bonus_p410_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_005",
+      "type": "text",
+      "question": "What character precedes the opening square bracket when embedding a Markdown image?",
+      "route": null,
+      "gold": [
+        "bonus_p53_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p53_text_0",
+        "bonus_p53_image_0",
+        "bonus_p465_text_0",
+        "bonus_p57_text_1",
+        "bonus_p257_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_006",
+      "type": "text",
+      "question": "Which Python operator performs floor division in the examples?",
+      "route": "table",
+      "gold": [
+        "bonus_p61_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p131_table_0",
+        "bonus_p253_table_0",
+        "bonus_p131_table_1",
+        "bonus_p123_table_0",
+        "bonus_p128_table_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_007",
+      "type": "text",
+      "question": "Which error is described when an incorrect dictionary key is accessed?",
+      "route": null,
+      "gold": [
+        "bonus_p69_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p69_text_0",
+        "bonus_p286_text_0",
+        "bonus_p217_text_0",
+        "bonus_p225_text_1",
+        "bonus_p226_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_008",
+      "type": "text",
+      "question": "What file is used to specify paths that Git should ignore?",
+      "route": null,
+      "gold": [
+        "bonus_p77_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p74_text_1",
+        "bonus_p76_text_1",
+        "bonus_p77_text_1",
+        "bonus_p77_text_0",
+        "bonus_p76_text_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_009",
+      "type": "chart",
+      "question": "According to the bar chart in Figure 1-6, what information does the chart visualize?",
+      "route": "chart",
+      "gold": [
+        "bonus_p63_chart_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p63_chart_0",
+        "bonus_p469_chart_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_010",
+      "type": "text",
+      "question": "What does underscore (_) hold in an interactive Python session in the example?",
+      "route": null,
+      "gold": [
+        "bonus_p93_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p44_text_1",
+        "bonus_p93_text_0",
+        "bonus_p131_table_0",
+        "bonus_p458_table_0",
+        "bonus_p361_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_011",
+      "type": "text",
+      "question": "Which argument allows negative integers to be converted with int.to_bytes in the example?",
+      "route": null,
+      "gold": [
+        "bonus_p101_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p101_text_0",
+        "bonus_p256_text_1",
+        "bonus_p133_text_0",
+        "bonus_p250_text_1",
+        "bonus_p290_text_1"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_012",
+      "type": "text",
+      "question": "What function is described as creating a character from a Unicode code point?",
+      "route": null,
+      "gold": [
+        "bonus_p109_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p109_text_0",
+        "bonus_p108_text_1",
+        "bonus_p312_text_0",
+        "bonus_p445_text_1",
+        "bonus_p110_table_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_013",
+      "type": "table",
+      "question": "Which reserved keyword is described as a conditional statement?",
+      "route": null,
+      "gold": [
+        "bonus_p91_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p91_table_0",
+        "bonus_p91_text_1",
+        "bonus_p210_text_0",
+        "bonus_p165_table_0",
+        "bonus_p92_text_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_014",
+      "type": "table",
+      "question": "Which ASCII character is listed for decimal value 65?",
+      "route": null,
+      "gold": [
+        "bonus_p107_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p106_text_0",
+        "bonus_p105_text_1",
+        "bonus_p22_text_0",
+        "bonus_p109_text_0",
+        "bonus_p256_text_1"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_015",
+      "type": "diagram",
+      "question": "In the while-loop flowchart in Figure 2-4, what happens when the condition is false?",
+      "route": "diagram",
+      "gold": [
+        "bonus_p180_diagram_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p180_diagram_0",
+        "bonus_p193_diagram_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_016",
+      "type": "table",
+      "question": "What is the default value of the sep argument listed for print?",
+      "route": null,
+      "gold": [
+        "bonus_p163_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p163_text_1",
+        "bonus_p292_text_1",
+        "bonus_p315_text_0",
+        "bonus_p163_text_0",
+        "bonus_p290_text_1"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_017",
+      "type": "table",
+      "question": "Which branch is used for numeric grades at least 90 in the grade conversion example?",
+      "route": null,
+      "gold": [
+        "bonus_p194_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p209_text_1",
+        "bonus_p194_text_0",
+        "bonus_p208_text_1",
+        "bonus_p208_text_0",
+        "bonus_p194_text_1"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_018",
+      "type": "table",
+      "question": "According to the marks-list case study, what happens after the marks are collected?",
+      "route": null,
+      "gold": [
+        "bonus_p202_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p160_text_1",
+        "bonus_p161_text_0",
+        "bonus_p202_text_1",
+        "bonus_p201_text_1",
+        "bonus_p203_text_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_019",
+      "type": "table",
+      "question": "Which string operation joins two strings together?",
+      "route": null,
+      "gold": [
+        "bonus_p249_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p237_text_1",
+        "bonus_p249_text_0",
+        "bonus_p250_text_0",
+        "bonus_p247_text_1",
+        "bonus_p305_text_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_020",
+      "type": "table",
+      "question": "Which regular-expression symbol is described as matching the start of a string?",
+      "route": null,
+      "gold": [
+        "bonus_p258_table_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p261_text_1",
+        "bonus_p260_text_1",
+        "bonus_p257_text_1",
+        "bonus_p305_text_0",
+        "bonus_p259_text_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    },
+    {
+      "id": "bonus_test_candidate_021",
+      "type": "image",
+      "question": "Which university logo is rendered in the Markdown example?",
+      "route": null,
+      "gold": [
+        "bonus_p53_image_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p53_image_0",
+        "bonus_p48_text_0",
+        "bonus_p53_text_0",
+        "bonus_p54_text_0",
+        "bonus_p54_table_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_022",
+      "type": "image",
+      "question": "Which Tkinter widget is illustrated in Figure 8-2?",
+      "route": null,
+      "gold": [
+        "bonus_p458_image_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p458_image_0",
+        "bonus_p490_text_0",
+        "bonus_p490_text_1",
+        "bonus_p458_text_1",
+        "bonus_p489_text_1"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_023",
+      "type": "image",
+      "question": "What two actions appear on the login/registration mockup on PDF page 498?",
+      "route": null,
+      "gold": [
+        "bonus_p498_image_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p498_image_0",
+        "bonus_p377_text_0",
+        "bonus_p473_text_0",
+        "bonus_p193_diagram_0",
+        "bonus_p42_image_0"
+      ],
+      "all_evidence_at_3": true,
+      "all_evidence_at_5": true
+    },
+    {
+      "id": "bonus_test_candidate_024",
+      "type": "multi_hop",
+      "question": "According to the two examples, what is printed for 8 + 9 in the interactive shell, and which operator performs floor division?",
+      "route": "table",
+      "gold": [
+        "bonus_p45_text_0",
+        "bonus_p61_text_0"
+      ],
+      "retrieved_top5": [
+        "bonus_p131_table_1",
+        "bonus_p124_table_0",
+        "bonus_p253_table_0",
+        "bonus_p123_table_0",
+        "bonus_p399_table_0"
+      ],
+      "all_evidence_at_3": false,
+      "all_evidence_at_5": false
+    }
+  ]
+}
