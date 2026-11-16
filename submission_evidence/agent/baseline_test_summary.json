@@ -1,0 +1,10 @@
+{
+  "split": "test",
+  "cases": 7,
+  "answered": 4,
+  "abstain": 3,
+  "errors": 0,
+  "model_calls": 14,
+  "avg_elapsed_ms": 15305.09,
+  "note": "Human grounding and citation review still required"
+}

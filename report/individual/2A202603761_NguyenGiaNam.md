@@ -238,6 +238,33 @@ q23, q24 được Agent từ chối phù hợp với nhãn benchmark. Nhãn abst
 - Chi phí USD của Gemini chưa được tổng hợp thành số liệu đáng tin cậy; báo cáo số lần gọi model thay thế.
 - Các chỉ số abstention chính thức cần biên bản xác nhận nhãn unanswerable.
 
+
+
+### 3.7. So sanh Agent Baseline va Hybrid tren TEST
+
+| Chi so | TF-IDF Baseline | Hybrid + Seed-First |
+|---|---:|---:|
+| Tool use | 7/7 | 7/7 |
+| Grounded Answer Mean | 1.600/2 | 1.600/2 |
+| Citation Validity | 4/4 | 4/4 |
+| False Abstention | 1/5 | 1/5 |
+| Provider errors | 0 | 0 |
+| Model calls | 14 | 15 |
+| Average latency | 15305.09 ms | 6223.53 ms |
+
+Both configurations answered q16-q19 and abstained on q20.
+The q20 abstention is incorrect because relevant evidence exists.
+For q23 and q24, abstention behavior was observed, but corpus-wide
+absence confirmation remains provisional.
+
+Agent latency includes Gemini API response time; these results
+do not establish that one retrieval method is inherently faster.
+
+Evidence: `submission_evidence/agent/baseline_test_metrics.json`
+and `submission_evidence/agent/baseline_test_reviews_provisional.json`.
+
+<!-- LAB07_AGENT_BASELINE_COMPARISON -->
+
 ## 4. Thử thách nâng cao
 
 Chưa thực hiện đánh giá riêng với bảng, ảnh, biểu đồ và multi-hop. Không báo cáo điểm cho các hạng mục chưa thử nghiệm.
