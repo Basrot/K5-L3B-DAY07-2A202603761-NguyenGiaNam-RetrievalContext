@@ -1,0 +1,199 @@
+﻿query_id,method,question,context_hit_strict,suggested_grade,manual_grade_0_1_2,matched_evidence_ids,context_ids,gold_evidence,context_text,review_reason
+q16,baseline_tfidf,Lỗi ZeroDivisionError xuất hiện khi nào?,True,2,2,by_paragraph:python_wang_2023_p219_para3,by_paragraph:python_wang_2023_p219_para3; by_paragraph:python_wang_2023_p218_para4; by_paragraph:python_wang_2023_p231_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 219, ""evidence"": ""ZeroDivisionError is raised when the divisor of a division or module operation is 0""}]","[by_paragraph:python_wang_2023_p219_para3 | starter\data\python_textbook.pdf | page 219]
+
+Though the result has over five million digits, no exception is raised because the design and implementation of Python can handle very big numbers. ZeroDivisionError ZeroDivisionError is raised when the divisor of a division or module operation is 0.
+
+
+
+[by_paragraph:python_wang_2023_p218_para4 | starter\data\python_textbook.pdf | page 218]
+
+\- > 3 n /= m # divide n by m ZeroDivisionError: division by zero
+
+
+
+[by_paragraph:python_wang_2023_p231_para1 | starter\data\python_textbook.pdf | page 231]
+
+\# handle the possible errors and exceptions except ValueError: print(""Invalid input. Please enter numbers only."") except ZeroDivisionError: print(""Cannot divide by zero.",Trich dan trang 219 noi ro ZeroDivisionError xay ra khi so chia bang 0.
+q17,baseline_tfidf,Lỗi IndexError xuất hiện khi nào?,True,2,2,by_paragraph:python_wang_2023_p222_para0,by_paragraph:python_wang_2023_p222_para0; by_paragraph:python_wang_2023_p222_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 222, ""evidence"": ""IndexError is raised when the index of a sequence is out of range""}]","[by_paragraph:python_wang_2023_p222_para0 | starter\data\python_textbook.pdf | page 222]
+
+Handle Errors and Exceptions in Programs 207 https\://doi.org/10.15215/remix/9781998944088.01 IndexError IndexError is raised when the index of a sequence is out of range.
+
+
+
+[by_paragraph:python_wang_2023_p222_para1 | starter\data\python_textbook.pdf | page 222]
+
+In [ ]: vs = list(range(19))   # create a list with 19 members indexed from 0 to 18 vs[19] \*= 3   # 19 is out of the range > 18 Out [ ]: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+IndexError  Traceback (most recent call last) \<ipython- input- 3- 47e31ad8b75b> in \<module> 1 vs = list(range(19)) - - - - > 2 vs[19] \*= 3 IndexError: list index out of range KeyError KeyError is raised when a key is not found in a dictionary.",Trang 222 dinh nghia IndexError khi chi so cua sequence vuot pham vi; kem vi du.
+q18,baseline_tfidf,"Khi dùng một biến chưa được định nghĩa trong phạm vi local hoặc global, Python báo lỗi gì?",True,2,2,by_paragraph:python_wang_2023_p223_para0,by_paragraph:python_wang_2023_p223_para0,"[{""source_id"": ""python_wang_2023"", ""page"": 223, ""evidence"": ""NameError is raised when a variable is not found in the local or global scope""}]","[by_paragraph:python_wang_2023_p223_para0 | starter\data\python_textbook.pdf | page 223]
+
+208 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 Out [ ]: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ModuleNotFoundError  Traceback (most recent call last) \<ipython- input- 8- 3808b892163e> in \<module> - - - - > 1 import fpectl 2 round(14.5/0, 3) ModuleNotFoundError: No module named 'fpectl' NameError NameError is raised when a variable is not found in the local or global scope.",Trang 223 dinh nghia NameError khi bien khong co trong local hoac global scope.
+q19,baseline_tfidf,"Trong chương 4, TabError xảy ra khi nào?",True,2,2,by_paragraph:python_wang_2023_p226_para1,by_paragraph:python_wang_2023_p226_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 226, ""evidence"": ""TabError is raised when the indentation consists of inconsistent tabs and spaces""}]","[by_paragraph:python_wang_2023_p226_para1 | starter\data\python_textbook.pdf | page 226]
+
+In [ ]: s = 0 while i < 10: s += i i += 1# not indented the same Out [ ]: File '\<tokenize>', line 4 i += 1   # not indented the same ^ IndentationError: unindent does not match any outer indentation level TabError TabError is raised when the indentation consists of inconsistent tabs and spaces. Indentations can be made of spaces and tabs, but they need to be consistent to avoid such errors. SystemError SystemError is raised when the interpreter detects an internal error.",Trang 226 dinh nghia TabError do tron tabs va spaces khong nhat quan.
+q20,baseline_tfidf,Khối finally trong try-except được thực thi khi nào?,False,,1,,by_paragraph:python_wang_2023_p235_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 234, ""evidence"": ""The finally clause encloses the code that will run regardless of whether any exception has been raised""}]","[by_paragraph:python_wang_2023_p235_para1 | starter\data\python_textbook.pdf | page 235]
+
+• In Python, a try statement may take one of five forms: try- except, try- except- else, try- except- finally, try- except- else- finally, and try- finally. • Between try and except, there should be a code block that may have runtime errors (such as incorrect input from users, files, or network sockets).","Chi liet ke cac dang try-except-finally, khong noi ro finally chay bat ke co exception hay khong."
+q16,hybrid_seedfirst,Lỗi ZeroDivisionError xuất hiện khi nào?,True,2,2,by_paragraph:python_wang_2023_p219_para3,by_paragraph:python_wang_2023_p219_para3; by_paragraph:python_wang_2023_p231_para1; by_paragraph:python_wang_2023_p218_para4; by_paragraph:python_wang_2023_p219_para2; by_paragraph:python_wang_2023_p219_para4; by_paragraph:python_wang_2023_p231_para0,"[{""source_id"": ""python_wang_2023"", ""page"": 219, ""evidence"": ""ZeroDivisionError is raised when the divisor of a division or module operation is 0""}]","[by_paragraph:python_wang_2023_p219_para3 | starter\data\python_textbook.pdf | page 219]
+
+Though the result has over five million digits, no exception is raised because the design and implementation of Python can handle very big numbers. ZeroDivisionError ZeroDivisionError is raised when the divisor of a division or module operation is 0.
+
+
+
+[by_paragraph:python_wang_2023_p231_para1 | starter\data\python_textbook.pdf | page 231]
+
+\# handle the possible errors and exceptions except ValueError: print(""Invalid input. Please enter numbers only."") except ZeroDivisionError: print(""Cannot divide by zero.
+
+
+
+[by_paragraph:python_wang_2023_p218_para4 | starter\data\python_textbook.pdf | page 218]
+
+\- > 3 n /= m # divide n by m ZeroDivisionError: division by zero
+
+
+
+[by_paragraph:python_wang_2023_p219_para2 | starter\data\python_textbook.pdf | page 219]
+
+A coding example of catching arithmetic errors like this is shown below: In [ ]: try: x = pow(123567,999999) print(f'Big x has {len(str(x))} digits') except OverflowError: print('It has overflowed because the number is too big') Out [ ]: Big x has 5091898 digits The code in the try clause calculates the power of 123567 to 999999 or 123567\*\*999999. The code is put in a try- except statement because the result is expected to be very big and may overflow.
+
+
+
+[by_paragraph:python_wang_2023_p219_para4 | starter\data\python_textbook.pdf | page 219]
+
+With this very specific exception/error name, the earlier example of this section can be rewritten as shown below: In [ ]: try: n = int(input('Give me an integer:')) m = int(input('Give me another integer:')) n /= m   # divide n by m except ZeroDivisionError: print('Wrong: 0 cannot be used as a divisor!')
+
+
+
+[by_paragraph:python_wang_2023_p231_para0 | starter\data\python_textbook.pdf | page 231]
+
+216 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 if n%f == 0: # f is a factor of n if not f in factor_list: factor_list.append(f) # now we have a list of factors for n if n == sum(factor_list): # n is a perfect number perfect_list.append([n, factor_list]) # keep factors too for checking # now we have found all the perfect numbers in the range print(f""Perfect numbers found between {a} and {b}:"") for n in perfect_list: print(n, end="" "")
+
+
+
+",Chunk trang 219 neu dung dieu kien chia cho 0; cac chunk mo rong minh hoa.
+q17,hybrid_seedfirst,Lỗi IndexError xuất hiện khi nào?,True,2,2,by_paragraph:python_wang_2023_p222_para0,by_paragraph:python_wang_2023_p222_para0; by_paragraph:python_wang_2023_p222_para1; by_paragraph:python_wang_2023_p226_para0; by_paragraph:python_wang_2023_p222_para2; by_paragraph:python_wang_2023_p226_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 222, ""evidence"": ""IndexError is raised when the index of a sequence is out of range""}]","[by_paragraph:python_wang_2023_p222_para0 | starter\data\python_textbook.pdf | page 222]
+
+Handle Errors and Exceptions in Programs 207 https\://doi.org/10.15215/remix/9781998944088.01 IndexError IndexError is raised when the index of a sequence is out of range.
+
+
+
+[by_paragraph:python_wang_2023_p222_para1 | starter\data\python_textbook.pdf | page 222]
+
+In [ ]: vs = list(range(19))   # create a list with 19 members indexed from 0 to 18 vs[19] \*= 3   # 19 is out of the range > 18 Out [ ]: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+IndexError  Traceback (most recent call last) \<ipython- input- 3- 47e31ad8b75b> in \<module> 1 vs = list(range(19)) - - - - > 2 vs[19] \*= 3 IndexError: list index out of range KeyError KeyError is raised when a key is not found in a dictionary.
+
+
+
+[by_paragraph:python_wang_2023_p226_para0 | starter\data\python_textbook.pdf | page 226]
+
+Handle Errors and Exceptions in Programs 211 https\://doi.org/10.15215/remix/9781998944088.01 IndentationError IndentationError is raised when there is an incorrect indentation. Such errors may occur quite often at the beginning of your study of Python programming. You must pay great attention to it because indentation matters a lot in Python programs/scripts.
+
+
+
+[by_paragraph:python_wang_2023_p222_para2 | starter\data\python_textbook.pdf | page 222]
+
+In [ ]: vdict = {1:'One', 2:'Two', 3:'Three'}   # create a dictionary vdict[5]   # the dictionary doesn't have key 5 Out [ ]: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+KeyError  Traceback (most recent call last) \<ipython- input- 4- 3011ee6a346e> in \<module> 1 vdict = {1:'One', 2:'Two', 3:'Three'} - - - - > 2 vdict[5] KeyError: 5 KeyboardInterrupt KeyboardInterrupt is raised when the user hits the interrupt key (Ctrl+C or Delete).
+
+
+
+[by_paragraph:python_wang_2023_p226_para1 | starter\data\python_textbook.pdf | page 226]
+
+In [ ]: s = 0 while i < 10: s += i i += 1# not indented the same Out [ ]: File '\<tokenize>', line 4 i += 1   # not indented the same ^ IndentationError: unindent does not match any outer indentation level TabError TabError is raised when the indentation consists of inconsistent tabs and spaces. Indentations can be made of spaces and tabs, but they need to be consistent to avoid such errors. SystemError SystemError is raised when the interpreter detects an internal error.
+
+
+
+",Chunk trang 222 dinh nghia truc tiep IndexError khi index nam ngoai sequence.
+q18,hybrid_seedfirst,"Khi dùng một biến chưa được định nghĩa trong phạm vi local hoặc global, Python báo lỗi gì?",False,,1,,by_paragraph:python_wang_2023_p227_para0; by_paragraph:python_wang_2023_p235_para0; by_paragraph:python_wang_2023_p200_para1; by_paragraph:python_wang_2023_p227_para1,"[{""source_id"": ""python_wang_2023"", ""page"": 223, ""evidence"": ""NameError is raised when a variable is not found in the local or global scope""}]","[by_paragraph:python_wang_2023_p227_para0 | starter\data\python_textbook.pdf | page 227]
+
+212 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 UnboundLocalError UnboundLocalError is raised when a reference is made to a local variable in a function or method but no value has been bound to that variable. UnicodeError UnicodeError is raised when a Unicode- related encoding or decoding error occurs. UnicodeEncodeError UnicodeEncodeError is raised when a Unicode- related error occurs during encoding.
+
+
+
+[by_paragraph:python_wang_2023_p235_para0 | starter\data\python_textbook.pdf | page 235]
+
+220 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 • A Python interpreter or virtual machine will raise exceptions when a runtime error has occurred. If exceptions are not caught and properly handled, the application or system will crash and become very ugly. • Python and many other modern programming languages use try- except statements to handle exceptions.
+
+
+
+[by_paragraph:python_wang_2023_p200_para1 | starter\data\python_textbook.pdf | page 200]
+
+Common Coding Mistakes with the for Loop Because Python made the for loop to run an iteration variable or variables through a sequence with a finite number of items, it has essentially avoided some mistakes common in other languages such as C, C++, and Java. You should, however, remember to not change the value of any iteration variable within the code block of a for loop because it needs to be changed automatically by Python interpreter to the next item in the sequence.
+
+
+
+[by_paragraph:python_wang_2023_p227_para1 | starter\data\python_textbook.pdf | page 227]
+
+UnicodeDecodeError UnicodeDecodeError is raised when a Unicode- related error occurs during decoding. UnicodeTranslateError UnicodeTranslateError is raised when a Unicode- related error occurs during translation. ValueError ValueError is raised when a function gets the correct type of argument but an improper value.
+
+
+
+",Co UnboundLocalError khi bien local chua duoc gan; lien quan nhung khong co dinh nghia NameError tong quat trong local/global scope.
+q19,hybrid_seedfirst,"Trong chương 4, TabError xảy ra khi nào?",False,,1,,by_paragraph:python_wang_2023_p198_para4; by_paragraph:python_wang_2023_p207_para1; by_paragraph:python_wang_2023_p200_para3; by_paragraph:python_wang_2023_p198_para3; by_paragraph:python_wang_2023_p207_para0,"[{""source_id"": ""python_wang_2023"", ""page"": 226, ""evidence"": ""TabError is raised when the indentation consists of inconsistent tabs and spaces""}]","[by_paragraph:python_wang_2023_p198_para4 | starter\data\python_textbook.pdf | page 198]
+
+list(zip(range(5), range(5), range(6))) [(0, 0, 0), (1, 1, 1), (2, 2, 2), (3, 3, 3), (4, 4, 4)] Table 3- 4: Case study: How to find Pythagorean triples (continued)
+
+
+
+[by_paragraph:python_wang_2023_p207_para1 | starter\data\python_textbook.pdf | page 207]
+
+students is 91.4. In the previous section we mentioned that the while loop is an entry-
+
+controlled iteration, which means that the code block of the loop statement may not be executed at all if the entry condition is not met at the beginning.
+
+
+
+[by_paragraph:python_wang_2023_p200_para3 | starter\data\python_textbook.pdf | page 200]
+
+For the problem solved in the previous section, even though you also know when each loop should stop, it can still be coded with the while statement, as shown below: The code 1 """""" 2 This program is used to print a multiplication table from 1 x 1 to 9 x 9. 3 The table will be displayed nicely as a right triangle. The two loops are coded with the while statement 4 instead of the for statement.
+
+
+
+[by_paragraph:python_wang_2023_p198_para3 | starter\data\python_textbook.pdf | page 198]
+
+In order to make it work, however, each item of the iteration sequence needs to have multiple values for the multiple iteration variables, as shown in the following example: for i, j in [(1, 1), (2, 2), (3, 3), (4, 4), (5, 5)]: print(f""{i} \* {j} = {i \* j}"") or for i, j in zip(range(5), range(5)): # zip is a special function print(f""{i + 1} \* {j + 1} = {(i + 1) \* (j + 1)}"") In the above, zip is a built- in function that takes an element from each iterable and forms a tuple, as shown below: >>>
+
+
+
+[by_paragraph:python_wang_2023_p207_para0 | starter\data\python_textbook.pdf | page 207]
+
+192 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 In [ ]: total, mark, count = 0, 0, 0 while True: mark = int(input(""Please input a mark:"")) if (mark >= 0): total += mark count += 1 else: break print(f'The average course mark of {count} students is {total/count}.') Out [ ]: Please input a mark: 88 Please input a mark: 98 Please input a mark: 97 Please input a mark: 96 Please input a mark: 78 Please input a mark: - 3 The average course mark of 5
+
+
+
+",Chi co vi du IndentationError va doan ma bi lech indent; thieu dieu kien TabError la tabs/spaces khong nhat quan.
+q20,hybrid_seedfirst,Khối finally trong try-except được thực thi khi nào?,False,,2,,by_paragraph:python_wang_2023_p235_para1; by_paragraph:python_wang_2023_p233_para1; by_paragraph:python_wang_2023_p219_para0; by_paragraph:python_wang_2023_p235_para0; by_paragraph:python_wang_2023_p235_para2,"[{""source_id"": ""python_wang_2023"", ""page"": 234, ""evidence"": ""The finally clause encloses the code that will run regardless of whether any exception has been raised""}]","[by_paragraph:python_wang_2023_p235_para1 | starter\data\python_textbook.pdf | page 235]
+
+• In Python, a try statement may take one of five forms: try- except, try- except- else, try- except- finally, try- except- else- finally, and try- finally. • Between try and except, there should be a code block that may have runtime errors (such as incorrect input from users, files, or network sockets).
+
+
+
+[by_paragraph:python_wang_2023_p233_para1 | starter\data\python_textbook.pdf | page 233]
+
+else:   # do something when no error has occurred \<code block for else>   # things to do when no exceptions are raised finally:   # finally clause allows to do something regardless of the above \<code block for finally>   # things to do regardless of the above As shown, a try statement starts with a try clause, which encloses the code that you want to run for the application but may cause errors and raise exceptions.
+
+
+
+[by_paragraph:python_wang_2023_p219_para0 | starter\data\python_textbook.pdf | page 219]
+
+204 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 The use of the try- except statement will be explained in the next section. For now, just remember the code lines between try and except are part of the program to be executed for the application, while the code under the except header tells what to do when a given exception has occurred.
+
+
+
+[by_paragraph:python_wang_2023_p235_para0 | starter\data\python_textbook.pdf | page 235]
+
+220 Introduction to Computer Programming with Python https\://doi.org/10.15215/remix/9781998944088.01 • A Python interpreter or virtual machine will raise exceptions when a runtime error has occurred. If exceptions are not caught and properly handled, the application or system will crash and become very ugly. • Python and many other modern programming languages use try- except statements to handle exceptions.
+
+
+
+[by_paragraph:python_wang_2023_p235_para2 | starter\data\python_textbook.pdf | page 235]
+
+The try keyword and the code block together form a try clause; right behind the except keyword, there should be the name or names of errors, followed by a code block to be run when the named error or errors occurred, which together form an except clause. • A try clause can be followed by multiple except clauses.
+
+
+
+",Chunk trang 233 neu ro finally chay regardless of the above; du tra loi du Gold Evidence exact o trang 234 khong trung.

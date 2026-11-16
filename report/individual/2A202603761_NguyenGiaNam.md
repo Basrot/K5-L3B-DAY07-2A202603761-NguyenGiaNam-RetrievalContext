@@ -105,6 +105,25 @@ Retrieval-only TEST used five answerable questions, without Gemini calls. TF-IDF
 
 The selected method performed worse on exact error-name queries in this small TEST subset. This is reported as a limitation, not used for additional TEST-driven tuning.
 
+
+
+### 2.6. Danh gia context TEST theo thang 0/1/2
+
+Ket qua cham thu cong 5 cau TEST answerable cho moi cau hinh:
+
+| Cau hinh | Tong diem | Diem trung binh | So cau dat 2 diem |
+|---|---:|---:|---:|
+| TF-IDF baseline | 9/10 | 1.80/2 | 4/5 |
+| Hybrid + Seed-First | 8/10 | 1.60/2 | 3/5 |
+
+Danh gia noi dung khac voi Strict Context Hit. Vi du q20 co context
+giai thich `finally` duoc thuc thi bat ke co exception hay khong,
+nhung khong trung hoan toan Gold Evidence da gan.
+
+Chi tiet diem va ly do: `submission_evidence/retrieval/test_context_human_review.csv`.
+
+<!-- LAB07_CONTEXT_REVIEW -->
+
 ## 3. Agentic RAG và đánh giá
 
 ### 3.1. Thiết kế Agent
