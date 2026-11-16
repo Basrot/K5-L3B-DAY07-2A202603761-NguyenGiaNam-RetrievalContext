@@ -1,0 +1,351 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Trong Python, câu lệnh if dùng để làm gì?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 190,
+        "evidence": "use an if statement to run a code block only under a set condition"
+      }
+    ],
+    "expected_answer": "Chỉ chạy một khối lệnh khi điều kiện được đáp ứng.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Cấu trúc if-elif-else dùng để giải quyết loại bài toán nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 190,
+        "evidence": "use if- elif- else to make multiple selections"
+      }
+    ],
+    "expected_answer": "Dùng để lựa chọn một trong nhiều nhánh điều kiện.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Khối lệnh nằm sau dấu hai chấm của if phải viết thế nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 191,
+        "evidence": "a code block for if statements must begin on the next line after a"
+      }
+    ],
+    "expected_answer": "Phải bắt đầu ở dòng tiếp theo và được thụt lề đúng.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Theo bảng quy đổi điểm trong chương 3, điểm từ 90 đến 100 được xếp loại gì?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 193,
+        "evidence": "90– 100 A+"
+      }
+    ],
+    "expected_answer": "A+.",
+    "filter": {
+      "chapter": "3"
+    },
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Trong ví dụ chuyển điểm số sang điểm chữ, chương trình dùng cấu trúc gì?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 194,
+        "evidence": "design a program using an if- elif- else statement"
+      }
+    ],
+    "expected_answer": "if-elif-else.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Vì sao các nhánh elif trong ví dụ chấm điểm không cần ghi rõ cận trên?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 195,
+        "evidence": "upper bound of the current if condition has been implicitly"
+      }
+    ],
+    "expected_answer": "Vì các nhánh trước đã được xét và không thỏa mãn, nên cận trên được suy ra ngầm.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Vòng lặp for giúp người lập trình tránh việc gì khi phải thực hiện thao tác nhiều lần?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 195,
+        "evidence": "run a block of statements in a loop as many times as needed"
+      }
+    ],
+    "expected_answer": "Tránh phải viết lặp lại cùng một khối lệnh rất nhiều lần.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Trong ví dụ tạo bảng nhân hình tam giác, tại sao cần hai vòng lặp?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 196,
+        "evidence": "the outer one is used to loop through the row, whereas the inner one loops through the"
+      }
+    ],
+    "expected_answer": "Vòng ngoài duyệt các hàng, vòng trong duyệt các cột của từng hàng.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Vòng lặp for lồng nhau khác gì so với dùng zip trên hai range?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 199,
+        "evidence": "The first statement is two loops nested, whereas the second is a single loop"
+      }
+    ],
+    "expected_answer": "Hai for lồng nhau tạo hai cấp lặp; zip duyệt theo từng cặp trong một vòng lặp.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Trong vòng lặp for, break và continue có tác dụng khác nhau ra sao?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 199,
+        "evidence": "if you want to get out of the iteration immediately"
+      }
+    ],
+    "expected_answer": "break thoát vòng lặp ngay; continue chuyển ngay sang phần tử tiếp theo.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Khi nào sách khuyên dùng while thay vì for?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 200,
+        "evidence": "while is best used if you know when the loop should stop"
+      }
+    ],
+    "expected_answer": "Khi biết điều kiện dừng nhưng chưa biết sẽ lặp bao nhiêu lần.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Trong ví dụ nhập điểm sinh viên không biết trước số lượng, tín hiệu nào kết thúc nhập?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 201,
+        "evidence": "use a while loop to take input from the user until you get a negative number"
+      }
+    ],
+    "expected_answer": "Nhập một số âm.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Lỗi phổ biến nào khiến vòng lặp while có thể chạy mãi không dừng?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 205,
+        "evidence": "Otherwise, the loop will go on forever"
+      }
+    ],
+    "expected_answer": "Điều kiện lặp luôn đúng hoặc biến điều khiển không thay đổi để điều kiện thành sai.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Vì sao ví dụ tính điểm trung bình của lớp có 30 sinh viên có thể dùng for?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 206,
+        "evidence": "Because the number of students in the class is known, the for loop can be used"
+      }
+    ],
+    "expected_answer": "Vì số lần lặp đã biết trước là 30.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Trong chương xử lý lỗi, vì sao bắt Exception chung không xác định được chính xác lỗi chia cho 0?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 218,
+        "evidence": "is not a specific exception class"
+      }
+    ],
+    "expected_answer": "Vì Exception là lớp bao quát nhiều ngoại lệ nên không phân biệt loại lỗi cụ thể.",
+    "filter": {
+      "chapter": "4"
+    },
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "Lỗi ZeroDivisionError xuất hiện khi nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 219,
+        "evidence": "ZeroDivisionError is raised when the divisor of a division or module operation is 0"
+      }
+    ],
+    "expected_answer": "Khi số chia của phép chia hoặc phép chia lấy dư bằng 0.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "Lỗi IndexError xuất hiện khi nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 222,
+        "evidence": "IndexError is raised when the index of a sequence is out of range"
+      }
+    ],
+    "expected_answer": "Khi truy cập chỉ số nằm ngoài phạm vi của một sequence.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Khi dùng một biến chưa được định nghĩa trong phạm vi local hoặc global, Python báo lỗi gì?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 223,
+        "evidence": "NameError is raised when a variable is not found in the local or global scope"
+      }
+    ],
+    "expected_answer": "NameError.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "Trong chương 4, TabError xảy ra khi nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 226,
+        "evidence": "TabError is raised when the indentation consists of inconsistent tabs and spaces"
+      }
+    ],
+    "expected_answer": "Khi cách thụt lề trộn tab và khoảng trắng không nhất quán.",
+    "filter": {
+      "chapter": "4"
+    },
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Khối finally trong try-except được thực thi khi nào?",
+    "gold": [
+      {
+        "source_id": "python_wang_2023",
+        "page": 234,
+        "evidence": "The finally clause encloses the code that will run regardless of whether any exception has been raised"
+      }
+    ],
+    "expected_answer": "Luôn chạy, dù có ngoại lệ trong try hay không.",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "question": "Python 3.13 triển khai chế độ free-threading và vô hiệu hóa GIL như thế nào?",
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "gold": [],
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Pending manual corpus-wide evidence review."
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "question": "Cú pháp khai báo tham số kiểu tổng quát của hàm trong Python 3.12 là gì?",
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "gold": [],
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Pending manual corpus-wide evidence review."
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "Trong Python 3.13, cơ chế JIT thử nghiệm được kích hoạt và hoạt động như thế nào?",
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "gold": [],
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Pending manual corpus-wide evidence review."
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "Theo tài liệu, asyncio.TaskGroup xử lý nhiều ngoại lệ đồng thời ra sao?",
+    "expected_answer": "Không đủ bằng chứng trong tài liệu để trả lời.",
+    "gold": [],
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Pending manual corpus-wide evidence review."
+  }
+]

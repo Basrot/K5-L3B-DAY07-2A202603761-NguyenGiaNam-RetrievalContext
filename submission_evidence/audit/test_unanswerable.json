@@ -1,0 +1,23 @@
+{
+  "q23": {
+    "chunks_checked": 200,
+    "matched_chunks": 0,
+    "matches": [],
+    "review_status": "manual_review_required"
+  },
+  "q24": {
+    "chunks_checked": 200,
+    "matched_chunks": 1,
+    "matches": [
+      {
+        "id": "by_paragraph:python_wang_2023_p225_para2",
+        "page": 225,
+        "terms": [
+          "asynchronous"
+        ],
+        "text": "StopAsyncIteration StopAsyncIteration is raised by the __anext__() method of an asynchronous iterator object to stop the iteration. SyntaxError SyntaxError is raised by the parser when a syntax error is encountered. In [ ]: s = 0 for i in range(10)   # a colon is missing which will cause a syntax error s += i Out [ ]: File '<ipython- input- 16- 6e54ba8cdb35>', line 2 for i in range(10) ^ SyntaxError: invalid syntax"
+      }
+    ],
+    "review_status": "manual_review_required"
+  }
+}

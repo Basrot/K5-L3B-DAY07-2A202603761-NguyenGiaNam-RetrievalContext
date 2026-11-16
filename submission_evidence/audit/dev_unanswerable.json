@@ -1,0 +1,27 @@
+{
+  "q21": {
+    "chunks_checked": 200,
+    "keywords": [
+      "free-thread",
+      "gil",
+      "global interpreter lock",
+      "python 3.13",
+      "no-gil",
+      "nogil"
+    ],
+    "matches": [],
+    "status": "manual_review_required"
+  },
+  "q22": {
+    "chunks_checked": 200,
+    "keywords": [
+      "python 3.12",
+      "type parameter",
+      "generic function",
+      "pep 695",
+      "typeparams"
+    ],
+    "matches": [],
+    "status": "manual_review_required"
+  }
+}
