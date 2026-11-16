@@ -466,31 +466,29 @@ Cần cấu hình `.env`, truy cập được nguồn PDF
 và ChromaDB/embedding tương ứng để tái lập
 đầy đủ các lượt chạy. Không đưa API key vào GitHub.
 
-## Ph? l?c ? ??i chi?u c?ch ch?m Bonus V6
+## Appendix - Bonus V6 Strict Scoring
 
 <!-- BONUS_V6_STRICT_SCORING -->
 
-K?t qu? TEST V6 ??u ti?n:
-
-| Ch? s? | K?t qu? |
+| Metric | Result |
 |---|---:|
-| Answer Accuracy tr?n c?u answerable | 20/24 (83,3%) |
-| ??p ?n ??ng v? citation h? tr? | 19/24 |
-| Abstention ??ng theo nh?n t?m th?i | 6/6 |
-| T?ng ??ng s? b? v? ??p ?n/h?nh vi | 26/30 (86,7%) |
-| Strict Pass Rate s? b? | 25/30 (83,3%) |
+| Correct answers on answerable questions | 20/24 (83.3%) |
+| Correct answers with supported citations | 19/24 |
+| Correct abstentions (provisional labels) | 6/6 |
+| Preliminary total correctness | 26/30 (86.7%) |
+| Preliminary strict pass rate | 25/30 (83.3%) |
 
-Strict Pass y?u c?u c?u answerable v?a c? ??p ?n ??ng,
-v?a c? citation ???c b?ng ch?ng h? tr?.
+Strict pass requires both a correct answer and a
+supporting citation.
 
-S?u nh?n unanswerable v?n mang tr?ng th?i provisional,
-ch?a ???c x?c minh ??c l?p to?n di?n.
+The six unanswerable labels remain provisional.
 
-Ng??ng 90% t??ng ???ng ?t nh?t 27/30 c?u ??t.
-V?i k?t qu? hi?n t?i, ch?a ?? c? s? kh?ng ??nh ??t Bonus +15.
+The 90% threshold requires at least 27/30 passes.
+The current TEST V6 results do not establish
+eligibility for the additional 15 bonus points.
 
-K?t qu? TEST ??u ti?n ???c gi? nguy?n; kh?ng thay ??i
-pipeline d?a tr?n c?c c?u TEST ch?a ??t.
+The first TEST run is preserved without
+post-TEST tuning.
 
 ## 5. Khả năng tái lập
 
