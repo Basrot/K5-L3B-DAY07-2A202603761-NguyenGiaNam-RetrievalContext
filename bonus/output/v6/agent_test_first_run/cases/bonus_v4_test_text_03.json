@@ -1,0 +1,116 @@
+{
+  "query_id": "bonus_v4_test_text_03",
+  "type": "text",
+  "question": "According to the text describing Python built-in functions, do these functions need a module import to be called directly?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "No, they can be used without importing a module.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p132_text_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Không, các hàm dựng sẵn (built-in functions) trong Python có thể được sử dụng trực tiếp mà không cần phải import bất kỳ module nào [bonus_p132_text_1, bonus_p132_text_0].",
+  "citations": [
+    "bonus_p132_text_0",
+    "bonus_p132_text_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": false,
+  "citation_format_valid": false,
+  "searches": 1,
+  "queries": [
+    "Python built-in functions module import directly"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p132_text_1",
+      "pdf_page": 132,
+      "kind": "text",
+      "text": "an be used directly without importing any module or noting what it belongs to. Built-­in functions, and functions or methods in general, can be put into two categories. One is based on the data they return, whereas the other is based on the operations performed, although sometimes the returned data from a built-­in function in the second category may still be useful in subsequent executions of the program. We will first explain built-­in functions in the first category, followed by built-­in functions in the second category. To best understand these functions, read through these built-­in functions and test the sample code in a Python interactive shell or Jupyter Notebook. Table 2-­14: Python membership operators (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p120_text_1",
+      "pdf_page": 120,
+      "kind": "text",
+      "text": "name or the function or class name if that is imported from the module. C:\\comp218> python prime. py .… >>> __name__ __main__ More information about these constants can be found at https://​docs​.python​ .org/​3/​library/​constants​.html. Table 2-­6: Python built-­in constants (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p92_text_1",
+      "pdf_page": 92,
+      "kind": "text",
+      "text": "xt for a code block from used together with import yield used in place of return, to turn a function into a generator global to access a global variable from inside of a function In addition to the reserved words in Table 2-­1, you should also avoid using names that have been used by Python for built-­in types and built-­in functions, Table 2-­1: Reserved words in the Python programming language (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p171_text_0",
+      "pdf_page": 171,
+      "kind": "text",
+      "text": "156 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 IMPORT STATEMENT The import statement is used to import modules into a program file or a specific class within the module. The following is an example of how to import the standard math module into the program: In [ ]: import math print(f\"98 ** 3 = {math.pow(98, 3)}\") Out [ ]: 98 ** 3 = 941192.0 GLOBAL STATEMENT A global statement simply declares, within a code block such as function or class, that some identifiers/names such as variables should be treated as globally writable. Without a global statement, a variable defined outside of a function or class may be read, but writing to the variable will raise an exception, as shown in the following examples: In [ ]: gravity = 9.807 # gravity on the earth's surface, global variable r_earth = 6371000 # the earth's mean radius 6371000 metres def changed_gravity(m): # m is the distance from the earth gravity = gravity * (r_earth/(r_earth+m)) ** 2 # decrease gravity by 2 return gravity print(f'gravity at 99999 metres above sea level is {changed_gravity(99999)} or {gravity}') Out [ ]: -­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p132_text_0",
+      "pdf_page": 132,
+      "kind": "text",
+      "text": "Essential Building Blocks of Computer Programs 117 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code sample in Python interactive mode v not in s Checks whether value/variable is not found in the sequence >>> l [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] >>> 30 in l False >>> 30 not in l True The third membership operator is used to access members of objects, mod­ ules, or packages. It is the dot (.) operator. The example in Table 2-­15 shows how to access a function in module math. Table 2-­15: Dot operator Operator Operation Code sample in Python interactive mode p.q q is a member of p where p and q refer to an object (variable, constant, function or method name), package, or module name >>> import math >>> type(math) <class 'module'> >>> type(math.sqrt) <class 'builtin_function_ or_method'> >>> math.sqrt(35) 5.916079783099616 Built-­In Functions As with operators, built-­in functions are also important in processing and testing data in programs. As the name implies, built-­in functions are built into Python Virtual Machine (PVM). A built-­in function can be used directly without importing any module or noting what it belongs to. Built-­in functions, and functions or met",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Python built-in functions module import directly"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Python built-in functions module import directly",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p132_text_1",
+        "bonus_p120_text_1",
+        "bonus_p92_text_1",
+        "bonus_p171_text_0",
+        "bonus_p132_text_0"
+      ],
+      "context_ids": [
+        "bonus_p132_text_1",
+        "bonus_p120_text_1",
+        "bonus_p92_text_1",
+        "bonus_p171_text_0",
+        "bonus_p132_text_0"
+      ],
+      "context_chars": 4114
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Không, các hàm dựng sẵn (built-in functions) trong Python có thể được sử dụng trực tiếp mà không cần phải import bất kỳ module nào [bonus_p132_text_1, bonus_p132_text_0].",
+        "citations": [
+          "bonus_p132_text_0",
+          "bonus_p132_text_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 445,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1773,
+      "output_tokens": 85
+    }
+  ],
+  "elapsed_ms": 17182.65
+}

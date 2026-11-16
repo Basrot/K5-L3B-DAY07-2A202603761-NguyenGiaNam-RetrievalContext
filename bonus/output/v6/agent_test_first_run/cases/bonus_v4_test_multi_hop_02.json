@@ -1,0 +1,119 @@
+{
+  "query_id": "bonus_v4_test_multi_hop_02",
+  "type": "multi_hop",
+  "question": "The textbook's summation algorithm initializes i=1 and s=0, then updates s by adding i and i by adding 1. Using the augmented assignment syntax in the assignment-operator table, write the two Python updates and give s and i after one iteration.",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "s += i; i += 1. After one iteration, s=1 and i=2.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p70_text_1",
+    "bonus_p127_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Sử dụng cú pháp phép gán tăng cường (augmented assignment), hai câu lệnh cập nhật Python là s += i và i += 1 [bonus_p72_diagram_0] [bonus_p158_text_1]. Sau một lần lặp (khởi tạo i = 1 và s = 0), giá trị của s là 1 và i là 2 [bonus_p72_diagram_0].",
+  "citations": [
+    "bonus_p72_diagram_0",
+    "bonus_p158_text_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "summation algorithm python augmented assignment s i i"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p72_diagram_0",
+      "pdf_page": 72,
+      "kind": "diagram",
+      "text": "Figure 1-8: Summation algorithm flowchart. Initialize i = 1 and s = 0. Update s = s + i and i = i + 1. Check i <= 10000. When true, repeat the update; otherwise print s.",
+      "image_path": "visual_pages/page_72.png"
+    },
+    {
+      "id": "bonus_p70_text_1",
+      "pdf_page": 70,
+      "kind": "text",
+      "text": "n the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem solving and computing, conditional operations and repetitive operations are often needed. An example is to calculate the sum of number 1, 2,…10000. One might think that the sum could be calculated by writing 1 + 2 + 3 + … + 10000, but that is wrong because that mathematical expression cannot be precisely understood by computers. The correct algorithm should be: [algorithm 2] Calculate the sum of all positive integers that are no greater than 10000. Step 1. 1 → i, 0 → s Step 2. s + i → s, i +1 → i Step 3. If i <= 10000 go to step 2 # loop back and make repetition under condition",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p135_text_0",
+      "pdf_page": 135,
+      "kind": "text",
+      "text": "120 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 >>> ord('c') 99 SUM(…) This calculates and returns the sum of numbers in a list, a tuple, or a range() call. >>> sum([23, 56, 67, 12, 89]) 247 >>> sum((23, 56, 67, 12, 89)) 247 >>> sum(range(88)) 3828 SET(S) This converts a set from a list or tuple. >>> set([23, 56, 67, 12, 89]) {23, 56, 67, 12, 89} DICT() DICT(ITERABLE) DICT(A = V,…) These convert an empty dictionary, construct a dictionary from the iterable of (k, v) tuples, and from key=value pairs, respectively. >>> dict() {} >>> dict([(1,'Turing'), (2,'Bool'), (3,'Babbage'), (4,'Neumann'), (5,'Knuth')]) {1: 'Turing', 2: 'Bool', 3: 'Babbage', 4: 'Neumann', 5: 'Knuth'} >>> dict(a = 1, b = 2, c = 3) {'a': 1, 'b': 2, 'c': 3} BIN(N) This converts a number to its binary equivalence as a string. >>> bin(98) '0b1100010'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p158_text_1",
+      "pdf_page": 158,
+      "kind": "text",
+      "text": "rea is {a}\") Out [ ]: diameter = 15; radius = 7.5; circumference = 47.1; area is 176.625 AUGMENTED ASSIGNMENT In programming, we often take the value of a variable, perform an operation on it, then put the result back to the variable. That is when augmented assign­ ment comes into play. In section 2.1, we saw several augmented assignment operators. In general, for an assignment in the form of x = x <operator> v the augmented assignment can be used in the following form: x <operator>= v",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p62_text_0",
+      "pdf_page": 62,
+      "kind": "text",
+      "text": "Introduction 47 https://doi.org/10.15215/remix/9781998944088.01 As you can see, in this interactive programming environment, you can write and edit many Python statements within a single cell. You may simply write some statements to accomplish certain calculation or data analysis tasks that cannot be done even on an advanced scientific finance calculator. This next example in Jupyter Notebook within VS Code calculates the sum and the product of 1, 2, 3, … 100: \"\"\" This is to calculate the sum of 1,2,…,100. \"\"\" s=0 for i in range(100): s+=i+1 print(f\"Sum of 1,2…,100 is {s}) \"\"\" This is to calculate the product of 1,2,…,100 \"\"\" p=1 for i in range(100): p*=i+1 print(f\"The product of 1,2,…,100 is {p}\") This prints the following: Sum of 1,2,…,100 is 5050 The product of 1,2,…,100 is 9332621544394415268169923885626670 049071596826438162146859296389521759999322991560894146 397615651828625369792082722375825118521091686400000000 0000000000000000 Our next sample program in Jupyter Notebook within VS Code creates a simple data visualization to showcase how Python can be used for that purpose. The data for x-axis are a list of letter grade in a grading system; the data for y-axis contain a list",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "summation algorithm python augmented assignment s i i",
+        "answer": null,
+        "citations": []
+      }
+    },
+    {
+      "event": "search",
+      "query": "summation algorithm python augmented assignment s i i",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p72_diagram_0",
+        "bonus_p70_text_1",
+        "bonus_p135_text_0",
+        "bonus_p158_text_1",
+        "bonus_p62_text_0"
+      ],
+      "context_ids": [
+        "bonus_p72_diagram_0",
+        "bonus_p70_text_1",
+        "bonus_p135_text_0",
+        "bonus_p158_text_1",
+        "bonus_p62_text_0"
+      ],
+      "context_chars": 3725
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Sử dụng cú pháp phép gán tăng cường (augmented assignment), hai câu lệnh cập nhật Python là s += i và i += 1 [bonus_p72_diagram_0] [bonus_p158_text_1]. Sau một lần lặp (khởi tạo i = 1 và s = 0), giá trị của s là 1 và i là 2 [bonus_p72_diagram_0].",
+        "citations": [
+          "bonus_p72_diagram_0",
+          "bonus_p158_text_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 476,
+      "output_tokens": 20
+    },
+    {
+      "input_tokens": 1992,
+      "output_tokens": 124
+    }
+  ],
+  "elapsed_ms": 16755.62
+}

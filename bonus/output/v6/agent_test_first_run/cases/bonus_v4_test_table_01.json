@@ -1,0 +1,110 @@
+{
+  "query_id": "bonus_v4_test_table_01",
+  "type": "table",
+  "question": "According to the reserved-word table, which keyword is used to exit a loop early?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "break",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p92_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Dựa trên các ngữ cảnh được cung cấp, không có đủ thông tin từ bảng từ khóa (reserved-word table) để xác định từ khóa nào được dùng để thoát khỏi vòng lặp sớm.",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": false,
+  "searches": 1,
+  "queries": [
+    "reserved word table keyword exit loop early"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p207_text_1",
+      "pdf_page": 207,
+      "kind": "text",
+      "text": "teration. The flowchart of such iteration is shown in Figure 3-­7. Compared to the for statement, the while statement is more powerful and its uses are more versatile. In fact, all code written with a for statement can be rewritten with a while statement, though when looping through sequences, coding with for statements is more elegant and more readable. Condition to exit Code block Condition to exit is not met Condition to exit is met Figure 3-­7: Flowchart for a while loop",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p204_text_1",
+      "pdf_page": 204,
+      "kind": "text",
+      "text": "s a prime Please note the break statement in the example above. It is used to get out of the loop immediately by ignoring all the code before it without going back to test the looping condition. This is a way to get out of a loop in the middle of an iteration and is applicable to both the while loop and for loop. Somewhat related to the break statement, the continue statement is used within a loop to go back directly to the beginning of the iteration—­testing the Table 3-­7: Code sample: Prime number test (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p170_text_1",
+      "pdf_page": 170,
+      "kind": "text",
+      "text": "1 2 3 4 5 6 7 8 get out of the loop when i = 8 CONTINUE STATEMENT The continue statement is used within a loop code block to continue to the next iteration of the loop and ignore the rest of the code block. This statement can be very useful if you don’t want to run some statements when some condition is met.",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p91_text_1",
+      "pdf_page": 91,
+      "kind": "text",
+      "text": "ot: 1d, d/, f-, g.d In Python, identifiers shown in Table 2-­1 are reserved and hence called reserved words or keywords, with predefined special meaning in the language, which means that you must not use them to name your variables, functions/ methods, classes, or modules. Table 2-­1: Reserved words in the Python programming language Reserved word Special meaning Reserved word Special meaning and logical and if conditional statement as used together with import and with to create new alia import to import modules",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p91_table_0",
+      "pdf_page": 91,
+      "kind": "table",
+      "text": "Reserved | Specialmeaning | Reserved | Specialmeaning\nword |  | word | \nand | logicaland | if | conditionalstatement\nas | usedtogetherwithimport | import | toimportmodules\n | andwithtocreatenew |  | \n | alia |  |",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "reserved word table keyword exit loop early"
+      }
+    },
+    {
+      "event": "search",
+      "query": "reserved word table keyword exit loop early",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p207_text_1",
+        "bonus_p204_text_1",
+        "bonus_p170_text_1",
+        "bonus_p91_text_1",
+        "bonus_p91_table_0"
+      ],
+      "context_ids": [
+        "bonus_p207_text_1",
+        "bonus_p204_text_1",
+        "bonus_p170_text_1",
+        "bonus_p91_text_1",
+        "bonus_p91_table_0"
+      ],
+      "context_chars": 2321
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Dựa trên các ngữ cảnh được cung cấp, không có đủ thông tin từ bảng từ khóa (reserved-word table) để xác định từ khóa nào được dùng để thoát khỏi vòng lặp sớm.",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 440,
+      "output_tokens": 15
+    },
+    {
+      "input_tokens": 1174,
+      "output_tokens": 52
+    }
+  ],
+  "elapsed_ms": 9885.82
+}

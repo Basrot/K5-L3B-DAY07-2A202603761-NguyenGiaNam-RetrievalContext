@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_009",
+  "type": "table",
+  "question": "What does Python's 'in' membership operator check?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "Whether a value occurs in a sequence.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p131_table_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Toán tử thành viên 'in' trong Python kiểm tra xem một giá trị có được tìm thấy trong một chuỗi hay không [bonus_p131_table_1].",
+  "citations": [
+    "bonus_p131_table_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Python in membership operator check"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p131_table_0",
+      "pdf_page": 131,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n* | Repeatasequencesuchasstring , | >>> \"Python \" * 3\n | listortuplemultipletimes | 'Python Python Python '\n |  | >>> [1 2 3] * 5 , ,\n |  | [1 2 3 1 2 3 1 2 , , , , , , , ,\n |  | 3 1 2 3 1 2 3] , , , , , ,\n+ | Jointwosequences | >>> [1 2 3] + [5 6 7] , , , ,\n |  | [1 2 3 5 6 7] , , , , ,\n[n] | Sliceoutasinglememberofthe | >>> name = 'John'\n | sequence | >>> name[1]\n |  | 'o'\n[n:m] | Sliceasequencestartfromntom . | >>> name\n |  | 'John'\n |  | >>> name[1:3]\n |  | 'oh'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p132_table_0",
+      "pdf_page": 132,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvnotins | Checkswhethervalue/variableis | >>> l\n | notfoundinthesequence | [0 1 2 3 4 5 6 7 8 9] , , , , , , , , ,\n |  | >>> 30 in l\n |  | False\n |  | >>> 30 not in l\n |  | True",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p131_table_1",
+      "pdf_page": 131,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\nvins | Trueifvaluevisfoundin | >>> l = list(range(10))\n | sequences | >>> l\n |  | [0 1 2 3 4 5 6 7 , , , , , , , ,\n |  | 8 9] ,\n |  | >>> 3 in l\n |  | True\n |  | >>> 2 + 1 in l\n |  | True\n |  | >>> 'x' in \"Welcome to\n |  | COMP218\"\n |  | False",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p253_table_0",
+      "pdf_page": 253,
+      "kind": "table",
+      "text": "Conversion | Meaning | Codesample\nc | Singlecharacter(acceptsinteger | >>> s = 'Python is\n | orsinglecharacterstring) . | great!'\n |  | >>> 'The first character\n |  | of string %s is %c'%(s ,\n |  | s[0])\n |  | 'The first character of\n |  | string Python is great!\n |  | is P'\nr | String(convertsanypython | >>> 'The complex number\n | objectusingrepr()or repr () __ __ , | will be displayed as\n | insteadofstr()or str ()) In __ __ . | %r'%(cn)\n | classdefinition youneedto , | 'The complex number\n | implementthedundermethod | will be displayed as\n | repr inorderforrepr()or __ __ __ | (12+35j)'\n | repr ()toworkontheobjects __ | \n | ofthedefinedclass . | \ns | String(convertsanypython | >>> 'The complex number\n | objectusingstr()) Wewillsee . | will be displayed as\n | thedifferencebetween%rand | %s'%(cn)\n | %swhenwedefined repr __ __ | 'The complex number\n | methodforauser-defined ­ | will be displayed as\n | class . | (12+35j)'\n%% | Noargumentisconverted | >>> '%% will be displayed\n | (resultsina\"%\"characterin | as a single percentage\n | theresult) Itworksonlyifthe . | sign and the complex ,\n | formattingiscomplete . | number is %s'%(cn)\n |  | '% will be displayed as\n |  | a single percentage\n |  | sign and the complex ,\n |  | number is (12+35j)'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p116_table_0",
+      "pdf_page": 116,
+      "kind": "table",
+      "text": "Name | Meaning | Exampleofusage\nframe | Atablecontainingallthelocal | Itisusedinfunctioncalling .\n | variables . | \ntraceback | Aspecialobjectforexception | Itprovidesaninterfaceto\n | handling . | extract format andprintstack , ,\n |  | tracesofPythonprograms ,\n |  | especiallywhenanexception\n |  | israised .\nellipsis | Asingleobjectcalledellipsis a , | Itisrarelyusedexceptinslicing .\n | built-i ­n name in Python 3 . |",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Python in membership operator check"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Python in membership operator check",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p131_table_0",
+        "bonus_p132_table_0",
+        "bonus_p131_table_1",
+        "bonus_p253_table_0",
+        "bonus_p116_table_0"
+      ],
+      "context_ids": [
+        "bonus_p131_table_0",
+        "bonus_p132_table_0",
+        "bonus_p131_table_1",
+        "bonus_p253_table_0",
+        "bonus_p116_table_0"
+      ],
+      "context_chars": 3050
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Toán tử thành viên 'in' trong Python kiểm tra xem một giá trị có được tìm thấy trong một chuỗi hay không [bonus_p131_table_1].",
+        "citations": [
+          "bonus_p131_table_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 434,
+      "output_tokens": 13
+    },
+    {
+      "input_tokens": 1704,
+      "output_tokens": 59
+    }
+  ],
+  "elapsed_ms": 16751.35
+}

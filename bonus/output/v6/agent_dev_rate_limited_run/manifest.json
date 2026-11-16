@@ -1,0 +1,14 @@
+{
+  "mode": "dev",
+  "benchmark": "benchmark_dev_21_v4.json",
+  "benchmark_sha256": "0ba8ffd5dfe952f01d407744bf896eac3ab98d09a442acac0f8112d64cd3dcbd",
+  "collection": "bonus_multimodal_v6",
+  "corpus_records": 1006,
+  "model": "gemini-3.5-flash-lite",
+  "max_searches": 2,
+  "top_k": 5,
+  "depth": 10,
+  "routing": "dev_v6_query_routing",
+  "evaluation": "first_run",
+  "unanswerable_labels": "provisional"
+}

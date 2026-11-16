@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_016",
+  "type": "table",
+  "question": "According to the arithmetic type table, what is the result type of complex plus float?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "complex",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p118_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Theo bảng kiểu số học, kết quả của kiểu complex cộng với float là complex [bonus_p118_table_0].",
+  "citations": [
+    "bonus_p118_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "arithmetic type table complex plus float result type"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p118_table_0",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p118_table_1",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p132_table_1",
+      "pdf_page": 132,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\npq . | qisamemberofpwherepand | >>> import math\n | qrefertoanobject(variable , | >>> type(math)\n | constant functionormethod , | <class 'module'>\n | name) package ormodule , , | >>> type(math .sqrt)\n | name | <class 'builtin function _ _\n |  | or method'> _\n |  | >>> math sqrt(35) .\n |  | 5 916079783099616 .",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p259_table_1",
+      "pdf_page": 259,
+      "kind": "table",
+      "text": "Escapesequence | Specialmeaninginre | Example\n\\d | Match any decimal digit 0 -9 ­. | Img\\d+jpg .\n\\D | Oppositeof\\d meaningdo , | [\\D]willmatcheverythingbut\n | notmatchanydecimaldigit . | decimaldigits\n\\w | Matchanyalphanumeric | [ a-zA -Z]\\w*willmatchall _ ­ ­\n | character A -Z a-z 0 -9 , , , ­. | legitimateidentifiersin\n |  | Python",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p124_table_0",
+      "pdf_page": 124,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n< | Lessthan—Trueifleftoperandis ­ | >>> x, y = 23 , 53\n | lessthantheright | >>> x, y\n |  | (23 53) ,\n |  | >>> x < y\n |  | True\n |  | >>> s1 = \"Albert\"\n |  | >>> s2 = \"Jeremy\"\n |  | >>> s1 < s2\n |  | True\n== | Equalto—Trueifbothoperands ­ | >>> x, y = 23 , 53\n | areequal | >>> x, y\n |  | (23 53) ,\n |  | >>> x == y\n |  | False\n!= | Notequalto—Trueifoperandsare ­ | >>> x, y = 23 , 53\n | notequal | >>> x, y\n |  | (23 53) ,\n |  | >>> x != y\n |  | True\n>= | Greaterthanorequalto—Trueif ­ | >>> x, y = 23 , 53\n | leftoperandisgreaterthanor | >>> x, y\n | equaltotheright | (23 53) ,\n |  | >>> x >= y\n |  | True\n<= | Lessthanorequalto—Trueifleft ­ | >>> x, y = 23 , 53\n | operandislessthanorequalto | >>> x, y\n | theright | (23 53) ,\n |  | >>> x <= y\n |  | True",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "arithmetic type table complex plus float result type"
+      }
+    },
+    {
+      "event": "search",
+      "query": "arithmetic type table complex plus float result type",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p132_table_1",
+        "bonus_p259_table_1",
+        "bonus_p124_table_0"
+      ],
+      "context_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p132_table_1",
+        "bonus_p259_table_1",
+        "bonus_p124_table_0"
+      ],
+      "context_chars": 2099
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Theo bảng kiểu số học, kết quả của kiểu complex cộng với float là complex [bonus_p118_table_0].",
+        "citations": [
+          "bonus_p118_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 439,
+      "output_tokens": 17
+    },
+    {
+      "input_tokens": 1409,
+      "output_tokens": 54
+    }
+  ],
+  "elapsed_ms": 17293.83
+}

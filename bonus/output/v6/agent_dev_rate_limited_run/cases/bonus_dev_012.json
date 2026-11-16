@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_012",
+  "type": "table",
+  "question": "What result type is shown for integer plus float?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "float.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p118_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Kết quả của phép tính giữa số nguyên (integer) và số thực (float) là số thực (float) [bonus_p118_table_0].",
+  "citations": [
+    "bonus_p118_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "integer plus float result type"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p118_table_0",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p118_table_1",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p127_table_0",
+      "pdf_page": 127,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx=e | Expressioneisevaluated andthe , | >>> m , n = 23 , 12\n | valueisassignedtovariablex . | >>> m n ,\n | NotethatinPythonandin | (23 12) ,\n | previouscodesamples , | >>> x = m + n\n | assignmentscanbemadeto | >>> x\n | morethanonevariablewithone | 35\n | statement . | \nx+=e | Expressionx+eisevaluated , | >>> x, m , n = 35 , 23 , 12\n | andthevalueisassignedto | >>> x, m , n\n | variablex . | (35 23 12) , ,\n | x=x+e | >>> x += m + n\n |  | >>> x\n |  | 70\n |  | >>> x, m , n\n |  | (70 23 12) , ,\nx=e | Expression x − e is evaluated , | >>> x, m , n = (70 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x−e | (70 23 12) , ,\n |  | >>> x -= m + n ­\n |  | >>> x, m , n\n |  | (35 23 12) , ,\nx*=e | Expressionx*eisevaluated , | >>> x, m , n = (35 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x*e | (35 23 12) , ,\n |  | >>> x *= m + n\n |  | >>> x, m , n\n |  | (1225 23 12) , ,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p130_table_0",
+      "pdf_page": 130,
+      "kind": "table",
+      "text": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2]) , , , , ,\n | not6/2because6/2=30 . , | >>>id(x) id(y) ,\n | whichisdifferentfrom3 . | (10049456 10049016) ,\n |  | >>>xisy\n |  | False\n |  | >>>id(3)\n |  | 258398416\n |  | >>>id(2+1)\n |  | 258398416\nisnot | Trueiftheoperandsarenot | >>>x=list(range(3))\n | identical(donotrefertothe | >>>x=y\n | sameobject) . | >>>id(x) id(y) ,\n | Notethatwhenassigningvariable | (10049016 10049016) ,\n | ytovariablex theoperation , | >>>xisy\n | pointsxtothesamememory | True\n | blockyispointingto(sothatthe | >>>y=list(range(3))\n | twohavetheid)andsharesthe | >>>id(x)id(y) ,\n | samememoryblock However . , | (10090256 10090336) ,\n | whenanewassignmentis | >>>x y ,\n | madetoxory thetwowillhave , | ([0 1 2] [0 1 2]) , , , , ,\n | differentids unlesstheyboth , | >>>xisnoty\n | holdthesameintegerorstring . | True",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p132_table_1",
+      "pdf_page": 132,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\npq . | qisamemberofpwherepand | >>> import math\n | qrefertoanobject(variable , | >>> type(math)\n | constant functionormethod , | <class 'module'>\n | name) package ormodule , , | >>> type(math .sqrt)\n | name | <class 'builtin function _ _\n |  | or method'> _\n |  | >>> math sqrt(35) .\n |  | 5 916079783099616 .",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "integer plus float result type"
+      }
+    },
+    {
+      "event": "search",
+      "query": "integer plus float result type",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p127_table_0",
+        "bonus_p130_table_0",
+        "bonus_p132_table_1"
+      ],
+      "context_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p127_table_0",
+        "bonus_p130_table_0",
+        "bonus_p132_table_1"
+      ],
+      "context_chars": 2946
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Kết quả của phép tính giữa số nguyên (integer) và số thực (float) là số thực (float) [bonus_p118_table_0].",
+        "citations": [
+          "bonus_p118_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 432,
+      "output_tokens": 13
+    },
+    {
+      "input_tokens": 1824,
+      "output_tokens": 56
+    }
+  ],
+  "elapsed_ms": 17307.34
+}

@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_text_01",
+  "type": "text",
+  "question": "In the summation algorithm for positive integers up to 10000, what is the comparison controlling repetition?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "If i <= 10000, go back to the update step.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p70_text_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong thuật toán tính tổng các số nguyên dương đến 10000, phép so sánh điều khiển việc lặp lại là i <= 10000 [bonus_p70_text_1].",
+  "citations": [
+    "bonus_p70_text_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "summation algorithm positive integers up to 10000 comparison repetition"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p70_text_1",
+      "pdf_page": 70,
+      "kind": "text",
+      "text": "n the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem solving and computing, conditional operations and repetitive operations are often needed. An example is to calculate the sum of number 1, 2,…10000. One might think that the sum could be calculated by writing 1 + 2 + 3 + … + 10000, but that is wrong because that mathematical expression cannot be precisely understood by computers. The correct algorithm should be: [algorithm 2] Calculate the sum of all positive integers that are no greater than 10000. Step 1. 1 → i, 0 → s Step 2. s + i → s, i +1 → i Step 3. If i <= 10000 go to step 2 # loop back and make repetition under condition",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p72_diagram_0",
+      "pdf_page": 72,
+      "kind": "diagram",
+      "text": "Figure 1-8: Summation algorithm flowchart. Initialize i = 1 and s = 0. Update s = s + i and i = i + 1. Check i <= 10000. When true, repeat the update; otherwise print s.",
+      "image_path": "visual_pages/page_72.png"
+    },
+    {
+      "id": "bonus_p135_text_0",
+      "pdf_page": 135,
+      "kind": "text",
+      "text": "120 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 >>> ord('c') 99 SUM(…) This calculates and returns the sum of numbers in a list, a tuple, or a range() call. >>> sum([23, 56, 67, 12, 89]) 247 >>> sum((23, 56, 67, 12, 89)) 247 >>> sum(range(88)) 3828 SET(S) This converts a set from a list or tuple. >>> set([23, 56, 67, 12, 89]) {23, 56, 67, 12, 89} DICT() DICT(ITERABLE) DICT(A = V,…) These convert an empty dictionary, construct a dictionary from the iterable of (k, v) tuples, and from key=value pairs, respectively. >>> dict() {} >>> dict([(1,'Turing'), (2,'Bool'), (3,'Babbage'), (4,'Neumann'), (5,'Knuth')]) {1: 'Turing', 2: 'Bool', 3: 'Babbage', 4: 'Neumann', 5: 'Knuth'} >>> dict(a = 1, b = 2, c = 3) {'a': 1, 'b': 2, 'c': 3} BIN(N) This converts a number to its binary equivalence as a string. >>> bin(98) '0b1100010'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p201_text_1",
+      "pdf_page": 201,
+      "kind": "text",
+      "text": "but you do know there will be no negative marks. You can then use a negative number, input by the user, to end the application and use the while loop to iterate. To calculate the average, you need to know the sum of all the marks as well as the total number of marks. For the former, you need to add each mark to the total, whereas for the latter, you need to use a counter to count every mark. Use the variable total to keep the sum and use the variable count to keep the number of marks. Both need to be initialized to 0. The algorithm is below: Step 1: Initialize both count and total to 0 Step 2: Take an input from user and convert it to a float number Step 3: If the number is a mark (>= 0), then do the following: Step 3.1: Increase count by 1 Step 3.2: Add mark to total Step 3.3: Get another input from user and convert to float Step 3.4: Go back to Step 3 Step 4: Calculate the average using total/count and print out the result. Step 5: End the program Is condition to loop met? Code block Met Not met Figure 3-­6: Flowchart illustrating the while loop",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p331_text_0",
+      "pdf_page": 331,
+      "kind": "text",
+      "text": "316 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 In [ ]: import sys print(f\"The size of a list containing numbers from 0 to 100 is {sys.getsizeof(list(range(100)))}Bytes\") print(f\"The size of list containing numbers from 0 to 1000 is {sys.getsizeof(list(range(1000)))}Bytes\") print(f\"The size of list containing numbers from 0 to 10000 is {sys.getsizeof(list(range(10000)))}Bytes\") Out [ ]: The size of a list containing numbers from 0 to 100 is 1008Bytes The size of a list containing numbers from 0 to 1000 is 9112Bytes The size of a list containing numbers from 0 to 10000 is 90112Bytes As you can see, a simple list containing integer numbers from 0 to 10000 takes up almost 90KB of memory. 6.7 Closures: Turning a Function into a Closure In Python and some other programming languages such as JavaScript, closures are the result of a nested function—­that is, one function that is defined inside another—­as shown in the following example: In [ ]: def outer(greeting): print('Good morning!') def inner(msg): print(msg) inner(greeting) outer('Good day!') Out [ ]: Good morning! Good day! In the example above, the outer function can also return",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "summation algorithm positive integers up to 10000 comparison repetition"
+      }
+    },
+    {
+      "event": "search",
+      "query": "summation algorithm positive integers up to 10000 comparison repetition",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p70_text_1",
+        "bonus_p72_diagram_0",
+        "bonus_p135_text_0",
+        "bonus_p201_text_1",
+        "bonus_p331_text_0"
+      ],
+      "context_ids": [
+        "bonus_p70_text_1",
+        "bonus_p72_diagram_0",
+        "bonus_p135_text_0",
+        "bonus_p201_text_1",
+        "bonus_p331_text_0"
+      ],
+      "context_chars": 4300
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong thuật toán tính tổng các số nguyên dương đến 10000, phép so sánh điều khiển việc lặp lại là i <= 10000 [bonus_p70_text_1].",
+        "citations": [
+          "bonus_p70_text_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 445,
+      "output_tokens": 23
+    },
+    {
+      "input_tokens": 2009,
+      "output_tokens": 66
+    }
+  ],
+  "elapsed_ms": 17091.95
+}

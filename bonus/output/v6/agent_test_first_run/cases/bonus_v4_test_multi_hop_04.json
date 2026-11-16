@@ -1,0 +1,117 @@
+{
+  "query_id": "bonus_v4_test_multi_hop_04",
+  "type": "multi_hop",
+  "question": "Using the bitwise operator example with 12 and 15 and the reserved-word table's meaning of 'not', what is the Boolean result of `not ((12 & 15) == 12)`?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "False. The bitwise AND gives 12; the equality is True, so not True is False.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p126_table_0",
+    "bonus_p92_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Kết quả Boolean của biểu thức `not ((12 & 15) == 12)` là False [bonus_p125_table_0] [bonus_p126_table_0]",
+  "citations": [
+    "bonus_p125_table_0",
+    "bonus_p126_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "bitwise operator 12 and 15 reserved word table not"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p127_table_0",
+      "pdf_page": 127,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx=e | Expressioneisevaluated andthe , | >>> m , n = 23 , 12\n | valueisassignedtovariablex . | >>> m n ,\n | NotethatinPythonandin | (23 12) ,\n | previouscodesamples , | >>> x = m + n\n | assignmentscanbemadeto | >>> x\n | morethanonevariablewithone | 35\n | statement . | \nx+=e | Expressionx+eisevaluated , | >>> x, m , n = 35 , 23 , 12\n | andthevalueisassignedto | >>> x, m , n\n | variablex . | (35 23 12) , ,\n | x=x+e | >>> x += m + n\n |  | >>> x\n |  | 70\n |  | >>> x, m , n\n |  | (70 23 12) , ,\nx=e | Expression x − e is evaluated , | >>> x, m , n = (70 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x−e | (70 23 12) , ,\n |  | >>> x -= m + n ­\n |  | >>> x, m , n\n |  | (35 23 12) , ,\nx*=e | Expressionx*eisevaluated , | >>> x, m , n = (35 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x*e | (35 23 12) , ,\n |  | >>> x *= m + n\n |  | >>> x, m , n\n |  | (1225 23 12) , ,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p125_table_0",
+      "pdf_page": 125,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Meaning | interactivemode\nand | AandB | >>> (x, y) = (23 , 53)\n | TrueifbothAandBaretrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y and m > n\n |  | False\nor | AorB | >>> (x, y) = (23 , 53)\n | TrueifeitherAorBistrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y or m > n\n |  | True\nnot | notA | >>> (x, y) = (23 , 53)\n | TrueifAisfalse | >>> x, y\n |  | (23 53) ,\n |  | >>> not x < y\n |  | False",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p126_table_0",
+      "pdf_page": 126,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Meaning | interactivemode\n& | Bitwiseand | >>> m , n = 12 , 15\n |  | >>> bin(m) bin(n) ,\n |  | ('0b1100' '0b1111') ,\n |  | >>> bin(m & n)\n |  | '0b1100'\n| | Bitwiseor | >>> bin(m) bin(n) ,\n |  | ('0b1100' '0b1111') ,\n |  | >>> bin(m | n)\n |  | '0b1111'\n~ | Bitwisenot | >>> ~ m\n |  | -13 ­\n |  | >>> bin(~ m)\n |  | '-0b1101' ­\n^ | BitwiseXOR | >>> bin(m) bin(n) ,\n |  | ('0b1100' '0b1111') ,\n |  | >>> bin(m ^ n)\n |  | '0b11'\n>> | Bitwiserightshift | >>> bin(m)\n |  | '0b1100'\n |  | >>> bin(m>>2)\n |  | '0b11'\n<< | Bitwiseleftshift | >>> bin(m)\n |  | '0b1100'\n |  | >>> bin(m<<2)\n |  | '0b110000'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p91_table_0",
+      "pdf_page": 91,
+      "kind": "table",
+      "text": "Reserved | Specialmeaning | Reserved | Specialmeaning\nword |  | word | \nand | logicaland | if | conditionalstatement\nas | usedtogetherwithimport | import | toimportmodules\n | andwithtocreatenew |  | \n | alia |  |",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p92_table_0",
+      "pdf_page": 92,
+      "kind": "table",
+      "text": "Reserved | Specialmeaning | Reserved | Specialmeaning\nword |  | word | \nassert | tomakeanassertionfor | in | membershiptest\n | handlingpossibleerrors |  | \nbreak | togetoutofsomecode | is | identitytest\n | blockssuchasduring |  | \n | iteration |  | \nclass | todefineclass | lambda | tocreatealambdafunction\ncontinue | toomittherestofthecode | not | logicnegation\n | blockandcontinuethe |  | \n | loop |  | \ndef | todefinefunctions | or | logicalor\ndel | todeleteanobject | pass | topassthecodeblock\nelif | usedtogetherwithifto | print | tooutput\n | createaconditional |  | \n | statement |  | \nelse | usedtogetherwithifto | raise | toraiseanexception\n | createaconditional |  | intentionally\n | statement |  | \nexcept | usedtogetherwithtryto | return | toreturnvaluesfroma\n | handleerrors |  | functioninfunction\n |  |  | definition\nexec | toexecutesome | try | usedforexceptionhandling\n | dynamicallygenerated |  | \n | codeinastringorobject |  | \nfinally | usedtogetherwithtryand | while | tomakeloop/iteration\n | excepttohandleerrors |  | statements\nfor | tocreatealoop | with | tointroducecontextfora\n |  |  | codeblock\nfrom | usedtogetherwithimport | yield | usedinplaceofreturn ,\n |  |  | toturnafunctionintoa\nglobal | toaccessaglobalvariable |  | generator\n | frominsideofafunction |  |",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "bitwise operator 12 and 15 reserved word table not"
+      }
+    },
+    {
+      "event": "search",
+      "query": "bitwise operator 12 and 15 reserved word table not",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p127_table_0",
+        "bonus_p125_table_0",
+        "bonus_p126_table_0",
+        "bonus_p91_table_0",
+        "bonus_p92_table_0"
+      ],
+      "context_ids": [
+        "bonus_p127_table_0",
+        "bonus_p125_table_0",
+        "bonus_p126_table_0",
+        "bonus_p91_table_0",
+        "bonus_p92_table_0"
+      ],
+      "context_chars": 3940
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Kết quả Boolean của biểu thức `not ((12 & 15) == 12)` là False [bonus_p125_table_0] [bonus_p126_table_0]",
+        "citations": [
+          "bonus_p125_table_0",
+          "bonus_p126_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 471,
+      "output_tokens": 21
+    },
+    {
+      "input_tokens": 2266,
+      "output_tokens": 78
+    }
+  ],
+  "elapsed_ms": 17359.15
+}

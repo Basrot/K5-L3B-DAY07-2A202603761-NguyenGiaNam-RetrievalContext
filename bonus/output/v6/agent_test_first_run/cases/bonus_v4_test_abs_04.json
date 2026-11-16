@@ -1,0 +1,108 @@
+{
+  "query_id": "bonus_v4_test_abs_04",
+  "type": "unanswerable",
+  "question": "What changes to exception handling does PEP 758 introduce?",
+  "answerable_gold_label": false,
+  "expected_answer_for_manual_review": "ABSTAIN",
+  "gold_record_ids_for_manual_review": [],
+  "status": "abstained",
+  "problem": "",
+  "answer": "",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "PEP 758 exception handling changes python"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p233_text_0",
+      "pdf_page": 233,
+      "kind": "text",
+      "text": "218 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 <code block for exception 1> # things to do if exception 1 happens except <exception/error 2>: # except clause may have a list of errors <code block for exception 2> # things to do if exception 2 happens except <exception/error 3>: # there can be more exceptions <code block for exception 3> # things to do if exception 3 happens else: # do something when no error has occurred <code block for else> # things to do when no exceptions are raised finally: # finally clause allows to do something regardless of the above <code block for finally> # things to do regardless of the above As shown, a try statement starts with a try clause, which encloses the code that you want to run for the application but may cause errors and raise exceptions. Right after the try clause is one or more exception clauses, each of which starts with the keyword “except,” followed by a system-­defined error/exception name. The code of each exception clause specifies what you want to do if this error happens. In [ ]: try: grade = int(input('Please input your grade: ')) except ValueError as e: print('Exception has bee",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p169_text_1",
+      "pdf_page": 169,
+      "kind": "text",
+      "text": "handled with the try-­except statement. Such errors include operations deemed illegal by Python. In some cases, an exception needs to be explicitly applied when a certain condition is met. In the previous section, we saw how an exception can be raised with the assert statement. In the following example, we show how to raise an exception with the raise statement.",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p217_text_2",
+      "pdf_page": 217,
+      "kind": "text",
+      "text": "DE that can help identify the syntax errors while programming). However, the exception-­handling mechan­ ism provided by Python or other programming is not intended to catch syntax errors. You, as a programmer, must ensure that the programs you write use correct syntax, with the help of an IDE whenever is available. You may be wondering what errors can be handled by the exception-­handling mechanism provided by Python. The following is a long list of exception classes, all of which can be caused by errors in programs. The try-­except statement provided by Python to handle exceptions and errors uses the names of exception classes to",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p184_text_0",
+      "pdf_page": 184,
+      "kind": "text",
+      "text": "Essential Building Blocks of Computer Programs 169 https://doi.org/10.15215/remix/9781998944088.01 The following is an example showing how to handle errors from user input that use 0 for the denominator. Code sample: for statement with dictionary 1 try: 2 a = int(input(\"give me a number:\")) 3 b = int(input(\"give me another number:\")) 4 print(f\"{a} / {b} = {a / b}\") 5 except ZeroDivisionError: 6 print(f\"incorrect second input {b}!\") 7 The details of error and exception handling in programs will be discussed in Chapter 4. WITH STATEMENT The with statement is used to provide a context for the execution of a code block. The mechanism is a bit complex, but the following may provide some help. Remember that the with statement works only on objects that have special methods __enter__() and __exit__() implemented in accordance with Python context management protocol (PEP 343). For the mechanisms behind the with statement, read https://​effbot​.org/​zone/​python​-with​-statement​.htm or search the internet for more details. The general syntax of the with statement is as follows: With <expression of object> as < variable referring to the object>: <suite> where the value of <expression of the",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p219_text_0",
+      "pdf_page": 219,
+      "kind": "text",
+      "text": "204 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 The use of the try-­except statement will be explained in the next section. For now, just remember the code lines between try and except are part of the program to be executed for the application, while the code under the except header tells what to do when a given exception has occurred. ArithmeticError The base class of all arithmetic errors, including OverflowError, ZeroDivision­ Error, and FloatingPointError, which means except ArithmeticError would be the same as except (OverflowError, ZeroDivisionError, FloatingPointError). Note that when there are multiple error names behind the except keyword, a pair of parentheses is used to enclose them. OverflowError This subclass of ArithmeticError is raised when the result of an arithmetic operation is too large to be represented. A coding example of catching arithmetic errors like this is shown below: In [ ]: try: x = pow(123567,999999) print(f'Big x has {len(str(x))} digits') except OverflowError: print('It has overflowed because the number is too big') Out [ ]: Big x has 5091898 digits The code in the try clause calculates the power",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "PEP 758 exception handling changes python"
+      }
+    },
+    {
+      "event": "search",
+      "query": "PEP 758 exception handling changes python",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p233_text_0",
+        "bonus_p169_text_1",
+        "bonus_p217_text_2",
+        "bonus_p184_text_0",
+        "bonus_p219_text_0"
+      ],
+      "context_ids": [
+        "bonus_p233_text_0",
+        "bonus_p169_text_1",
+        "bonus_p217_text_2",
+        "bonus_p184_text_0",
+        "bonus_p219_text_0"
+      ],
+      "context_chars": 4885
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 435,
+      "output_tokens": 17
+    },
+    {
+      "input_tokens": 1799,
+      "output_tokens": 10
+    }
+  ],
+  "elapsed_ms": 16884.16
+}

@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_017",
+  "type": "table",
+  "question": "According to the division table, what is the result type of float divided by complex?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "complex",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p118_table_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Theo bảng phép chia, kết quả của kiểu float chia cho complex là complex [bonus_p118_table_1].",
+  "citations": [
+    "bonus_p118_table_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "float divided by complex result type division table"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p118_table_0",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p118_table_1",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p361_table_0",
+      "pdf_page": 361,
+      "kind": "table",
+      "text": "Overriddenoperator | Dundermethod\n- ­ | object neg (self) .__ __\n+ | object pos (self) .__ __\nabs() | object abs (self) .__ __\n~ | object invert (self) .__ __\ncomplex() | object complex (self) .__ __\nint() | object int (self) .__ __\nlong() | object long (self) .__ __\nfloat() | object float (self) .__ __\noct() | object oct (self) .__ __\nhex() | object hex (self) .__ __",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p459_table_0",
+      "pdf_page": 459,
+      "kind": "table",
+      "text": "| Canvasmethodto | \nGraphicobject | create | Codesample\noval(acircleoran | create oval(bbox _ , | >>> d board create _ . _\nellipse) | **options) | oval(30 50 80 80 , , , ,\n |  | fill = \"RED\")\npolygon | create polygon(coords _ , | >>> d board create _ . _\n | **options) | polygon(30 50 80 80 , , , ,\n |  | 70 , 90 , fill = \"RED\")\nrectangle | create rectangle(bbox _ , | >>> d board create _ . _\n | **options) | rectangle(30 50 80 , , ,\n |  | 80 , fill = \"RED\")\ntext | create text(position _ , | >>> d board create _ . _\n | **options) | text(130 , 150 , text =\nwindow | create _ | \"Hello!\")\n | window(position , | \n | **options) |",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p8_table_0",
+      "pdf_page": 8,
+      "kind": "table",
+      "text": "1 8 ManageYourWorkingFilesforSoftwareDevelopment . | \nProjects | 58\nSetUpGitonYourComputerandVersion-ControlLocally ­ | 59\nSetUpanAccountonGitHubandVersion-ControlwithRemote ­ | \nRepositories | 62\nChapterSummary | 67\nExercises | 69\nProjects | 71\nChapter2 EssentialBuildingBl ock sofComputer Programs | 73\nLearningObjectives | 73\n2 1 PrimaryConstructsofComputerProgramsinPython . | 74\nVocabularyoftheProgrammingLanguage | 74\nRulesofNamingIdentifiers | 76\nPythonNamingConventions | 79\nNameswithLeadingand/orTrailingUnderscores | 79\nRulesofScopeResolutionforIdentifiers | 81\nSimpleDataTypes | 82\nSignedIntegers(int) | 83\nFloat(float) | 87\nBoolean(bool) | 88\nComplex(complex) | 89\nCompoundDataTypes | 89\nString(str) | 90\nList | 95\nTuple | 97\nSet | 98\nDictionary | 99\nObject | 99\nVariablesandConstants | 101\nVariables | 101\nBuilt -InConstants ­ | 104\nOperators | 106\nArithmeticOperators | 106\nComparisonOperators | 108\nLogicalOperators | 109\nBitwiseOperators | 111\nAssignmentOperators | 112\nIdentityOperators | 115",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "float divided by complex result type division table"
+      }
+    },
+    {
+      "event": "search",
+      "query": "float divided by complex result type division table",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p361_table_0",
+        "bonus_p459_table_0",
+        "bonus_p8_table_0"
+      ],
+      "context_ids": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p361_table_0",
+        "bonus_p459_table_0",
+        "bonus_p8_table_0"
+      ],
+      "context_chars": 2573
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Theo bảng phép chia, kết quả của kiểu float chia cho complex là complex [bonus_p118_table_1].",
+        "citations": [
+          "bonus_p118_table_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 439,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1489,
+      "output_tokens": 48
+    }
+  ],
+  "elapsed_ms": 17111.3
+}

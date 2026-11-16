@@ -1,0 +1,108 @@
+{
+  "query_id": "bonus_dev_abs_002",
+  "type": "unanswerable",
+  "question": "What Python 3.13 feature allows running CPython without the traditional GIL?",
+  "answerable_gold_label": false,
+  "expected_answer_for_manual_review": "ABSTAIN",
+  "gold_record_ids_for_manual_review": [],
+  "status": "abstained",
+  "problem": "",
+  "answer": "",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Python 3.13 feature running CPython without the traditional GIL"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p33_text_0",
+      "pdf_page": 33,
+      "kind": "text",
+      "text": "18 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 bytecodes, then executed by a Python Virtual Machine (PVM), which is built into the Python interpreter. Python language has different implementations with different names. CPython, written in C and known simply as Python, is what we will be using, and it is the implementation you will get from Python standard distribution at python​.org by default. In addition to CPython, the following are some alterna­ tive implementations of Python: 1. JPython or Jython, and implementation for running on Java Virtual Machine (JVM) 2. IronPython, an implementation for running on .NET 3. PyPy, an implementation for working with a just-­in-­time (JIT) compiler 4. Stackless Python, an implementation of a branch of CPython supporting microthreads 5. MicroPython, an implementation for running on microcontrollers These implementations may be of interest only for some special applications. Advantages of Python Python was designed with the principle of “programming for everyone.” Programs written in Python are clean and easy to read. Yet Python is a general-­purpose programming language and very powerful to",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p32_text_2",
+      "pdf_page": 32,
+      "kind": "text",
+      "text": "of Python 3 is Python 3.9.0, at the time of writing. Python is an interpreted programming language rather than a compiled programming language. Programs written in Python don’t need to be com­ piled into target machine code. Instead, they only need to be translated into",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p38_text_0",
+      "pdf_page": 38,
+      "kind": "text",
+      "text": "Introduction 23 https://doi.org/10.15215/remix/9781998944088.01 the box to install pip, Python package manager, and other components within the distribution, as shown here: Python 3.11.1 (64-­bit) Setup Optional Features ☑ Documentation Installs the Python documentation files. ☑ pip Installs pip, which can download and install other Python packages. ☑ td/tk and IDLE Installs tkinter and the IDLE development environment. ☑ Python test suite Installs the standard library test suite. ☑ py launcher ☑ for all users (requires admin privileges) Use Programs and Features to remove the 'py' launcher. Back Next Cancel Check the following advanced options, as shown here: Python 3.11.1 (64-­bit) Setup Advanced Options ❑ Install Python 3.11 for all users ☑ Associate files with Python (requires the 'py' launcher) ☑ Create shortcuts for installed applications ☑ Add Python to environment variables ❑ Precompile standard library ❑ Download debugging symbols ❑ Download debug binaries (requires VS 2017 or later) Customize install location d:\\Programs\\Python\\Python311 You will require write permissions for the selected location. Back Install Cancel",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p17_image_0",
+      "pdf_page": 17,
+      "kind": "image",
+      "text": "Traditional abacus used as a computing device.",
+      "image_path": "visual_pages/page_017.png"
+    },
+    {
+      "id": "bonus_p17_text_2",
+      "pdf_page": 17,
+      "kind": "text",
+      "text": "ave taken using traditional methods, as in the previous census. In 1896, Herman Hollerith established a company called the Tabulating Machine Company to make the machines. This company ultimately became IBM. Figure 1-­1: A traditional abacus",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Python 3.13 feature running CPython without the traditional GIL"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Python 3.13 feature running CPython without the traditional GIL",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p33_text_0",
+        "bonus_p32_text_2",
+        "bonus_p38_text_0",
+        "bonus_p17_image_0",
+        "bonus_p17_text_2"
+      ],
+      "context_ids": [
+        "bonus_p33_text_0",
+        "bonus_p32_text_2",
+        "bonus_p38_text_0",
+        "bonus_p17_image_0",
+        "bonus_p17_text_2"
+      ],
+      "context_chars": 3177
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 439,
+      "output_tokens": 22
+    },
+    {
+      "input_tokens": 1384,
+      "output_tokens": 23
+    }
+  ],
+  "elapsed_ms": 17278.06
+}

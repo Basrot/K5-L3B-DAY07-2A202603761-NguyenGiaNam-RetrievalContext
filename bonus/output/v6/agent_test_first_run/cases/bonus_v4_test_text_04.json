@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_text_04",
+  "type": "text",
+  "question": "In the worked example `12 + 3 * 21`, which operation is evaluated first and why?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "3 * 21 first, because multiplication has higher precedence than addition.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p122_text_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong ví dụ `12 + 3 * 21`, phép tính nhân (`*`) được thực hiện trước vì toán tử nhân có độ ưu tiên cao hơn phép cộng (`+`) [bonus_p122_text_1].",
+  "citations": [
+    "bonus_p122_text_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "12 + 3 * 21 worked example operation evaluated first order of operations"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p122_text_1",
+      "pdf_page": 122,
+      "kind": "text",
+      "text": "e evaluated from left to right, hence left association. 8. Parentheses can be used to change the order of evaluation. The following are some examples of how expressions are evaluated. >>> 12 + 3 * 21 75 In the expression 12 + 3 * 21, because * has higher precedence than +, 3 * 21 is evaluated first to get 63, and then 12 + 63 is evaluated to get 75. >>> ((23 + 32) // 6 -­ 5 * 7 / 10) * 2 ** 3 44.0 In this example, because ** has the highest precedence, 2 ** 3 is evaluated first, to get Table 2-­7: Arithmetic operators (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p122_text_0",
+      "pdf_page": 122,
+      "kind": "text",
+      "text": "Essential Building Blocks of Computer Programs 107 https://doi.org/10.15215/remix/9781998944088.01 Operator Operation Code samples in Python interactive mode ** Exponent—­left operand raised to the power of right >>> x, y = 32, 7 >>> x, y (32, 7) >>> x ** y 34359738368 When two or more of these arithmetic operators are used in an expression, the precedence rules you learned in high school or university math courses apply. In brief, the precedence rules for all the operators are as follows: 1. Exponent operation (*) has the highest precedence. 2. Unary negation (−) is the next. 3. Multiplication (*), division (/), floor division (//), and modulus operation (%) have the same precedence and will be evaluated next unary negation. 4. Addition (+) and subtraction (−) are next, with the same precedence. 5. Comparison operators are next, with the same precedence. 6. The three logical operators (not, and, or) are next, with not having the highest precedence among the three, followed by and, then or. 7. When operators with equal precedence are present, the expression will be evaluated from left to right, hence left association. 8. Parentheses can be used to change the order of evaluation. Th",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p127_text_0",
+      "pdf_page": 127,
+      "kind": "text",
+      "text": "112 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 ASSIGNMENT OPERATORS In Python, and all programming languages, the assignment operation is one of the most important operations because assignment operations store data in variables for later use. In previous sections, we have seen many examples of using the assignment operator =, the equal sign. However, Python provides many augmented assign­ ment operators. Table 2-­11 lists all the assignment operators you can use in your Python programs. Table 2-­11: Python assignment operators Operator Operation Code samples in Python interactive mode x = e Expression e is evaluated, and the value is assigned to variable x. Note that in Python and in previous code samples, assignments can be made to more than one variable with one statement. >>> m, n = 23, 12 >>> m, n (23, 12) >>> x = m + n >>> x 35 x += e Expression x + e is evaluated, and the value is assigned to variable x. x = x + e >>> x, m, n = 35, 23, 12 >>> x, m, n (35, 23, 12) >>> x += m + n >>> x 70 >>> x, m, n (70, 23, 12) x = e Expression x − e is evaluated, and the value is assigned to variable x. x = x − e >>> x, m, n = (70, 23, 1",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p316_text_1",
+      "pdf_page": 316,
+      "kind": "text",
+      "text": "in the following example will calculate the square of num­ ber x by default, but it can also calculate x power of y by passing a particular value to y: In [ ]: def powerof(x, y = 2): return f'{x} ** {y} = {x ** y}' print(powerof(12)) print(powerof(23, 5)) print(powerof(13, y = 6)) print(powerof(y = 21, x = 3)) # with keyword arguments, the order doesn't matter Out [ ]: 12 ** 2 = 144 23 ** 5 = 6436343 13 ** 6 = 4826809 3 ** 21 = 10460353203",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p123_text_0",
+      "pdf_page": 123,
+      "kind": "text",
+      "text": "108 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 ((23 + 32) // 6 -­ 5 * 7 / 10) * 8 In this intermediate result, because of parentheses, we will need to evaluate ((23 + 32) // 6 − 5 * 7 / 10) first, and in this subexpression, because of parentheses, 23 + 32 will be evaluated first to get 55//6 − 5 * 7 /10. According to the precedence rules, this subexpression will be evaluated to 9 − 35 / 10, and then 9 − 3.5 = 5.5. Then the expression above will be 5.5 * 8 which is evaluated to be 44.0. COMPARISON OPERATORS Comparison operators are used to compare two objects. It is easy to understand how they work on numbers and even strings. When a comparison is applied to lists or tuples, the comparison will be applied to pairs of items, one from each list or tuple, and the final result is True if there are more Trues; otherwise it will be False, as shown in the example below: In [ ]: l1 = ['apple', 'orange', 'peach'] l2 = ['tomato', 'pepper', 'cabbage'] l1 < l2 Out [ ]: True Table 2-­8 explains all the comparison operators, with samples. Table 2-­8: Python comparison operators Operator Operation Code sample in Python interactive mode > Greate",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "12 + 3 * 21 worked example operation evaluated first order of operations"
+      }
+    },
+    {
+      "event": "search",
+      "query": "12 + 3 * 21 worked example operation evaluated first order of operations",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p122_text_1",
+        "bonus_p122_text_0",
+        "bonus_p127_text_0",
+        "bonus_p316_text_1",
+        "bonus_p123_text_0"
+      ],
+      "context_ids": [
+        "bonus_p122_text_1",
+        "bonus_p122_text_0",
+        "bonus_p127_text_0",
+        "bonus_p316_text_1",
+        "bonus_p123_text_0"
+      ],
+      "context_chars": 4861
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong ví dụ `12 + 3 * 21`, phép tính nhân (`*`) được thực hiện trước vì toán tử nhân có độ ưu tiên cao hơn phép cộng (`+`) [bonus_p122_text_1].",
+        "citations": [
+          "bonus_p122_text_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 445,
+      "output_tokens": 25
+    },
+    {
+      "input_tokens": 2124,
+      "output_tokens": 72
+    }
+  ],
+  "elapsed_ms": 17520.29
+}

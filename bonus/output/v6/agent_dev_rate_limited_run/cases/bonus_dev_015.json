@@ -1,0 +1,116 @@
+{
+  "query_id": "bonus_dev_015",
+  "type": "text",
+  "question": "Which computational resources are mentioned when discussing algorithm complexity?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "CPU time and memory.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p25_text_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Khi thảo luận về độ phức tạp của thuật toán, các tài nguyên tính toán được đề cập bao gồm thời gian CPU (CPU time) và bộ nhớ (memory) [bonus_p25_text_1], cũng như không gian (space) và tổng số các phép tính cơ bản như phép cộng và phép nhân [bonus_p83_text_1].",
+  "citations": [
+    "bonus_p25_text_1",
+    "bonus_p83_text_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "algorithm complexity computational resources time space memory"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p25_text_1",
+      "pdf_page": 25,
+      "kind": "text",
+      "text": "er of resources—­CPU time and memory, in particular—­needed to run the algorithm on a computer. A problem may be solved in different ways using different algorithms with different computational complexities. Sometimes it is necessary to find a better algorithm that runs faster and/or uses less memory. The time required to run an algorithm is also related to the size of the problem to be solved. For example, finding someone in a classroom would be much easier than finding someone in a city. If you denote the size of a problem with n, then in computer science, O(f(n))—­called the big O of f(n)—­is used to describe asymptotically the upper bound of running time: the time complexity of an algorithm for solving the problem. For example, assume you want to sort the numbers in a list. The size of the problem will be the number of numbers in the list. One algorithm is called selection sort, which begins with selecting the smallest number from the list, then selecting the smallest number from the remaining of the list, and so on. Assume the size of the list is n. The first time it will need to do n − 1 comparisons. The second time it will need n − 2 comparisons. When these are only two numb",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p421_text_1",
+      "pdf_page": 421,
+      "kind": "text",
+      "text": "ially when measuring the computational cost of a code block. >>> time.clock() 428446.1717301 TIME.CTIME([SECS]) This returns a time in seconds since the epoch to a string in the local time. Remember that the argument in [] is optional. This has the same result as asctime(localtime(secs)), and simply a call of asctime(), which will use the current local time in seconds. >>> time.asctime() 'Tue Nov 12 15:24:49 2019' >>> time.ctime() 'Tue Nov 12 15:24:55 2019'",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p83_text_1",
+      "pdf_page": 83,
+      "kind": "text",
+      "text": "Alan Turing is credited as a father of modern computing. • There is also the question of how difficult it is to solve a problem with computers, which is the study of computational complexity. The computational complexity of a problem is often measured in terms of the total number of basic computations, such as addition and multiplication, which can be converted into the time needed to solve the problem on specific computers. The space required to solve a problem can be a concern as well, but most of the time, when people are talking about computational complexity, they are talking about the steps or time required to solve the problem. • Problems to be solved on computers are often divided into three classes of problems: P, NP-­complete, and NP, in which P is short for polynomial and NP is short for nondeterministic polynomial. • If, on a deterministic and sequential machine like a computer, for a problem of size n, if the time or number of steps needed to find the solution is a polynomial function of n, the problem is said to be in the P class. If a problem can be solved in polynomial time on a nondeterministic machine, the problem is in the NP class. A problem is said to be NP-­c",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p24_text_1",
+      "pdf_page": 24,
+      "kind": "text",
+      "text": "uctions (the program) and data needed during the computation. For the central processing unit (CPU) and memory (RAM) to com­ municate and work together, a communication channel and control unit need to be added. For human users to communicate with the computing machine, input and output units are also needed. Together these include everything described in Von Neumann’s architecture for modern computers. Computability and Computational Complexity Now comes the question of how powerful the computing machine described above can be. In particular, we should ask, • What problems can or cannot be computed with a computing machine? • How difficult is it to solve a given problem with a computing machine, assuming that the machine can take as many steps and use as much memory as needed to solve the problem? Answering the first problem is the study of computability. Answering the second question is the study of computational complexity. A well-­known computability problem was raised by David Hilbert, a very famous German mathematician in the 19th century. The 10th problem in his list of 23 important mathematical problems he published in 1900 is the decidability problem, which is about findin",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p25_text_0",
+      "pdf_page": 25,
+      "kind": "text",
+      "text": "10 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Diophantine equation such as xn + yn = zn, where n is an integer and greater than 2, has integer solutions. It was proved in 1970 that such an algorithm doesn’t exist, meaning that the problem of deciding whether a Diophantine equation has integer solutions is unsolvable, or incomputable. Between the 1930s and 1940s, before the existence of modern computers, Alan Turing invented a simple yet powerful abstract machine called the Tur­ ing machine. He proved that the abstract machine could simulate the logic of any given algorithm and further determine whether an algorithm is comput­ able. The operation of the machine will halt if the algorithm is incomputable. During the same time, computability was also well studied by Alonzo Church based on lambda calculus. The two works later intertwined in a formal theory of computation known as the Church-­Turing thesis. In computer science, the computational complexity of an algorithm devised to solve a problem is about the number of resources—­CPU time and memory, in particular—­needed to run the algorithm on a computer. A problem may be solved",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "algorithm complexity computational resources time space memory"
+      }
+    },
+    {
+      "event": "search",
+      "query": "algorithm complexity computational resources time space memory",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p25_text_1",
+        "bonus_p421_text_1",
+        "bonus_p83_text_1",
+        "bonus_p24_text_1",
+        "bonus_p25_text_0"
+      ],
+      "context_ids": [
+        "bonus_p25_text_1",
+        "bonus_p421_text_1",
+        "bonus_p83_text_1",
+        "bonus_p24_text_1",
+        "bonus_p25_text_0"
+      ],
+      "context_chars": 5534
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Khi thảo luận về độ phức tạp của thuật toán, các tài nguyên tính toán được đề cập bao gồm thời gian CPU (CPU time) và bộ nhớ (memory) [bonus_p25_text_1], cũng như không gian (space) và tổng số các phép tính cơ bản như phép cộng và phép nhân [bonus_p83_text_1].",
+        "citations": [
+          "bonus_p25_text_1",
+          "bonus_p83_text_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 432,
+      "output_tokens": 15
+    },
+    {
+      "input_tokens": 1873,
+      "output_tokens": 107
+    }
+  ],
+  "elapsed_ms": 10189.19
+}

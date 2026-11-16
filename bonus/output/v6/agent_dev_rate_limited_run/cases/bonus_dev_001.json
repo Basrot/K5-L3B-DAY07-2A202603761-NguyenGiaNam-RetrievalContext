@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_001",
+  "type": "image",
+  "question": "What traditional calculating device is pictured?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "A traditional abacus.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p17_image_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Thiết bị tính toán truyền thống được minh họa là bàn tính (abacus) [bonus_p17_image_0].",
+  "citations": [
+    "bonus_p17_image_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "traditional calculating device pictured"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p17_image_0",
+      "pdf_page": 17,
+      "kind": "image",
+      "text": "Traditional abacus used as a computing device.",
+      "image_path": "visual_pages/page_017.png"
+    },
+    {
+      "id": "bonus_p480_image_0",
+      "pdf_page": 480,
+      "kind": "image",
+      "text": "Screenshot of a basic Tkinter GUI application.",
+      "image_path": "visual_pages/page_480.png"
+    },
+    {
+      "id": "bonus_p42_image_0",
+      "pdf_page": 42,
+      "kind": "image",
+      "text": "Screenshot of Jupyter Notebook in a browser.",
+      "image_path": "visual_pages/page_042.png"
+    },
+    {
+      "id": "bonus_p481_image_0",
+      "pdf_page": 481,
+      "kind": "image",
+      "text": "Examples of Tkinter GUI applications with widgets.",
+      "image_path": "visual_pages/page_481.png"
+    },
+    {
+      "id": "bonus_p46_image_0",
+      "pdf_page": 46,
+      "kind": "image",
+      "text": "Screenshot of a Python program in Visual Studio Code.",
+      "image_path": "visual_pages/page_046.png"
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "traditional calculating device pictured"
+      }
+    },
+    {
+      "event": "search",
+      "query": "traditional calculating device pictured",
+      "route": "image",
+      "retrieved_ids": [
+        "bonus_p17_image_0",
+        "bonus_p480_image_0",
+        "bonus_p42_image_0",
+        "bonus_p481_image_0",
+        "bonus_p46_image_0"
+      ],
+      "context_ids": [
+        "bonus_p17_image_0",
+        "bonus_p480_image_0",
+        "bonus_p42_image_0",
+        "bonus_p481_image_0",
+        "bonus_p46_image_0"
+      ],
+      "context_chars": 526
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Thiết bị tính toán truyền thống được minh họa là bàn tính (abacus) [bonus_p17_image_0].",
+        "citations": [
+          "bonus_p17_image_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 429,
+      "output_tokens": 12
+    },
+    {
+      "input_tokens": 742,
+      "output_tokens": 68
+    }
+  ],
+  "elapsed_ms": 13456.07
+}

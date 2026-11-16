@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_006",
+  "type": "diagram",
+  "question": "What conditional structure is illustrated by the flowcharts?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "An if-elif-else conditional structure.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p193_diagram_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Cấu trúc điều kiện được minh họa bởi các lưu đồ là cấu trúc quyết định if-elif-else [bonus_p193_diagram_0].",
+  "citations": [
+    "bonus_p193_diagram_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "flowcharts conditional structure"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p193_diagram_0",
+      "pdf_page": 193,
+      "kind": "diagram",
+      "text": "Two flowcharts illustrating if-elif-else decisions.",
+      "image_path": "visual_pages/page_193.png"
+    },
+    {
+      "id": "bonus_p180_diagram_0",
+      "pdf_page": 180,
+      "kind": "diagram",
+      "text": "Figure 2-4 is a flowchart of a while statement. A condition is tested before executing the loop body. If the condition is true, the suite executes and control returns to test the condition. If false, the flow exits the loop.",
+      "image_path": "visual_pages/page_180.png"
+    },
+    {
+      "id": "bonus_p72_diagram_0",
+      "pdf_page": 72,
+      "kind": "diagram",
+      "text": "Figure 1-8: Summation algorithm flowchart. Initialize i = 1 and s = 0. Update s = s + i and i = i + 1. Check i <= 10000. When true, repeat the update; otherwise print s.",
+      "image_path": "visual_pages/page_72.png"
+    },
+    {
+      "id": "bonus_p71_diagram_0",
+      "pdf_page": 71,
+      "kind": "diagram",
+      "text": "Figure 1-7: Flowchart of a simple algorithm. Start -> Input n1 -> Input n2 -> s = n1 + n2 -> Print s -> Stop.",
+      "image_path": "visual_pages/page_71.png"
+    },
+    {
+      "id": "bonus_p90_diagram_0",
+      "pdf_page": 90,
+      "kind": "diagram",
+      "text": "Figure 2-3: Now X and Y point to different memory locations. X points to Smith and Y points to John.",
+      "image_path": "visual_pages/page_90.png"
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "flowcharts conditional structure"
+      }
+    },
+    {
+      "event": "search",
+      "query": "flowcharts conditional structure",
+      "route": "diagram",
+      "retrieved_ids": [
+        "bonus_p193_diagram_0",
+        "bonus_p180_diagram_0",
+        "bonus_p72_diagram_0",
+        "bonus_p71_diagram_0",
+        "bonus_p90_diagram_0"
+      ],
+      "context_ids": [
+        "bonus_p193_diagram_0",
+        "bonus_p180_diagram_0",
+        "bonus_p72_diagram_0",
+        "bonus_p71_diagram_0",
+        "bonus_p90_diagram_0"
+      ],
+      "context_chars": 960
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Cấu trúc điều kiện được minh họa bởi các lưu đồ là cấu trúc quyết định if-elif-else [bonus_p193_diagram_0].",
+        "citations": [
+          "bonus_p193_diagram_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 432,
+      "output_tokens": 12
+    },
+    {
+      "input_tokens": 879,
+      "output_tokens": 55
+    }
+  ],
+  "elapsed_ms": 18032.0
+}

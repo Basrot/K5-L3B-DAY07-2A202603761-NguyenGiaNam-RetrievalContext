@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_011",
+  "type": "table",
+  "question": "What result type does integer divided by integer produce in the division table?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "float.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p118_table_1"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Theo bảng chia trong tài liệu, khi số nguyên chia cho số nguyên (integer / integer), kết quả trả về có kiểu là số thực (float) [bonus_p118_table_1].",
+  "citations": [
+    "bonus_p118_table_1"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "integer divided by integer division table result type"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p118_table_0",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "+ , - ­, * | integer | float | complex\ninteger | integer | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p127_table_0",
+      "pdf_page": 127,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx=e | Expressioneisevaluated andthe , | >>> m , n = 23 , 12\n | valueisassignedtovariablex . | >>> m n ,\n | NotethatinPythonandin | (23 12) ,\n | previouscodesamples , | >>> x = m + n\n | assignmentscanbemadeto | >>> x\n | morethanonevariablewithone | 35\n | statement . | \nx+=e | Expressionx+eisevaluated , | >>> x, m , n = 35 , 23 , 12\n | andthevalueisassignedto | >>> x, m , n\n | variablex . | (35 23 12) , ,\n | x=x+e | >>> x += m + n\n |  | >>> x\n |  | 70\n |  | >>> x, m , n\n |  | (70 23 12) , ,\nx=e | Expression x − e is evaluated , | >>> x, m , n = (70 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x−e | (70 23 12) , ,\n |  | >>> x -= m + n ­\n |  | >>> x, m , n\n |  | (35 23 12) , ,\nx*=e | Expressionx*eisevaluated , | >>> x, m , n = (35 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x*e | (35 23 12) , ,\n |  | >>> x *= m + n\n |  | >>> x, m , n\n |  | (1225 23 12) , ,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p118_table_1",
+      "pdf_page": 118,
+      "kind": "table",
+      "text": "/ | integer | float | complex\ninteger | float | float | complex\nfloat | float | float | complex\ncomplex | complex | complex | complex",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p193_table_0",
+      "pdf_page": 193,
+      "kind": "table",
+      "text": "Numberofselections |  | \nneeded | Numericgrade(%) | Alpha/lettergrade\n1 | 90–100 ­ | A+\n2 | 85–89 ­ | A\n3 | 80–84 ­ | A−\n4 | 76–79 ­ | B+\n5 | 73–75 ­ | B\n6 | 70–72 ­ | B−\n7 | 67–69 ­ | C+\n8 | 64–66 ­ | C\n9 | 60–63 ­ | C−\n10 | 55–59 ­ | D+\n11 | 50–54 ­ | D\n12 | 0–49 ­ | F",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p399_table_0",
+      "pdf_page": 399,
+      "kind": "table",
+      "text": "Theproblem | Thiscasestudywillfindouthowgoodtherandomnumber\n | generatoris .\nTheanalysis | Randomnumbersgeneratedbycomputersarenotcompletely\nanddesign | random Rather theyarepseudorandomsequences Tostudy . , .\n | howgoodageneratoris youneedtoseeifthenumbers ,\n | generatedbythegeneratorlookrandom Wewillshowthatina .\n | two- ­dimensional chart to visualize it .\nThecode | import random\n | import matplotlib .pyplot as pyp\n | data = [random .randint(0 ,100) for i in\n | range(1000)]\n | pyp .plot(list(range(1000)) data) ,\n | pyp .xlabel('Run #')\n | pyp .ylabel('Random Integer')\n | pyp .title('Visualization of Randomness')\n | pyp .show()\nTheresult | Figure 8 - ­1 below is plotted by the program . It seems the random\n | generatorworksverywell .",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "integer divided by integer division table result type"
+      }
+    },
+    {
+      "event": "search",
+      "query": "integer divided by integer division table result type",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p118_table_0",
+        "bonus_p127_table_0",
+        "bonus_p118_table_1",
+        "bonus_p193_table_0",
+        "bonus_p399_table_0"
+      ],
+      "context_ids": [
+        "bonus_p118_table_0",
+        "bonus_p127_table_0",
+        "bonus_p118_table_1",
+        "bonus_p193_table_0",
+        "bonus_p399_table_0"
+      ],
+      "context_chars": 2575
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Theo bảng chia trong tài liệu, khi số nguyên chia cho số nguyên (integer / integer), kết quả trả về có kiểu là số thực (float) [bonus_p118_table_1].",
+        "citations": [
+          "bonus_p118_table_1"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 436,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1640,
+      "output_tokens": 69
+    }
+  ],
+  "elapsed_ms": 18080.89
+}

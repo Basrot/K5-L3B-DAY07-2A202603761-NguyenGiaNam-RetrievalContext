@@ -1,0 +1,14 @@
+{
+  "mode": "test",
+  "benchmark": "benchmark_test_30_v6_FROZEN.json",
+  "benchmark_sha256": "8afea6f54074f6dadf2559e985f6db52d8d9ed33b48eb2bf400d256868bf52fc",
+  "collection": "bonus_multimodal_v6",
+  "corpus_records": 1006,
+  "model": "gemini-3.5-flash-lite",
+  "max_searches": 2,
+  "top_k": 5,
+  "depth": 10,
+  "routing": "dev_v6_query_routing",
+  "evaluation": "first_run",
+  "unanswerable_labels": "provisional"
+}

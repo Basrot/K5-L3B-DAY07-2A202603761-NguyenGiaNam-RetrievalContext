@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_dev_014",
+  "type": "text",
+  "question": "What are the main steps to calculate the sum of two numbers?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "Get two numbers, calculate their sum and print it.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p70_text_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Các bước chính để tính tổng của hai số là: \nBước 1. Lấy số đầu tiên gán vào n1 [bonus_p70_text_0].\nBước 2. Lấy số thứ hai gán vào n2 [bonus_p70_text_0].\nBước 3. Tính tổng của n1 và n2, sau đó lưu kết quả vào s [bonus_p70_text_0].\nBước 4. In kết quả s ra [bonus_p70_text_0].",
+  "citations": [
+    "bonus_p70_text_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "steps to calculate the sum of two numbers"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p70_text_1",
+      "pdf_page": 70,
+      "kind": "text",
+      "text": "n the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem solving and computing, conditional operations and repetitive operations are often needed. An example is to calculate the sum of number 1, 2,…10000. One might think that the sum could be calculated by writing 1 + 2 + 3 + … + 10000, but that is wrong because that mathematical expression cannot be precisely understood by computers. The correct algorithm should be: [algorithm 2] Calculate the sum of all positive integers that are no greater than 10000. Step 1. 1 → i, 0 → s Step 2. s + i → s, i +1 → i Step 3. If i <= 10000 go to step 2 # loop back and make repetition under condition",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p70_text_0",
+      "pdf_page": 70,
+      "kind": "text",
+      "text": "Introduction 55 https://doi.org/10.15215/remix/9781998944088.01 [algorithm 1] Get two numbers from user, calculate, and print out the sum. Step 1. Get the first number to n1. Step 2. Get the second number to n2. Step 3. Calculate the sum of n1 and n2, and store the result to s. Step 4. Print out s. [end of algorithm 1] Describing the steps of operations as shown above is just one way to present algorithms. In computing and software development, algorithms can also be, and more often are, presented using pseudocode or a flowchart. Pseudocode is a language that is easier for humans to understand but that is written like a computer program. There is no widely standard vocabulary and grammar for pseudocode. However, within an organization or even a class, the same pseudocode language should be used for collaboration and communication. The above algorithm can be described in pseudocode as follows: Start Input from user → n1 # get an input from user and assign it to n1 Input from user → n2 # get another input from user and assign it to n2 n1 + n2 → s # n1 + n2 and assign the sum to s print(s) End This simple algorithm can also be described using a flowchart, as in Figure 1-­7. In problem",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p229_text_1",
+      "pdf_page": 229,
+      "kind": "text",
+      "text": "follows: 1. Get two integers from user to set the range, assigned to a and b, respectively. If a is greater than b, then we swap their values. 2. Loop through all the numbers between a and b, including a and b, and test each number to see if it is a perfect number; if yes, we add it to a list holding perfect numbers found so far. The list should be set as empty at the beginning. 3. Print out all the perfect numbers in the list, and stop. To test a number to see if it is perfect, according to the definition above, we need to first find out its factors and check whether the sum of all the factors is equal to the number itself. So there will be two additional steps: 2.1. Find out all the factors, and keep them all in a list. 2.2. Check whether the number is equal to the sum of all its factors in the list built up in step 2.1.",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p201_text_1",
+      "pdf_page": 201,
+      "kind": "text",
+      "text": "but you do know there will be no negative marks. You can then use a negative number, input by the user, to end the application and use the while loop to iterate. To calculate the average, you need to know the sum of all the marks as well as the total number of marks. For the former, you need to add each mark to the total, whereas for the latter, you need to use a counter to count every mark. Use the variable total to keep the sum and use the variable count to keep the number of marks. Both need to be initialized to 0. The algorithm is below: Step 1: Initialize both count and total to 0 Step 2: Take an input from user and convert it to a float number Step 3: If the number is a mark (>= 0), then do the following: Step 3.1: Increase count by 1 Step 3.2: Add mark to total Step 3.3: Get another input from user and convert to float Step 3.4: Go back to Step 3 Step 4: Calculate the average using total/count and print out the result. Step 5: End the program Is condition to loop met? Code block Met Not met Figure 3-­6: Flowchart illustrating the while loop",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p213_text_2",
+      "pdf_page": 213,
+      "kind": "text",
+      "text": "splay all the factors of the number given by the user. * By definition, a perfect number is a positive integer that is equal to the sum of all its divisors, excluding itself but including 1. The smallest perfect number is 6, which is equal to the sum of 1, 2, and 3.",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "steps to calculate the sum of two numbers"
+      }
+    },
+    {
+      "event": "search",
+      "query": "steps to calculate the sum of two numbers",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p70_text_1",
+        "bonus_p70_text_0",
+        "bonus_p229_text_1",
+        "bonus_p201_text_1",
+        "bonus_p213_text_2"
+      ],
+      "context_ids": [
+        "bonus_p70_text_1",
+        "bonus_p70_text_0",
+        "bonus_p229_text_1",
+        "bonus_p201_text_1",
+        "bonus_p213_text_2"
+      ],
+      "context_chars": 4347
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Các bước chính để tính tổng của hai số là: \nBước 1. Lấy số đầu tiên gán vào n1 [bonus_p70_text_0].\nBước 2. Lấy số thứ hai gán vào n2 [bonus_p70_text_0].\nBước 3. Tính tổng của n1 và n2, sau đó lưu kết quả vào s [bonus_p70_text_0].\nBước 4. In kết quả s ra [bonus_p70_text_0].",
+        "citations": [
+          "bonus_p70_text_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 435,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1761,
+      "output_tokens": 140
+    }
+  ],
+  "elapsed_ms": 26933.65
+}

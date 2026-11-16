@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_table_05",
+  "type": "table",
+  "question": "In the comparison-operator table, what does the example `23 > 53` evaluate to?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "False.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p123_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong bảng toán tử so sánh, ví dụ `23 > 53` (với `x > y`) đánh giá ra kết quả là False [bonus_p123_table_0].",
+  "citations": [
+    "bonus_p123_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "comparison-operator table 23 > 53 evaluate"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p124_table_0",
+      "pdf_page": 124,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n< | Lessthan—Trueifleftoperandis ­ | >>> x, y = 23 , 53\n | lessthantheright | >>> x, y\n |  | (23 53) ,\n |  | >>> x < y\n |  | True\n |  | >>> s1 = \"Albert\"\n |  | >>> s2 = \"Jeremy\"\n |  | >>> s1 < s2\n |  | True\n== | Equalto—Trueifbothoperands ­ | >>> x, y = 23 , 53\n | areequal | >>> x, y\n |  | (23 53) ,\n |  | >>> x == y\n |  | False\n!= | Notequalto—Trueifoperandsare ­ | >>> x, y = 23 , 53\n | notequal | >>> x, y\n |  | (23 53) ,\n |  | >>> x != y\n |  | True\n>= | Greaterthanorequalto—Trueif ­ | >>> x, y = 23 , 53\n | leftoperandisgreaterthanor | >>> x, y\n | equaltotheright | (23 53) ,\n |  | >>> x >= y\n |  | True\n<= | Lessthanorequalto—Trueifleft ­ | >>> x, y = 23 , 53\n | operandislessthanorequalto | >>> x, y\n | theright | (23 53) ,\n |  | >>> x <= y\n |  | True",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p128_table_0",
+      "pdf_page": 128,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx/=e | Expressionx/eisevaluated , | >>> x, m , n = (1225 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x/e | (1225 23 12) , ,\n |  | >>> x /= m + n\n |  | >>> x, m , n\n |  | (35 0 23 12) . , ,\nx%=e | Expressionx%eisevaluated , | >>> x, m , n = (28 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x%e | (28 23 12) , ,\n |  | >>> x %= m + n\n |  | >>> x, m , n\n |  | (28 23 12) , ,\nx//=e | Expressionx//eisevaluated , | >>> x, m , n = 989 , 23 , 12\n | andthevalueisassignedto | >>> x, m , n\n | variablex . | (989 23 12) , ,\n | x=x//e | >>> x //= m + n\n |  | >>> x, m , n\n |  | (28 23 12) , ,\nx**=e | Expressionx**eisevaluated , | >>> x, m , n = 98 , 3 , 2\n | andthevalueisassignedto | >>> x **= m + n\n | variablex . | >>> x, m , n\n | x=x**e | (9039207968 3 2) , ,\nx&=e | Expressionx&eisevaluated , | >>> x, m , n = 9 , 3 , 2\n | andthevalueisassignedto | >>> bin(x) bin(m) , ,\n | variablex . | bin(n)\n | x=x&e | ('0b1001' '0b11' , ,\n |  | '0b10')\n |  | >>> x &= m * n\n |  | >>> bin(x) bin(m) , ,\n |  | bin(n)\n |  | ('0b0' '0b11' '0b10') , ,\nx|=e | Expressionx|eisevaluated , | >>> x, m , n = 9 , 3 , 2\n | andthevalueisassignedto | >>> bin(x) bin(m) , ,\n | variablex . | bin(n)\n | x=x|e | ('0b1001' '0b11' , ,\n |  | '0b10')\n |  | >>> x |= m * n\n |  | >>> bin(x) bin(m) , ,\n |  | bin(n)\n |  | ('0b1111' '0b11' , ,\n |  | '0b10')",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p127_table_0",
+      "pdf_page": 127,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\nx=e | Expressioneisevaluated andthe , | >>> m , n = 23 , 12\n | valueisassignedtovariablex . | >>> m n ,\n | NotethatinPythonandin | (23 12) ,\n | previouscodesamples , | >>> x = m + n\n | assignmentscanbemadeto | >>> x\n | morethanonevariablewithone | 35\n | statement . | \nx+=e | Expressionx+eisevaluated , | >>> x, m , n = 35 , 23 , 12\n | andthevalueisassignedto | >>> x, m , n\n | variablex . | (35 23 12) , ,\n | x=x+e | >>> x += m + n\n |  | >>> x\n |  | 70\n |  | >>> x, m , n\n |  | (70 23 12) , ,\nx=e | Expression x − e is evaluated , | >>> x, m , n = (70 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x−e | (70 23 12) , ,\n |  | >>> x -= m + n ­\n |  | >>> x, m , n\n |  | (35 23 12) , ,\nx*=e | Expressionx*eisevaluated , | >>> x, m , n = (35 , 23 ,\n | andthevalueisassignedto | 12)\n | variablex . | >>> x, m , n\n | x=x*e | (35 23 12) , ,\n |  | >>> x *= m + n\n |  | >>> x, m , n\n |  | (1225 23 12) , ,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p125_table_0",
+      "pdf_page": 125,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Meaning | interactivemode\nand | AandB | >>> (x, y) = (23 , 53)\n | TrueifbothAandBaretrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y and m > n\n |  | False\nor | AorB | >>> (x, y) = (23 , 53)\n | TrueifeitherAorBistrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y or m > n\n |  | True\nnot | notA | >>> (x, y) = (23 , 53)\n | TrueifAisfalse | >>> x, y\n |  | (23 53) ,\n |  | >>> not x < y\n |  | False",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p123_table_0",
+      "pdf_page": 123,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Operation | interactivemode\n> | Greaterthan—Trueifleftoperand ­ | >>> x, y = 23 , 53\n | isgreaterthantheright | >>> x > y\n |  | False\n |  | >>> l1 = ('apple' ,\n |  | 'orange' 'peach') ,\n |  | >>> l2 = ('tomato' ,\n |  | 'pepper' 'cabbage') ,\n |  | >>> l2 > l1\n |  | True",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "comparison-operator table 23 > 53 evaluate"
+      }
+    },
+    {
+      "event": "search",
+      "query": "comparison-operator table 23 > 53 evaluate",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p124_table_0",
+        "bonus_p128_table_0",
+        "bonus_p127_table_0",
+        "bonus_p125_table_0",
+        "bonus_p123_table_0"
+      ],
+      "context_ids": [
+        "bonus_p124_table_0",
+        "bonus_p128_table_0",
+        "bonus_p127_table_0",
+        "bonus_p125_table_0",
+        "bonus_p123_table_0"
+      ],
+      "context_chars": 4375
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong bảng toán tử so sánh, ví dụ `23 > 53` (với `x > y`) đánh giá ra kết quả là False [bonus_p123_table_0].",
+        "citations": [
+          "bonus_p123_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 444,
+      "output_tokens": 20
+    },
+    {
+      "input_tokens": 2688,
+      "output_tokens": 85
+    }
+  ],
+  "elapsed_ms": 17305.61
+}

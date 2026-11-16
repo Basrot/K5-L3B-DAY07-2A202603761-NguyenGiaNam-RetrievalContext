@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v6_test_diagram_04",
+  "type": "diagram",
+  "question": "In Figure 2-1, what value is stored in the memory location referenced by the variable grade?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "98.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p89_diagram_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong Hình 2-1, giá trị được lưu trữ trong ô nhớ được tham chiếu bởi biến grade là 98 [bonus_p89_diagram_0].",
+  "citations": [
+    "bonus_p89_diagram_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Figure 2-1 memory location variable grade"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p89_diagram_0",
+      "pdf_page": 89,
+      "kind": "diagram",
+      "text": "Figure 2-1: The variable grade and its memory location. An arrow from grade points to a memory box containing the value 98.",
+      "image_path": "visual_pages/page_89.png"
+    },
+    {
+      "id": "bonus_p90_diagram_0",
+      "pdf_page": 90,
+      "kind": "diagram",
+      "text": "Figure 2-3: Now X and Y point to different memory locations. X points to Smith and Y points to John.",
+      "image_path": "visual_pages/page_90.png"
+    },
+    {
+      "id": "bonus_p116_text_1",
+      "pdf_page": 116,
+      "kind": "text",
+      "text": "ple, you cannot use reserved words or keywords as variables. An important operation on a variable is to assign a value to it or put a value into the memory location identified by the variable. In Python, this is done by using the assignment operator =. For example, the following statement assigns COMP 218 to the variable course, assigns Smith to the variable student, and assigns 99 to the variable grade: In [ ]: course = 'COMP 218' student = 'Smith' grade = 99 print(\"course is {}, student is {}, grade is {}\". format(course, student, grade)) Out [ ]: course is COMP 218, student is Smith, grade is 99 Table 2-­4: Types of objects in Python (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p90_text_0",
+      "pdf_page": 90,
+      "kind": "text",
+      "text": "Essential Building Blocks of Computer Programs 75 https://doi.org/10.15215/remix/9781998944088.01 In a program, different identifiers may be used to refer to the same memory location and hold the same data or program code, as shown in Figure 2-­2. This is accomplished through the following Python code: In [ ]: x = 'John' y = x Out [ ]: John To check what x and y hold, we use the print statement as follows: In [ ]: print('x holds ', x, ', y holds', y) Out [ ]: x holds John, y holds John X Y ‘John’ Figure 2-­2: X and Y point to the same memory location If we change one identifier to refer to something else, the value referred to by the other identifier will remain the same, as shown in Figure 2-­3. This is done with the following code: In [ ]: x = 'Smith' print('x holds ', x, ', y holds ', y) Out [ ]: x holds Smith, y holds John X Y ‘Smith’ ‘John’ Figure 2-­3: Now X and Y point to different memory locations",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p89_text_1",
+      "pdf_page": 89,
+      "kind": "text",
+      "text": "7. Vocabulary of the Programming Language Vocabulary is the foundation of any language. In computer languages, identifi­ ers are an important part of the vocabulary used to write computer programs. As in all programming languages, identifiers in Python are used to identify variables, functions and methods, classes, objects, and modules. They are called identifiers because, for computers, the only purpose of these names is to identify specific locations of computer memory that hold or can be used to hold specific data or code blocks. Figure 2-­1 illustrates how a variable named “grade” is identified as the mem­ ory location that holds the integer 98. Please note that we use 98 in the diagram for illustration purposes, although, in fact, both data and program codes are stored as sequences of binary (0s and 1s). grade 98 Figure 2-­1: The variable “grade” and its memory location Although an identifier in computer programs does not need to be mean­ ingful to humans, it must be unique in a given context, which is often called namespace. In Python, a namespace is a mapping from names to objects and is implemented as a Python dictionary.",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Figure 2-1 memory location variable grade"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Figure 2-1 memory location variable grade",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p89_diagram_0",
+        "bonus_p90_diagram_0",
+        "bonus_p116_text_1",
+        "bonus_p90_text_0",
+        "bonus_p89_text_1"
+      ],
+      "context_ids": [
+        "bonus_p89_diagram_0",
+        "bonus_p90_diagram_0",
+        "bonus_p116_text_1",
+        "bonus_p90_text_0",
+        "bonus_p89_text_1"
+      ],
+      "context_chars": 3231
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong Hình 2-1, giá trị được lưu trữ trong ô nhớ được tham chiếu bởi biến grade là 98 [bonus_p89_diagram_0].",
+        "citations": [
+          "bonus_p89_diagram_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 443,
+      "output_tokens": 17
+    },
+    {
+      "input_tokens": 1437,
+      "output_tokens": 56
+    }
+  ],
+  "elapsed_ms": 16999.27
+}

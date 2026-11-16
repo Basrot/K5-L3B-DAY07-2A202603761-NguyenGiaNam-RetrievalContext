@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_table_06",
+  "type": "table",
+  "question": "Which Tkinter Canvas method is listed for drawing a line?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "create_line(coords, **options).",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p458_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Phương thức Tkinter Canvas được liệt kê để vẽ một đường thẳng là create_line [bonus_p458_text_0].",
+  "citations": [
+    "bonus_p458_text_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Tkinter Canvas method for drawing a line"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p458_text_0",
+      "pdf_page": 458,
+      "kind": "text",
+      "text": "Modules and Packages 443 https://doi.org/10.15215/remix/9781998944088.01 Create Graphics with Tkinter The module built into the standard Python distribution for creating graphics is the Tkinter module, which is commonly used to develop graphical user interface (GUI) applications. However, Tkinter also provides a widget called Canvas for graphics and images. The following statements in Python interactive mode will produce a window containing a Canvas ready for drawing graphic objects—­Canvas items: >>> from tkinter import * >>> d_board = Canvas() Table 8-­4 is a list of Canvas items we can draw on a Canvas. Table 8-­4: A list of functions that can be used to draw on a Canvas Graphic object Canvas method to create Code sample arc or arc-­shaped region (such as a chord or pie slice) create_arc(bbox, **options) >>> d_board = Canvas() >>> d_board.pack() >>> d_board.create_arc(30, 50, 100, 200) 1 bitmap (built-­in or read from an XBM file) create_bitmap(position, **options) >>> d_board.create_ bitmap(30, 50) image (a BitmapImage or PhotoImage instance) create_image(position, **options) >>> d_board.create_ image(30, 50) line create_line(coords, **options) >>> d_board.create_ line(30, 50,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p458_image_0",
+      "pdf_page": 458,
+      "kind": "image",
+      "text": "Figure 8-2 illustrates a blank Tkinter Canvas window.",
+      "image_path": "visual_pages/page_458.png"
+    },
+    {
+      "id": "bonus_p462_text_1",
+      "pdf_page": 462,
+      "kind": "text",
+      "text": "GE, borderwidth = 2) canvas.pack(fill = BOTH, expand=1) ln1 = canvas.create_line(100, 100, 300, 300, width = 6) tk.mainloop()",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p459_text_0",
+      "pdf_page": 459,
+      "kind": "text",
+      "text": "444 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Graphic object Canvas method to create Code sample oval (a circle or an ellipse) create_oval(bbox, **options) >>> d_board.create_ oval(30, 50, 80, 80, fill = \"RED\") polygon create_polygon(coords, **options) >>> d_board.create_ polygon(30, 50, 80, 80, 70, 90, fill = \"RED\") rectangle create_rectangle(bbox, **options) >>> d_board.create_ rectangle(30, 50, 80, 80, fill = \"RED\") text create_text(position, **options) >>> d_board.create_ text(130, 150, text = \"Hello!\") window create_ window(position, **options) Every method listed in Table 8-­4 returns a unique ID for the created graphic object, which can be used later to manipulate the object. Note that graphic objects created by the above methods will be stacked on the Canvas and will remain until being moved, lifted, lowered, or deleted, with the methods in Table 8-­5. Table 8-­5: Other methods of Canvas within Tkinter Method Operation Code sample dchars(item, from, to = None) Deletes text from an editable graphic item such as text: from is where to start deleting text, to is where to stop deleting text. If to is omitted, only a single",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p463_text_1",
+      "pdf_page": 463,
+      "kind": "text",
+      "text": "a package called Pillow (available from https://​pypi​.org/​project/​Pillow/​2​.2​.1/ or https://​github​.com/​ python​-pillow/​Pillow). Because it is not a standard part of the Python library, you will need to install it with the following statement: Figure 8-­3: Drawing on TK Canvas",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Tkinter Canvas method for drawing a line"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Tkinter Canvas method for drawing a line",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p458_text_0",
+        "bonus_p458_image_0",
+        "bonus_p462_text_1",
+        "bonus_p459_text_0",
+        "bonus_p463_text_1"
+      ],
+      "context_ids": [
+        "bonus_p458_text_0",
+        "bonus_p458_image_0",
+        "bonus_p462_text_1",
+        "bonus_p459_text_0",
+        "bonus_p463_text_1"
+      ],
+      "context_chars": 3146
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Phương thức Tkinter Canvas được liệt kê để vẽ một đường thẳng là create_line [bonus_p458_text_0].",
+        "citations": [
+          "bonus_p458_text_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 434,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1576,
+      "output_tokens": 70
+    }
+  ],
+  "elapsed_ms": 17142.6
+}

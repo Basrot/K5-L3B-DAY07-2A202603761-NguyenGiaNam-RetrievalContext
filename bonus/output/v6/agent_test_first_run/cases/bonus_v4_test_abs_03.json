@@ -1,0 +1,108 @@
+{
+  "query_id": "bonus_v4_test_abs_03",
+  "type": "unanswerable",
+  "question": "What does PEP 734 specify about multiple interpreters in Python?",
+  "answerable_gold_label": false,
+  "expected_answer_for_manual_review": "ABSTAIN",
+  "gold_record_ids_for_manual_review": [],
+  "status": "abstained",
+  "problem": "",
+  "answer": "",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "PEP 734 multiple interpreters in Python"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p131_text_0",
+      "pdf_page": 131,
+      "kind": "text",
+      "text": "116 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Table 2-­13: Python sequence operators Operator Operation Code sample in Python interactive mode * Repeat a sequence such as string, list or tuple multiple times >>> \"Python \" * 3 'Python Python Python ' >>> [1, 2, 3] * 5 [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3] + Join two sequences >>> [1, 2, 3] + [5, 6, 7] [1, 2, 3, 5, 6, 7] [n] Slice out a single member of the sequence >>> name = 'John' >>> name[1] 'o' [n:m] Slice a sequence start from n to m. >>> name 'John' >>> name[1:3] 'oh' MEMBERSHIP OPERATOR Membership operators are used to test whether an element is a member of a sequence. There are three membership operators in Python, and two of them are shown in Table 2-­14. Table 2-­14: Python membership operators Operator Operation Code sample in Python interactive mode v in s True if value v is found in sequence s >>> l = list(range(10)) >>> l [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] >>> 3 in l True >>> 2 + 1 in l True >>> 'x' in \"Welcome to COMP218\" False",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p141_text_1",
+      "pdf_page": 141,
+      "kind": "text",
+      "text": "f the shortest iterable, and then returning the tuple. In Python, *p notation means p takes multiple argu­ ments. In this case, multiple iterables such as lists, tuples, or strings are expected.",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p351_text_0",
+      "pdf_page": 351,
+      "kind": "text",
+      "text": "336 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 In [ ]: class Student: def __init__(self, firstname, lastname): self.__firstname = firstname self.__lastname = lastname s0 = Student('Jim', 'Carte') setattr(s0, '__firstname', 'Richard') setattr(s0, '__lastname', 'Selot') print(getattr(s0, '__firstname'), getattr(s0, '__lastname')) Out [ ]: Richard Selot Class Methods As we have seen, in Python, special method __init__ is used as a constructor of the class. People familiar with C++ or Java might be wondering if __init__ can be overloaded or defined multiple times in Python to make multiple con­ structors, because a class in C++ and Java can have two or more constructors with different signature. In Python, however, a class cannot have more than one __init__ effectively defined. If you define two or more __init__ within a class definition, only the last one will take effect. So how can you create an instance of a class differently in Python if there can be only one constructor, the special __init__ method, in a class definition? The solution is to use the class method, as shown in the next example: In [ ]: class Graduate: def __init_",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p433_text_0",
+      "pdf_page": 433,
+      "kind": "text",
+      "text": "418 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 8.8 Modules for Interfacing Operating Systems and Python Interpreter On a computer, all applications run on top of an operating system (OS) such as Windows, MacOS, or Linux. Therefore, quite often when developing applica­ tions, you will need to interact with an OS, file paths, and the Python interpreter. In Python, the built-­in os module, path submodule of os, and sys module provide powerful and convenient ways to interact with the OS, the file path, the Python interpreter, and the runtime environment. OS Module for Interacting with the Operating System Since it is a built-­in module, all you need to do to use the os module is import it, as shown below: import os If you use the dir(os) statement, you can get a rather big list of names defined in the module. Note that because the os module is operating-­system dependent, you may get a different list of names available depending on your platform (e.g., Windows or Linux). The following are some functions provided in the os module. You are encour­ aged to test these functions with your own examples on your own machine. OS.ACCESS(PATH,",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p153_text_0",
+      "pdf_page": 153,
+      "kind": "text",
+      "text": "138 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 for a more complex application, however, several or even hundreds of Python files may be needed. Of these files, there will be only one Python file defin­ ing the starting point of the program that implements the application, while all other files are used as modules to be imported into the main Python file, either directly or indirectly. So essentially, the relationships of all the Python files used for an application can be depicted as a tree in which the root is the main Python file. The modules used directly or indirectly by the main Python program may be from the standard libraries installed with Python or from those installed later using the conda or pip command as needed. Regarding coding style, see PEP 8: Style Guide for Python Code (https://​ pep8​.org/), which describes in great detail how Python code should be writ­ ten. Read it thoroughly and review it whenever you are unsure. Below are the highlights: 1. A Python program/script file should begin with a docstring as the main documentation of the program file, stating the application and functionality of the program, as w",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "PEP 734 multiple interpreters in Python"
+      }
+    },
+    {
+      "event": "search",
+      "query": "PEP 734 multiple interpreters in Python",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p131_text_0",
+        "bonus_p141_text_1",
+        "bonus_p351_text_0",
+        "bonus_p433_text_0",
+        "bonus_p153_text_0"
+      ],
+      "context_ids": [
+        "bonus_p131_text_0",
+        "bonus_p141_text_1",
+        "bonus_p351_text_0",
+        "bonus_p433_text_0",
+        "bonus_p153_text_0"
+      ],
+      "context_chars": 5142
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 436,
+      "output_tokens": 17
+    },
+    {
+      "input_tokens": 1999,
+      "output_tokens": 10
+    }
+  ],
+  "elapsed_ms": 17233.77
+}

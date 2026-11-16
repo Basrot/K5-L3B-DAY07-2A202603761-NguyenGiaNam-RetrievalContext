@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_table_02",
+  "type": "table",
+  "question": "According to the built-in-constants table, what does the interactive command `license()` display?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "The full Python license text.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p120_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Bằng chứng được cung cấp từ bảng các hằng số tích hợp không chứa thông tin về lệnh tương tác `license()` hay những gì lệnh này hiển thị [bonus_p119_text_0].",
+  "citations": [
+    "bonus_p119_text_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "built in constants table interactive command license displays"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p120_text_1",
+      "pdf_page": 120,
+      "kind": "text",
+      "text": "name or the function or class name if that is imported from the module. C:\\comp218> python prime. py .… >>> __name__ __main__ More information about these constants can be found at https://​docs​.python​ .org/​3/​library/​constants​.html. Table 2-­6: Python built-­in constants (continued)",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p457_text_1",
+      "pdf_page": 457,
+      "kind": "text",
+      "text": "play(loops = 2) # play the most recent loaded file twice The functions listed above are needed if you are developing a music player with PyGame. For details on these functions, please refer to the official documen­ tation on the PyGame mixer at https://​www​.pygame​.org/​docs/​ref/​mixer​.html. 8.11 Modules for Creating and Manipulating Graphics and Images In computing and information processing, graphics are an important part of data and information. In this section, we learn how to create and manipulate graphics and images with Python.",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p119_text_0",
+      "pdf_page": 119,
+      "kind": "text",
+      "text": "104 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 BUILT-­IN CONSTANTS We have seen some values of various data types. Some values have special meanings in Python. We call them constants. The following table lists all the constants you may see and use when programming with Python. Table 2-­6: Python built-­in constants Constant name Meaning Code sample in Python interactive mode True Logical true >>> x = True >>> if x: … print(f\"x is {x}\") … x is True False Logical false >>> x = False >>> if not x: … print(f\"x is {x}\") … x is False None No value assigned >>> x = None >>> if not x: … print(f\"{x} is treated as False\") … None is treated as False Ellipsis Same as …, often used in slicing multiple dimensional arrays >>> Ellipsis == … True >>> Ellipsis is … __debug__ Contains True if Python is started without the -­O option C:\\Users\\comp218>python -­O Python 3.7.2 >>> __debug__ False quit Contains information displayed when Python quits and terminates >>> quit Use quit() or Ctrl+Z+Enter to exit exit Contains information displayed when Python quits and terminates >>> exit Use exit() or Ctrl+Z+Enter to exit",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p498_image_0",
+      "pdf_page": 498,
+      "kind": "image",
+      "text": "GUI examples with widgets and a login/register screen.",
+      "image_path": "visual_pages/page_498.png"
+    },
+    {
+      "id": "bonus_p132_text_1",
+      "pdf_page": 132,
+      "kind": "text",
+      "text": "an be used directly without importing any module or noting what it belongs to. Built-­in functions, and functions or methods in general, can be put into two categories. One is based on the data they return, whereas the other is based on the operations performed, although sometimes the returned data from a built-­in function in the second category may still be useful in subsequent executions of the program. We will first explain built-­in functions in the first category, followed by built-­in functions in the second category. To best understand these functions, read through these built-­in functions and test the sample code in a Python interactive shell or Jupyter Notebook. Table 2-­14: Python membership operators (continued)",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "built in constants table interactive command license displays"
+      }
+    },
+    {
+      "event": "search",
+      "query": "built in constants table interactive command license displays",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p120_text_1",
+        "bonus_p457_text_1",
+        "bonus_p119_text_0",
+        "bonus_p498_image_0",
+        "bonus_p132_text_1"
+      ],
+      "context_ids": [
+        "bonus_p120_text_1",
+        "bonus_p457_text_1",
+        "bonus_p119_text_0",
+        "bonus_p498_image_0",
+        "bonus_p132_text_1"
+      ],
+      "context_chars": 3071
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Bằng chứng được cung cấp từ bảng các hằng số tích hợp không chứa thông tin về lệnh tương tác `license()` hay những gì lệnh này hiển thị [bonus_p119_text_0].",
+        "citations": [
+          "bonus_p119_text_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 442,
+      "output_tokens": 16
+    },
+    {
+      "input_tokens": 1393,
+      "output_tokens": 65
+    }
+  ],
+  "elapsed_ms": 17812.2
+}

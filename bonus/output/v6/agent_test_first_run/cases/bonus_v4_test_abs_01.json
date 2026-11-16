@@ -1,0 +1,108 @@
+{
+  "query_id": "bonus_v4_test_abs_01",
+  "type": "unanswerable",
+  "question": "According to the textbook, on what exact date was Python 3.14.0 officially released?",
+  "answerable_gold_label": false,
+  "expected_answer_for_manual_review": "ABSTAIN",
+  "gold_record_ids_for_manual_review": [],
+  "status": "abstained",
+  "problem": "",
+  "answer": "",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Python 3.14.0 release date textbook"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p411_text_0",
+      "pdf_page": 411,
+      "kind": "text",
+      "text": "396 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 >>> d1 = datetime.date(2020, 7, 1) # create a date object >>> d1.year # get the year attribute of the date object 2020 >>> d1.month # get the month attribute of the date object 7 >>> d1.day # get the day attribute of the date object 1 A date object has the following methods defined. DATETIME.DATE.CTIME() This returns a ctime()-­style string. >>> d1.ctime() 'Wed Jul 1 00:00:00 2020' DATETIME.DATE.ISOCALENDAR() This returns a three-­tuple containing an ISO year, week number of the year, and day number of the week. In the datetime module, Monday is 1, Tuesday is 2,…, Sunday is 7. >>> d1.isocalendar() (2020, 27, 3) DATETIME.DATE.ISOFORMAT() This returns a date string in ISO 8601 format, YYYY-­MM-­DD. >>> d1.isoformat() '2020-­07-­01' DATETIME.DATE.ISOWEEKDAY() This returns an integer from 1 to 7 as the day of the week represented by the date. >>> d1.isoweekday() 3",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p412_text_0",
+      "pdf_page": 412,
+      "kind": "text",
+      "text": "Modules and Packages 397 https://doi.org/10.15215/remix/9781998944088.01 DATETIME.DATE.REPLACE(…) This returns the date with new specified fields. DATETIME.DATE.STRFTIME(…) This changes the date format and returns a strftime()-­style string. DATETIME.DATE.TIMETUPLE(…) This returns a time-­tuple that is compatible with time.localtime(). DATETIME.DATE.TOORDINAL(…) This returns a proleptic Gregorian ordinal. January 1 of year 1 is day 1. DATETIME.DATE.WEEKDAY(…) This returns the day of the week represented by the date: Monday is 0…Sunday is 6. The following are all class methods of the date class defined in the datetime module, which means they can be called from the class name date. DATETIME.DATE.FROMISOFORMAT(<ISO_DATE_FORMAT STRING>) This will construct a date object from an ISO date format string, which is YYYY-­MM-­DD. >>> d2 = datetime.date.fromisoformat('2020-­07-­01') >>> d2.ctime() 'Wed Jul 1 00:00:00 2020' DATETIME.DATE.FROMORDINAL(<DAYS IN RELATION TO A PROLEPTIC GREGORIAN ORDINAL>) This constructs a date object from an integer >= 1 representing the days after the proleptic Gregorian ordinal, which is January 1 of year 1, with ordinal 1. >>> from datetime import date # afte",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p413_text_0",
+      "pdf_page": 413,
+      "kind": "text",
+      "text": "398 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 DATETIME.DATE.FROMTIMESTAMP(<TIMESTAMP>) This constructs a local date object from a POSIX timestamp (a big positive float number), such as returned time.time(), which will be explained shortly. >>> import time >>> time.time() # it returns a timestamp for now 1593745988.6121984 >>> date.fromtimestamp(1593745988.6121984) datetime.date(2020, 7, 2) DATETIME.DATE.TODAY() This returns a date object of for the current date. >>> from datetime import date >>> print(date.today()) 2020-­07-­05 The datetime module also has a class called time. The following is the con­ structor of the time class. DATETIME.TIME(HOUR = 0, MINUTE = 0, SECOND = 0, MICROSECOND = 0, TZINFO = NONE) This returns a time object. All arguments with 0 as their default value must be in their reasonable range or the program will raise a value error. If no argument is provided, they are all 0, except tzinfo (for time zone information, which needs to be an instance of tzinfo class if given). The default value of tzinfo is None. >>> from datetime import time >>> print(time(hour = 23)) 23:00:00 >>> t1 = time(11, 25, 5) time is 1",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p157_text_0",
+      "pdf_page": 157,
+      "kind": "text",
+      "text": "142 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15 3 94.2 4 >>> 3.14 * 15 ** 2 5 706.5 6 >>> 7 8 So if you are using Python in interactive mode, you can simply type expressions without using the print statement to see the result of the calculation, just like a powerful calculator. We can also have expression statements in Jupyter Notebook, but when there are several expression statements in the same cell, it will only show the result of the last expression, as shown in the following example: In [ ]: 2 * 3.14 * 15 3.14 * 15 ** 2 Out [ ]: 706.5 We mentioned earlier in this subsection that you can also put several simple statements on the same line, but you must separate them with semicolons. This is shown in the following examples: Code sample in Python interactive mode 1 2 >>> 2 * 3.14 * 15; 3.14 * 15 ** 2 3 94.2 4 706.5 5 >>> 6 7 8 The expression statement above can also be given in Jupyter Notebook, as shown below. In Jupyter Notebook, however, you have to press Shift+Enter or click the play button to run the scripts in an active cell:",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p419_text_0",
+      "pdf_page": 419,
+      "kind": "text",
+      "text": "404 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 >>> dtstring = \"7 July, 2020\" >>> dtobj = datetime.strptime(dtstring, \"%d %B, %Y\") # note the date formatting string >>> print(\"date object = \", dtobj) date object = 2020-­07-­07 00:00:00 DATETIME.TODAY() This returns a datetime object for today. >>> dt2 = datetime.today() >>> print(f'Today is {dt2}') Today is 11:34:09.228618 DATETIME.UTCFROMTIMESTAMP() This constructs a naive UTC datetime from a POSIX timestamp. >>> redtmobj = datetime.utcfromtimestamp(tmstamp1) >>> print(f'{redtmobj} is a UTC datetime from a POSIX timestamp {redtmobj}') 2020-­07-­06 04:39:33 is a UTC datetime from a POSIX timestamp 1594010373.0 DATETIME.UTCNOW() This returns a new datetime representing the UTC day and time. >>> dt2 = datetime.today() >>> dt3 = datetime.utcnow() >>> print(f'Today is {dt2}, and the UTC time is {dt3}') Today is 2020-­07-­07 11:37:02.862356, and the UTC time is 2020-­07-­07 17:37:02.862356 Sometimes, you need to deal with time intervals such as how long has passed since the last time you saw your best friend. That is what the timedelta class is defined for in the datetime module. The",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Python 3.14.0 release date textbook"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Python 3.14.0 release date textbook",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p411_text_0",
+        "bonus_p412_text_0",
+        "bonus_p413_text_0",
+        "bonus_p157_text_0",
+        "bonus_p419_text_0"
+      ],
+      "context_ids": [
+        "bonus_p411_text_0",
+        "bonus_p412_text_0",
+        "bonus_p413_text_0",
+        "bonus_p157_text_0",
+        "bonus_p419_text_0"
+      ],
+      "context_chars": 6018
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 443,
+      "output_tokens": 19
+    },
+    {
+      "input_tokens": 2600,
+      "output_tokens": 15
+    }
+  ],
+  "elapsed_ms": 17203.57
+}

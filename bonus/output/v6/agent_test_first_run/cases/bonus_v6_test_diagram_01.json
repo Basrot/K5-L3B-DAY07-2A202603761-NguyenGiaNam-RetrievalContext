@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v6_test_diagram_01",
+  "type": "diagram",
+  "question": "In the Von Neumann architecture diagram, which two labeled units appear inside the Central Processing Unit?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "Control Unit and Arithmetic/Logic Unit.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p19_diagram_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong sơ đồ kiến trúc Von Neumann, hai đơn vị được dán nhãn xuất hiện bên trong Đơn vị Xử lý Trung tâm (Central Processing Unit) là Control Unit và Arithmetic/Logic Unit [bonus_p19_diagram_0].",
+  "citations": [
+    "bonus_p19_diagram_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Von Neumann architecture diagram Central Processing Unit units labeled"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p19_diagram_0",
+      "pdf_page": 19,
+      "kind": "diagram",
+      "text": "Figure 1-2: Von Neumann architecture. The Central Processing Unit contains a Control Unit and an Arithmetic/Logic Unit. The diagram also shows Input, Output, Memory, and Storage with connecting arrows.",
+      "image_path": "visual_pages/page_19.png"
+    },
+    {
+      "id": "bonus_p19_text_0",
+      "pdf_page": 19,
+      "kind": "text",
+      "text": "4 Introduction to Computer Programming with Python https://doi.org/10.15215/remix/9781998944088.01 believed that John von Neumann, a mathematician and physicist working at the Los Alamos National Laboratory, was the first user of the Harvard Mark I, which he used to run programs on the machine to calculate for the Manhattan Project. In 1944, Von Neumann had an opportunity to join a discussion with J. Pres­ per Eckert and John Mauchly, who were developing ENIAC and EDVAC machines at the time. He wrote up a report on the EDVAC, First Draft of a Report, in which he described a computer architecture later known as Von Neumann architec­ ture (see Figure 1-­2). The key idea behind the architecture is a stored-­program computer that includes the following components: • a processing unit that contains an arithmetic logic unit and processor registers • a control unit that contains an instruction register and program counter • internal memory that stores data and instructions • external mass storage • input and output mechanisms The unpublished report was widely circulated. It had great impact on the later development of modern computers, although to many people, Turing was the originator of",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p24_text_1",
+      "pdf_page": 24,
+      "kind": "text",
+      "text": "uctions (the program) and data needed during the computation. For the central processing unit (CPU) and memory (RAM) to com­ municate and work together, a communication channel and control unit need to be added. For human users to communicate with the computing machine, input and output units are also needed. Together these include everything described in Von Neumann’s architecture for modern computers. Computability and Computational Complexity Now comes the question of how powerful the computing machine described above can be. In particular, we should ask, • What problems can or cannot be computed with a computing machine? • How difficult is it to solve a given problem with a computing machine, assuming that the machine can take as many steps and use as much memory as needed to solve the problem? Answering the first problem is the study of computability. Answering the second question is the study of computational complexity. A well-­known computability problem was raised by David Hilbert, a very famous German mathematician in the 19th century. The 10th problem in his list of 23 important mathematical problems he published in 1900 is the decidability problem, which is about findin",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p19_text_1",
+      "pdf_page": 19,
+      "kind": "text",
+      "text": "It had great impact on the later development of modern computers, although to many people, Turing was the originator of this key idea and architecture, and many others, including J. Presper Eckert and John Mauchly, made significant contributions to its evo­ lution as well. Regardless, it is Von Neumann architecture that has guided the design of modern computers. All computers we use today are essentially still Von Neumann computers. Modern computers can be categorized into three generations based on the core hardware technology used. The first generation of computers (1937–­46) used vacuum tubes, the second generation (1947–­62) used transistors, and the third generation (1963–­present) used integrated circuits (IC). Central Processing Unit Control Unit Arithmetic/Logic Unit Memory Input Output Storage Figure 1-­2: Von Neumann architecture",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p82_text_1",
+      "pdf_page": 82,
+      "kind": "text",
+      "text": "troduced you to computers and programming languages and guided you in setting up the programming environment. • The introduction to modern computers included a brief history as well as a description of the fundamental architecture of modern computers. Knowing who made significant contributions to the development of computers, what contributions they made, and how they made those contributions can be very inspiring. • The computers we use today are called Von Neumann machines because they are based on Von Neumann architecture, which consists of a control unit, an arithmetic logic unit (ALU), registers, and a memory unit (collectively called CPU) plus inputs and outputs. That’s why Von Neumann is often credited as one of the fathers of modern computers. • The key features of modern computers are that they are digital, programmable, and automatic, with stored programs, although these features were already in the design of the analytical engine by British mathematician Charles Baggage in the 1800s. Hence Charles Babbage is also credited as a father of modern computers, although his machines were not electronic.",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Von Neumann architecture diagram Central Processing Unit units labeled"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Von Neumann architecture diagram Central Processing Unit units labeled",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p19_diagram_0",
+        "bonus_p19_text_0",
+        "bonus_p24_text_1",
+        "bonus_p19_text_1",
+        "bonus_p82_text_1"
+      ],
+      "context_ids": [
+        "bonus_p19_diagram_0",
+        "bonus_p19_text_0",
+        "bonus_p24_text_1",
+        "bonus_p19_text_1",
+        "bonus_p82_text_1"
+      ],
+      "context_chars": 4855
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong sơ đồ kiến trúc Von Neumann, hai đơn vị được dán nhãn xuất hiện bên trong Đơn vị Xử lý Trung tâm (Central Processing Unit) là Control Unit và Arithmetic/Logic Unit [bonus_p19_diagram_0].",
+        "citations": [
+          "bonus_p19_diagram_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 440,
+      "output_tokens": 17
+    },
+    {
+      "input_tokens": 1638,
+      "output_tokens": 72
+    }
+  ],
+  "elapsed_ms": 17342.98
+}

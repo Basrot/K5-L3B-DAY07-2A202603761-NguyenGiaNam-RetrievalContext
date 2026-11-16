@@ -1,0 +1,116 @@
+{
+  "query_id": "bonus_v4_test_table_03",
+  "type": "table",
+  "question": "In Table 2-7, what value is produced by `32 % 7`?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "4.",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p121_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Trong Python, giá trị được tạo ra bởi phép toán `32 % 7` là 4 [bonus_p121_text_1] [bonus_p121_table_0].",
+  "citations": [
+    "bonus_p121_text_1",
+    "bonus_p121_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "Table 2-7 32 % 7"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p298_text_2",
+      "pdf_page": 298,
+      "kind": "text",
+      "text": "7 = 7 2 x 7 = 14 3 x 7 = 21 4 x 7 = 28 5 x 7 = 35 6 x 7 = 42 7 x 7 = 49 378: 1 x 8 = 8 2 x 8 = 16 3 x 8 = 24 4 x 8 = 32 5 x 8 = 40 6 x 8 = 48 7 x 8 = 56 8 x 8 = 64 484: 1 x 9 = 9 2 x 9 = 18 3 x 9 = 27 4 x 9 = 36 5 x 9 = 45 6 x 9 = 54 7 x 9 = 63 8 x 9 = 72 9 x 9 = 81 603:",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p122_table_0",
+      "pdf_page": 122,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\n** | Exponent—leftoperandraisedto ­ | >>> x, y = 32 , 7\n | thepowerofright | >>> x, y\n |  | (32 7) ,\n |  | >>> x ** y\n |  | 34359738368",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p121_text_1",
+      "pdf_page": 121,
+      "kind": "text",
+      "text": "ltiply two operands >>> x, y = 10, 20 >>> y * x 200 / Divide left operand by the right one (always results into float) >>> x, y = 10, 20 >>> y / x 2.0 // Floor division—­division that results into integer number by omitting all the decimals >>> x, y = 32, 7 >>> x, y (32, 7) >>> x // y 4 % Modulus—­remainder of the division of left operand by the right >>> x, y = 32, 7 >>> x, y (32, 7) >>> x % y 4",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p84_table_0",
+      "pdf_page": 84,
+      "kind": "table",
+      "text": "(78) 10 | (1F) 16 | (27) 8\n(121) 10 | (3E) 16 | (33) 8\n(29) 10 | (CD) 16 | (52) 8",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p121_table_0",
+      "pdf_page": 121,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\n+ | Addtwooperands | >>> x = 10\n | orunaryplus | >>> y = 20\n | +operatorcanberedefinedina | >>> x + y\n | classforitsobjectsdefining | 30\n | add __ __ | >>> +y\n |  | 20\n− | Subtractrightoperandfromthe | >>> x, y = 10 , 20\n | leftorunaryminus | >>> x - y ­\n |  | -10 ­\n |  | >>> -y ­\n |  | -20 ­\n* | Multiplytwooperands | >>> x, y = 10 , 20\n |  | >>> y * x\n |  | 200\n/ | Divideleftoperandbytherightone | >>> x, y = 10 , 20\n | (alwaysresultsintofloat) | >>> y / x\n |  | 2 0 .\n// | Floordivision—divisionthatresults ­ | >>> x, y = 32 , 7\n | intointegernumberbyomitting | >>> x, y\n | allthedecimals | (32 7) ,\n |  | >>> x // y\n |  | 4\n% | Modulus—remainderofthe ­ | >>> x, y = 32 , 7\n | divisionofleftoperandbythe | >>> x, y\n | right | (32 7) ,\n |  | >>> x % y\n |  | 4",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "Table 2-7 32 % 7"
+      }
+    },
+    {
+      "event": "search",
+      "query": "Table 2-7 32 % 7",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p298_text_2",
+        "bonus_p122_table_0",
+        "bonus_p121_text_1",
+        "bonus_p84_table_0",
+        "bonus_p121_table_0"
+      ],
+      "context_ids": [
+        "bonus_p298_text_2",
+        "bonus_p122_table_0",
+        "bonus_p121_text_1",
+        "bonus_p84_table_0",
+        "bonus_p121_table_0"
+      ],
+      "context_chars": 2064
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Trong Python, giá trị được tạo ra bởi phép toán `32 % 7` là 4 [bonus_p121_text_1] [bonus_p121_table_0].",
+        "citations": [
+          "bonus_p121_text_1",
+          "bonus_p121_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 442,
+      "output_tokens": 19
+    },
+    {
+      "input_tokens": 1597,
+      "output_tokens": 83
+    }
+  ],
+  "elapsed_ms": 17575.36
+}

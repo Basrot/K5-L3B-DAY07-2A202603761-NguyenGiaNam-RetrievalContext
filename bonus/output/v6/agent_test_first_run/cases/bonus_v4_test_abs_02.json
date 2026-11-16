@@ -1,0 +1,108 @@
+{
+  "query_id": "bonus_v4_test_abs_02",
+  "type": "unanswerable",
+  "question": "What does PEP 779 specify about free-threaded Python support?",
+  "answerable_gold_label": false,
+  "expected_answer_for_manual_review": "ABSTAIN",
+  "gold_record_ids_for_manual_review": [],
+  "status": "abstained",
+  "problem": "",
+  "answer": "",
+  "citations": [],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "PEP 779 free-threaded Python support"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p36_text_0",
+      "pdf_page": 36,
+      "kind": "text",
+      "text": "Introduction 21 https://doi.org/10.15215/remix/9781998944088.01 distribution includes everything you need to interpret and execute Python programs, which are also called Python scripts. 2. A newer version of Jupyter Notebook, from https://​jupyter​.org/. Jupyter Notebook is a powerful interactive programming environment supporting up to 40 programming languages, including Python. 3. A newer version of Visual Studio Code (VS Code) from https://​ code​.visualstudio​.com/. VS Code is a free and open-­source code editor developed by Microsoft, and it will be used as an integrated development environment (IDE) and to host Jupyter Notebook for interactive programming. In this section, we will learn how to install Python, Jupyter Notebook, and Visual Studio Code IDE on our computer. A standard distribution of Python includes a large volume of libraries for general programming needs. Special applications such as those in data science and machine learning will require special libraries to be installed. We will learn about that in later units when we need them. Installing and Setting Up the Python Programming Environment There are different ways of setting up your Python programming environ­",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p2_text_0",
+      "pdf_page": 2,
+      "kind": "text",
+      "text": "Introduction to Computer Programming with Python",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p34_text_0",
+      "pdf_page": 34,
+      "kind": "text",
+      "text": "Introduction 19 https://doi.org/10.15215/remix/9781998944088.01 In Python, however, you only need to write the following code and save to a file, say, myhelloworld​.py: print(\"Hello World!\") Then run the following command: python myhelloworld​.py More importantly, Python supports different programming paradigms, including structured programming, imperative programming, object-­oriented programming, functional programming, and procedural programming. Logic programming is probably the only exception; it is not supported by Python. Python is very powerful for two reasons. The first reason, as you will see later, is that Python has many powerful language constructs and statements to represent data and operations on various data. The second reason is that there are thousands of third-­party packages/libraries/modules available for all kinds of programming needs in addition to the large standard libraries included with every release of Python. For example, Python is widely used for data analytics and machine learning with the support of the NumPy, SciPy, Pandas, Matplotlib, and TensorFlow libraries. Resources for Python and Python Education The ultimate resource for Python and API librar",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p86_text_1",
+      "pdf_page": 86,
+      "kind": "text",
+      "text": "gramming languages c. The essence (what defines it and differentiates it from others) of structural programming, the pros and cons of structural programming, and some well-­known programming languages that support structural programming d. The essence of imperative programming, the pros and cons of imperative programming, and some well-­known programming languages that support imperative programming e. The essence of declarative programming, the pros and cons of declarative programming, and some well-­known programming languages that support declarative programming f. The essence of functional programming, the pros and cons of functional programming, and some well-­known programming languages that support functional programming g. The essence of logical programming, the pros and cons of logical programming, and some well-­known programming languages that support logical programming h. The essence of object-­oriented programming, the pros and cons of object-­oriented programming, and some well-­known programming languages that support object-­oriented programming",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p166_text_1",
+      "pdf_page": 166,
+      "kind": "text",
+      "text": "­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­-­ NameError Traceback (most recent call last) <ipython-­input-­9-­2b1bea6f987e> in <module> 3 4 del grade -­-­ 5 print(f\"grade = {grade}\") NameError: name 'grade' is not defined Deleting an object will free up the memory locations occupied by the object. Computer memory is a precious resource in computing. Python objects, even objects of built-­in data types—­such as list, tuple, set, and dictionary—­can take up a great deal of memory. Deleting the objects that are no longer used will free up memory and make it available for other objects and other applications.",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "PEP 779 free-threaded Python support"
+      }
+    },
+    {
+      "event": "search",
+      "query": "PEP 779 free-threaded Python support",
+      "route": null,
+      "retrieved_ids": [
+        "bonus_p36_text_0",
+        "bonus_p2_text_0",
+        "bonus_p34_text_0",
+        "bonus_p86_text_1",
+        "bonus_p166_text_1"
+      ],
+      "context_ids": [
+        "bonus_p36_text_0",
+        "bonus_p2_text_0",
+        "bonus_p34_text_0",
+        "bonus_p86_text_1",
+        "bonus_p166_text_1"
+      ],
+      "context_chars": 4415
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "",
+        "citations": []
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 437,
+      "output_tokens": 18
+    },
+    {
+      "input_tokens": 1601,
+      "output_tokens": 10
+    }
+  ],
+  "elapsed_ms": 16510.83
+}

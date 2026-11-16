@@ -1,0 +1,114 @@
+{
+  "query_id": "bonus_v4_test_table_04",
+  "type": "table",
+  "question": "Which arithmetic operator performs exponentiation in the table on PDF page 122?",
+  "answerable_gold_label": true,
+  "expected_answer_for_manual_review": "**",
+  "gold_record_ids_for_manual_review": [
+    "bonus_p122_table_0"
+  ],
+  "status": "answered",
+  "problem": "",
+  "answer": "Toán tử số học thực hiện phép lũy thừa (exponentiation) trong bảng ở trang PDF 122 là `**` [bonus_p122_table_0].",
+  "citations": [
+    "bonus_p122_table_0"
+  ],
+  "citation_ids_valid": true,
+  "citation_markers_present": true,
+  "citation_format_valid": true,
+  "searches": 1,
+  "queries": [
+    "exponentiation arithmetic operator table page 122"
+  ],
+  "evidence": [
+    {
+      "id": "bonus_p122_table_0",
+      "pdf_page": 122,
+      "kind": "table",
+      "text": "|  | CodesamplesinPython\nOperator | Operation | interactivemode\n** | Exponent—leftoperandraisedto ­ | >>> x, y = 32 , 7\n | thepowerofright | >>> x, y\n |  | (32 7) ,\n |  | >>> x ** y\n |  | 34359738368",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p125_table_0",
+      "pdf_page": 125,
+      "kind": "table",
+      "text": "|  | CodesampleinPython\nOperator | Meaning | interactivemode\nand | AandB | >>> (x, y) = (23 , 53)\n | TrueifbothAandBaretrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y and m > n\n |  | False\nor | AorB | >>> (x, y) = (23 , 53)\n | TrueifeitherAorBistrue | >>> (m , n) = (12 , 9 .6)\n |  | >>> x, y, m , n\n |  | (23 53 12 9 6) , , , .\n |  | >>> x > y or m > n\n |  | True\nnot | notA | >>> (x, y) = (23 , 53)\n | TrueifAisfalse | >>> x, y\n |  | (23 53) ,\n |  | >>> not x < y\n |  | False",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p107_table_0",
+      "pdf_page": 107,
+      "kind": "table",
+      "text": "Dec | Char | Dec | Char | Dec | Char | Dec | Char\n0 | NUL(null) | 32 | SPACE | 64 | @ | 96 | `\n1 | SOH(startofheading) | 33 | ! | 65 | A | 97 | a\n2 | STX(startoftext) | 34 | \" | 66 | B | 98 | b\n3 | ETX(endoftext) | 35 | # | 67 | C | 99 | c\n4 | EOT(endof | 36 | $ | 68 | D | 100 | d\n | transmission) |  |  |  |  |  | \n5 | ENQ(enquiry) | 37 | % | 69 | E | 101 | e\n6 | ACK(acknowledge) | 38 | & | 70 | F | 102 | f\n7 | BEL(bell) | 39 | ' | 71 | G | 103 | g\n8 | BS(backspace) | 40 | ( | 72 | v | 104 | h\n9 | TAB(horizontaltab) | 41 | ) | 73 | I | 105 | i\n10 | LF(NLlinefeed new , | 42 | * | 74 | J | 106 | j\n | line) |  |  |  |  |  | \n11 | VT(verticaltab) | 43 | + | 75 | K | 107 | k\n12 | FF(NPformfeed new , | 44 | , | 76 | L | 108 | l\n | page) |  |  |  |  |  | \n13 | CR(carriagereturn) | 45 | - ­ | 77 | M | 109 | m\n14 | SO(shiftout) | 46 | . | 78 | N | 110 | n",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p130_table_0",
+      "pdf_page": 130,
+      "kind": "table",
+      "text": "Operator | Meaning | Example\nis | Trueiftheoperandsareidentical | >>>x=list(range(3))\n | (refertothesameobject) | >>>y=list(range(3))\n | Notethat3and2+1havethe | >>>x y ,\n | sameid andsodoes6//2 but , , | ([0 1 2] [0 1 2]) , , , , ,\n | not6/2because6/2=30 . , | >>>id(x) id(y) ,\n | whichisdifferentfrom3 . | (10049456 10049016) ,\n |  | >>>xisy\n |  | False\n |  | >>>id(3)\n |  | 258398416\n |  | >>>id(2+1)\n |  | 258398416\nisnot | Trueiftheoperandsarenot | >>>x=list(range(3))\n | identical(donotrefertothe | >>>x=y\n | sameobject) . | >>>id(x) id(y) ,\n | Notethatwhenassigningvariable | (10049016 10049016) ,\n | ytovariablex theoperation , | >>>xisy\n | pointsxtothesamememory | True\n | blockyispointingto(sothatthe | >>>y=list(range(3))\n | twohavetheid)andsharesthe | >>>id(x)id(y) ,\n | samememoryblock However . , | (10090256 10090336) ,\n | whenanewassignmentis | >>>x y ,\n | madetoxory thetwowillhave , | ([0 1 2] [0 1 2]) , , , , ,\n | differentids unlesstheyboth , | >>>xisnoty\n | holdthesameintegerorstring . | True",
+      "image_path": null
+    },
+    {
+      "id": "bonus_p108_table_0",
+      "pdf_page": 108,
+      "kind": "table",
+      "text": "Dec | Char | Dec | Char | Dec | Char | Dec | Char\n15 | SI(shiftin) | 47 | / | 79 | O | 111 | o\n16 | DLE(datalinkescape) | 48 | 0 | 80 | P | 112 | p\n17 | DC1(devicecontrol1) | 49 | 1 | 81 | Q | 113 | q\n18 | DC2(devicecontrol2) | 50 | 2 | 82 | R | 114 | r\n19 | DC3(devicecontrol3) | 51 | 3 | 83 | S | 115 | s\n20 | DC4(devicecontrol4) | 52 | 4 | 84 | T | 116 | t\n21 | NAK(negative | 53 | 5 | 85 | U | 117 | u\n | acknowledge) |  |  |  |  |  | \n22 | SYN(synchronous | 54 | 6 | 86 | V | 118 | v\n | idle) |  |  |  |  |  | \n23 | ETB(endoftrans . | 55 | 7 | 87 | W | 119 | w\n | block) |  |  |  |  |  | \n24 | CAN(cancel) | 56 | 8 | 88 | X | 120 | x\n25 | EM(endofmedium) | 57 | 9 | 89 | Y | 121 | y\n26 | SUB(substitute) | 58 | : | 90 | Z | 122 | z\n27 | ESC(escape) | 59 | ; | 91 | [ | 123 | {\n28 | FS(fileseparator) | 60 | < | 92 | \\ | 124 | |\n29 | GS(groupseparator) | 61 | = | 93 | ] | 125 | }\n30 | RS(recordseparator) | 62 | > | 94 | ^ | 126 | ~\n31 | US(unitseparator) | 63 | ? | 95 | _ | 127 | DEL",
+      "image_path": null
+    }
+  ],
+  "events": [
+    {
+      "event": "model_action",
+      "step": 1,
+      "action": {
+        "action": "search",
+        "query": "exponentiation arithmetic operator table page 122"
+      }
+    },
+    {
+      "event": "search",
+      "query": "exponentiation arithmetic operator table page 122",
+      "route": "table",
+      "retrieved_ids": [
+        "bonus_p122_table_0",
+        "bonus_p125_table_0",
+        "bonus_p107_table_0",
+        "bonus_p130_table_0",
+        "bonus_p108_table_0"
+      ],
+      "context_ids": [
+        "bonus_p122_table_0",
+        "bonus_p125_table_0",
+        "bonus_p107_table_0",
+        "bonus_p130_table_0",
+        "bonus_p108_table_0"
+      ],
+      "context_chars": 3884
+    },
+    {
+      "event": "model_action",
+      "step": 2,
+      "action": {
+        "action": "answer",
+        "answer": "Toán tử số học thực hiện phép lũy thừa (exponentiation) trong bảng ở trang PDF 122 là `**` [bonus_p122_table_0].",
+        "citations": [
+          "bonus_p122_table_0"
+        ]
+      }
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "model_calls": 2,
+  "usage": [
+    {
+      "input_tokens": 439,
+      "output_tokens": 18
+    },
+    {
+      "input_tokens": 2591,
+      "output_tokens": 81
+    }
+  ],
+  "elapsed_ms": 17074.11
+}
