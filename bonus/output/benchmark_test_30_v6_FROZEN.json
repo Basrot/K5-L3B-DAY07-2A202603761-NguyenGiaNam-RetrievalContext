@@ -1,0 +1,530 @@
+[
+  {
+    "id": "bonus_v4_test_table_01",
+    "split": "test",
+    "type": "table",
+    "question": "According to the reserved-word table, which keyword is used to exit a loop early?",
+    "answerable": true,
+    "expected_answer": "break",
+    "gold": [
+      {
+        "record_id": "bonus_p92_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 92,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_table_02",
+    "split": "test",
+    "type": "table",
+    "question": "According to the built-in-constants table, what does the interactive command `license()` display?",
+    "answerable": true,
+    "expected_answer": "The full Python license text.",
+    "gold": [
+      {
+        "record_id": "bonus_p120_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 120,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_table_03",
+    "split": "test",
+    "type": "table",
+    "question": "In Table 2-7, what value is produced by `32 % 7`?",
+    "answerable": true,
+    "expected_answer": "4.",
+    "gold": [
+      {
+        "record_id": "bonus_p121_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 121,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_table_04",
+    "split": "test",
+    "type": "table",
+    "question": "Which arithmetic operator performs exponentiation in the table on PDF page 122?",
+    "answerable": true,
+    "expected_answer": "**",
+    "gold": [
+      {
+        "record_id": "bonus_p122_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 122,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_table_05",
+    "split": "test",
+    "type": "table",
+    "question": "In the comparison-operator table, what does the example `23 > 53` evaluate to?",
+    "answerable": true,
+    "expected_answer": "False.",
+    "gold": [
+      {
+        "record_id": "bonus_p123_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 123,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_table_06",
+    "split": "test",
+    "type": "table",
+    "question": "Which Tkinter Canvas method is listed for drawing a line?",
+    "answerable": true,
+    "expected_answer": "create_line(coords, **options).",
+    "gold": [
+      {
+        "record_id": "bonus_p458_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 458,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v6_test_diagram_01",
+    "split": "test",
+    "type": "diagram",
+    "question": "In the Von Neumann architecture diagram, which two labeled units appear inside the Central Processing Unit?",
+    "answerable": true,
+    "expected_answer": "Control Unit and Arithmetic/Logic Unit.",
+    "gold": [
+      {
+        "record_id": "bonus_p19_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 19,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure 1-2 visually inspected in PDF. Draft awaiting final independent review."
+  },
+  {
+    "id": "bonus_v6_test_diagram_02",
+    "split": "test",
+    "type": "diagram",
+    "question": "In Figure 1-7, what calculation takes place after Input n1 and Input n2, but before Print s?",
+    "answerable": true,
+    "expected_answer": "s = n1 + n2.",
+    "gold": [
+      {
+        "record_id": "bonus_p71_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 71,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure 1-7 visually inspected in PDF. Draft awaiting final independent review."
+  },
+  {
+    "id": "bonus_v6_test_diagram_03",
+    "split": "test",
+    "type": "diagram",
+    "question": "In Figure 1-8, which condition is checked to decide whether the sum accumulation steps repeat?",
+    "answerable": true,
+    "expected_answer": "i <= 10000.",
+    "gold": [
+      {
+        "record_id": "bonus_p72_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 72,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure 1-8 visually inspected in PDF. Draft awaiting final independent review."
+  },
+  {
+    "id": "bonus_v6_test_diagram_04",
+    "split": "test",
+    "type": "diagram",
+    "question": "In Figure 2-1, what value is stored in the memory location referenced by the variable grade?",
+    "answerable": true,
+    "expected_answer": "98.",
+    "gold": [
+      {
+        "record_id": "bonus_p89_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 89,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure 2-1 visually inspected in PDF. Draft awaiting final independent review."
+  },
+  {
+    "id": "bonus_v6_test_diagram_05",
+    "split": "test",
+    "type": "diagram",
+    "question": "In Figure 2-3, after x changes its reference, which values do x and y refer to respectively?",
+    "answerable": true,
+    "expected_answer": "x refers to Smith; y refers to John.",
+    "gold": [
+      {
+        "record_id": "bonus_p90_diagram_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 90,
+        "kind": "diagram"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure 2-3 visually inspected in PDF. Draft awaiting final independent review."
+  },
+  {
+    "id": "bonus_v4_test_chart_01",
+    "split": "test",
+    "type": "chart",
+    "question": "What quantities are represented on the horizontal and vertical axes of Figure 8-1?",
+    "answerable": true,
+    "expected_answer": "Horizontal: Run #; vertical: Random Integer.",
+    "gold": [
+      {
+        "record_id": "bonus_p400_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 400,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source figure visually reviewed in PDF; case remains draft pending final review."
+  },
+  {
+    "id": "bonus_v4_test_chart_02",
+    "split": "test",
+    "type": "chart",
+    "question": "Does Figure 8-1 show a consistent upward trend, a consistent downward trend, or irregular fluctuations?",
+    "answerable": true,
+    "expected_answer": "Irregular fluctuations, with no consistent upward or downward trend.",
+    "gold": [
+      {
+        "record_id": "bonus_p400_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 400,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source figure visually reviewed in PDF; case remains draft pending final review."
+  },
+  {
+    "id": "bonus_v4_test_chart_03",
+    "split": "test",
+    "type": "chart",
+    "question": "Which mathematical function is graphed in Figure 8-5?",
+    "answerable": true,
+    "expected_answer": "The square-root function y = sqrt(x).",
+    "gold": [
+      {
+        "record_id": "bonus_p467_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 467,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Handwritten caption derived from chart/code; visually verify."
+  },
+  {
+    "id": "bonus_v4_test_chart_04",
+    "split": "test",
+    "type": "chart",
+    "question": "Does the line in Figure 8-5 grow steeper or flatter as x increases?",
+    "answerable": true,
+    "expected_answer": "It gets flatter as x increases.",
+    "gold": [
+      {
+        "record_id": "bonus_p467_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 467,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Visual trend confirmation required."
+  },
+  {
+    "id": "bonus_v4_test_chart_05",
+    "split": "test",
+    "type": "chart",
+    "question": "Approximately what y-value corresponds to x = 100 in Figure 8-5?",
+    "answerable": true,
+    "expected_answer": "About 10.",
+    "gold": [
+      {
+        "record_id": "bonus_p467_chart_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 467,
+        "kind": "chart"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Figure and source code confirmation required; repeated chart source."
+  },
+  {
+    "id": "bonus_v4_test_multi_hop_01",
+    "split": "test",
+    "type": "multi_hop",
+    "question": "Using the operator examples and precedence rules, what is the result of `32 // 7 + 2 ** 3`? Explain the two operations used.",
+    "answerable": true,
+    "expected_answer": "12: 32 // 7 = 4 and 2 ** 3 = 8, then 4 + 8 = 12.",
+    "gold": [
+      {
+        "record_id": "bonus_p121_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 121,
+        "kind": "table"
+      },
+      {
+        "record_id": "bonus_p122_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 122,
+        "kind": "table"
+      },
+      {
+        "record_id": "bonus_p122_text_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 122,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Three required evidence records: floor division, exponentiation and operator precedence. Manual review required."
+  },
+  {
+    "id": "bonus_v4_test_multi_hop_02",
+    "split": "test",
+    "type": "multi_hop",
+    "question": "The textbook's summation algorithm initializes i=1 and s=0, then updates s by adding i and i by adding 1. Using the augmented assignment syntax in the assignment-operator table, write the two Python updates and give s and i after one iteration.",
+    "answerable": true,
+    "expected_answer": "s += i; i += 1. After one iteration, s=1 and i=2.",
+    "gold": [
+      {
+        "record_id": "bonus_p70_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 70,
+        "kind": "text"
+      },
+      {
+        "record_id": "bonus_p127_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 127,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Revised multi-hop candidate using two distinct source pages. Requires final semantic review."
+  },
+  {
+    "id": "bonus_v4_test_multi_hop_03",
+    "split": "test",
+    "type": "multi_hop",
+    "question": "Which Tkinter widget provides a surface for drawing graphics, and which method from the Canvas methods table creates a rectangle on that surface?",
+    "answerable": true,
+    "expected_answer": "Canvas; create_rectangle.",
+    "gold": [
+      {
+        "record_id": "bonus_p458_text_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 458,
+        "kind": "text"
+      },
+      {
+        "record_id": "bonus_p459_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 459,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Revised multi-hop candidate using two distinct source pages. Requires final semantic review."
+  },
+  {
+    "id": "bonus_v4_test_multi_hop_04",
+    "split": "test",
+    "type": "multi_hop",
+    "question": "Using the bitwise operator example with 12 and 15 and the reserved-word table's meaning of 'not', what is the Boolean result of `not ((12 & 15) == 12)`?",
+    "answerable": true,
+    "expected_answer": "False. The bitwise AND gives 12; the equality is True, so not True is False.",
+    "gold": [
+      {
+        "record_id": "bonus_p126_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 126,
+        "kind": "table"
+      },
+      {
+        "record_id": "bonus_p92_table_0",
+        "source_id": "python_wang_2023",
+        "pdf_page": 92,
+        "kind": "table"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Revised multi-hop candidate using two distinct source pages. Requires final semantic review."
+  },
+  {
+    "id": "bonus_v4_test_text_01",
+    "split": "test",
+    "type": "text",
+    "question": "In the summation algorithm for positive integers up to 10000, what is the comparison controlling repetition?",
+    "answerable": true,
+    "expected_answer": "If i <= 10000, go back to the update step.",
+    "gold": [
+      {
+        "record_id": "bonus_p70_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 70,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_text_02",
+    "split": "test",
+    "type": "text",
+    "question": "In the Python example dividing an integer by a complex number, what result type is printed?",
+    "answerable": true,
+    "expected_answer": "complex.",
+    "gold": [
+      {
+        "record_id": "bonus_p118_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 118,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_text_03",
+    "split": "test",
+    "type": "text",
+    "question": "According to the text describing Python built-in functions, do these functions need a module import to be called directly?",
+    "answerable": true,
+    "expected_answer": "No, they can be used without importing a module.",
+    "gold": [
+      {
+        "record_id": "bonus_p132_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 132,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_text_04",
+    "split": "test",
+    "type": "text",
+    "question": "In the worked example `12 + 3 * 21`, which operation is evaluated first and why?",
+    "answerable": true,
+    "expected_answer": "3 * 21 first, because multiplication has higher precedence than addition.",
+    "gold": [
+      {
+        "record_id": "bonus_p122_text_1",
+        "source_id": "python_wang_2023",
+        "pdf_page": 122,
+        "kind": "text"
+      }
+    ],
+    "human_verified": false,
+    "review_notes": "Source-pool text supports candidate; manual rubric/source verification pending."
+  },
+  {
+    "id": "bonus_v4_test_abs_01",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "According to the textbook, on what exact date was Python 3.14.0 officially released?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  },
+  {
+    "id": "bonus_v4_test_abs_02",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What does PEP 779 specify about free-threaded Python support?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  },
+  {
+    "id": "bonus_v4_test_abs_03",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What does PEP 734 specify about multiple interpreters in Python?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  },
+  {
+    "id": "bonus_v4_test_abs_04",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What changes to exception handling does PEP 758 introduce?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  },
+  {
+    "id": "bonus_v4_test_abs_05",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "How is the Zstandard compression module used in Python 3.14 according to this textbook?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  },
+  {
+    "id": "bonus_v4_test_abs_06",
+    "split": "test",
+    "type": "unanswerable",
+    "question": "What does PEP 784 specify about the Python 3.14 release?",
+    "answerable": false,
+    "expected_answer": "ABSTAIN",
+    "gold": [],
+    "human_verified": false,
+    "review_notes": "PROVISIONAL ONLY: test against complete PDF/corpus for semantic answerability and overlap with V3/DEV. Not externally verified."
+  }
+]

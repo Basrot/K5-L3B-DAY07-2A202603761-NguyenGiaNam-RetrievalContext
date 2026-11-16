@@ -1,0 +1,482 @@
+[
+  {
+    "query_id": "q01",
+    "status": "answered",
+    "answer": "Trong Python, câu lệnh if được sử dụng để thực hiện các lựa chọn [by_paragraph:python_wang_2023_p190_para3]. Cụ thể, câu lệnh if dùng cho một lựa chọn và sẽ thực thi một khối mã nếu điều kiện được đáp ứng [by_paragraph:python_wang_2023_p210_para1]. Các câu lệnh if, if-else, if-elif và if-elif-else đại diện cho luồng thực thi của chương trình dựa trên các điều kiện logic hoặc biểu thức Boolean [by_paragraph:python_wang_2023_p210_para0], [by_paragraph:python_wang_2023_p210_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p190_para3",
+      "by_paragraph:python_wang_2023_p210_para1",
+      "by_paragraph:python_wang_2023_p210_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Python if statement purpose",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p190_para3",
+          "by_paragraph:python_wang_2023_p210_para1",
+          "by_paragraph:python_wang_2023_p195_para4",
+          "by_paragraph:python_wang_2023_p190_para2",
+          "by_paragraph:python_wang_2023_p210_para0"
+        ],
+        "context_chars": 2114
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 7466.8
+  },
+  {
+    "query_id": "q02",
+    "status": "answered",
+    "answer": "Cấu trúc if-elif-else dùng để giải quyết các bài toán có nhiều sự lựa chọn (multiple selections) [by_paragraph:python_wang_2023_p210_para1] hoặc nhiều tùy chọn khác nhau mà mỗi tùy chọn yêu cầu thực hiện các hành động khác nhau [by_paragraph:python_wang_2023_p192_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p210_para1",
+      "by_paragraph:python_wang_2023_p192_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "if elif else statement python use case problem types",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p210_para1",
+          "by_paragraph:python_wang_2023_p192_para1",
+          "by_paragraph:python_wang_2023_p190_para1",
+          "by_paragraph:python_wang_2023_p210_para0"
+        ],
+        "context_chars": 2206
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 6773.76
+  },
+  {
+    "query_id": "q03",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "python if statement syntax colon indentation block",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p210_para1",
+          "by_paragraph:python_wang_2023_p195_para4",
+          "by_paragraph:python_wang_2023_p200_para0",
+          "by_paragraph:python_wang_2023_p210_para0",
+          "by_paragraph:python_wang_2023_p210_para2"
+        ],
+        "context_chars": 2298
+      },
+      {
+        "event": "search",
+        "query": "python if statement colon indentation block syntax",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p210_para1",
+          "by_paragraph:python_wang_2023_p195_para4",
+          "by_paragraph:python_wang_2023_p200_para0",
+          "by_paragraph:python_wang_2023_p210_para0",
+          "by_paragraph:python_wang_2023_p210_para2"
+        ],
+        "context_chars": 2298
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 3,
+    "elapsed_ms": 8306.67
+  },
+  {
+    "query_id": "q04",
+    "status": "answered",
+    "answer": "Theo bảng quy đổi điểm trong chương 3, điểm từ 90 đến 100 được xếp loại A+ [by_paragraph:python_wang_2023_p208_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p208_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "score conversion table chapter 3 90 to 100 grade",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p208_para1",
+          "by_paragraph:python_wang_2023_p209_para3",
+          "by_paragraph:python_wang_2023_p209_para4",
+          "by_paragraph:python_wang_2023_p208_para0",
+          "by_paragraph:python_wang_2023_p208_para2"
+        ],
+        "context_chars": 2362
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 4563.37
+  },
+  {
+    "query_id": "q05",
+    "status": "answered",
+    "answer": "Trong ví dụ chuyển điểm số sang điểm chữ, chương trình sử dụng cấu trúc câu lệnh if-elif-else [by_paragraph:python_wang_2023_p194_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p194_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "score to letter grade program structure example",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p209_para3",
+          "by_paragraph:python_wang_2023_p194_para1",
+          "by_paragraph:python_wang_2023_p194_para4",
+          "by_paragraph:python_wang_2023_p209_para2",
+          "by_paragraph:python_wang_2023_p209_para4"
+        ],
+        "context_chars": 2246
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 3165.24
+  },
+  {
+    "query_id": "q06",
+    "status": "answered",
+    "answer": "Các nhánh elif trong ví dụ chấm điểm không cần ghi rõ cận trên vì đoạn mã tận dụng cấu trúc câu lệnh if-elif-elif; khi điều kiện trước đó không được thỏa mãn và chương trình chuyển sang nhánh elif hiện tại, điều kiện cận trên của nhánh hiện tại đã được ngầm thỏa mãn [by_paragraph:python_wang_2023_p195_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p195_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "elif grading upper bound python",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p195_para0",
+          "by_paragraph:python_wang_2023_p195_para1",
+          "by_paragraph:python_wang_2023_p209_para0",
+          "by_paragraph:python_wang_2023_p195_para2"
+        ],
+        "context_chars": 1993
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 3588.24
+  },
+  {
+    "query_id": "q07",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "for loop programming avoid repetition",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p205_para0",
+          "by_paragraph:python_wang_2023_p201_para0",
+          "by_paragraph:python_wang_2023_p205_para4",
+          "by_paragraph:python_wang_2023_p205_para1"
+        ],
+        "context_chars": 2192
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 1669.67
+  },
+  {
+    "query_id": "q08",
+    "status": "answered",
+    "answer": "Trong ví dụ tạo bảng nhân hình tam giác, chúng ta cần hai vòng lặp vì vòng lặp bên ngoài được sử dụng để lặp qua các hàng, trong khi vòng lặp bên trong lặp qua các cột của mỗi hàng [by_paragraph:python_wang_2023_p196_para2].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p196_para2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "triangle multiplication table nested loops why two loops",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p196_para2",
+          "by_paragraph:python_wang_2023_p197_para0",
+          "by_paragraph:python_wang_2023_p211_para3",
+          "by_paragraph:python_wang_2023_p196_para1",
+          "by_paragraph:python_wang_2023_p196_para3"
+        ],
+        "context_chars": 2157
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 26305.46
+  },
+  {
+    "query_id": "q09",
+    "status": "answered",
+    "answer": "Vòng lặp for lồng nhau là hai vòng lặp được đặt bên trong nhau, trong khi việc sử dụng zip trên hai range là một vòng lặp đơn [by_paragraph:python_wang_2023_p199_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p199_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "nested for loop vs zip two ranges python difference",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p198_para3",
+          "by_paragraph:python_wang_2023_p199_para1",
+          "by_paragraph:python_wang_2023_p199_para0",
+          "by_paragraph:python_wang_2023_p198_para2",
+          "by_paragraph:python_wang_2023_p198_para4",
+          "by_paragraph:python_wang_2023_p199_para2"
+        ],
+        "context_chars": 2322
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 8335.87
+  },
+  {
+    "query_id": "q10",
+    "status": "answered",
+    "answer": "Trong vòng lặp for, câu lệnh break được sử dụng để thoát khỏi vòng lặp ngay lập tức khi có điều kiện gì xảy ra [by_paragraph:python_wang_2023_p199_para2], trong khi câu lệnh continue được dùng để chuyển ngay sang phần tử tiếp theo trong chuỗi lặp [by_paragraph:python_wang_2023_p199_para2] hoặc quay trực tiếp về đầu vòng lặp để kiểm tra [by_paragraph:python_wang_2023_p204_para3].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p199_para2",
+      "by_paragraph:python_wang_2023_p204_para3"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "difference between break and continue in for loop",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p199_para2",
+          "by_paragraph:python_wang_2023_p199_para3",
+          "by_paragraph:python_wang_2023_p204_para3",
+          "by_paragraph:python_wang_2023_p199_para1",
+          "by_paragraph:python_wang_2023_p199_para4"
+        ],
+        "context_chars": 2152
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 5052.66
+  },
+  {
+    "query_id": "q11",
+    "status": "answered",
+    "answer": "Sách khuyên nên dùng vòng lặp while thay vì vòng lặp for trong các trường hợp mà số lần lặp chưa biết trước nhưng điều kiện lặp lại được biết rõ [by_paragraph:python_wang_2023_p201_para0] [by_paragraph:python_wang_2023_p205_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p201_para0",
+      "by_paragraph:python_wang_2023_p205_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "when to use while instead of for loop book programming python guide",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p201_para0",
+          "by_paragraph:python_wang_2023_p205_para0",
+          "by_paragraph:python_wang_2023_p205_para4",
+          "by_paragraph:python_wang_2023_p201_para1"
+        ],
+        "context_chars": 2118
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 6049.81
+  },
+  {
+    "query_id": "q12",
+    "status": "answered",
+    "answer": "Trong ví dụ nhập điểm khi số lượng sinh viên không biết trước, vòng lặp sử dụng điều kiện `if (mark >= 0)` và điểm số âm (như `-3`) đóng vai trò là tín hiệu dừng (bằng câu lệnh `break`) để kết thúc việc nhập [by_paragraph:python_wang_2023_p207_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p207_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "student grade entry unknown number of students sentinel value loop termination",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p207_para1",
+          "by_paragraph:python_wang_2023_p206_para1",
+          "by_paragraph:python_wang_2023_p232_para1",
+          "by_paragraph:python_wang_2023_p207_para0",
+          "by_paragraph:python_wang_2023_p206_para0"
+        ],
+        "context_chars": 2348
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 2715.31
+  },
+  {
+    "query_id": "q13",
+    "status": "answered",
+    "answer": "Để đảm bảo vòng lặp while kết thúc như mong đợi, điều kiện lặp phải được thay đổi bên trong khối mã của câu lệnh while [by_paragraph:python_wang_2023_p205_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p205_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "common error infinite while loop condition",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p200_para1",
+          "by_paragraph:python_wang_2023_p205_para0",
+          "by_paragraph:python_wang_2023_p201_para0",
+          "by_paragraph:python_wang_2023_p200_para0"
+        ],
+        "context_chars": 2062
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 2636.51
+  },
+  {
+    "query_id": "q14",
+    "status": "answered",
+    "answer": "Ví dụ tính điểm trung bình của lớp có 30 sinh viên có thể dùng vòng lặp for vì số lượng sinh viên trong lớp đã được biết trước [by_paragraph:python_wang_2023_p206_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p206_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "average score 30 students for loop",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p206_para1",
+          "by_paragraph:python_wang_2023_p206_para3",
+          "by_paragraph:python_wang_2023_p206_para0",
+          "by_paragraph:python_wang_2023_p206_para2",
+          "by_paragraph:python_wang_2023_p206_para4"
+        ],
+        "context_chars": 2251
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 3287.39
+  },
+  {
+    "query_id": "q15",
+    "status": "answered",
+    "answer": "Bắt Exception chung không xác định được chính xác lỗi chia cho 0 vì `Exception` là lớp cha (superclass) của tất cả các lớp ngoại lệ, dẫn đến việc bất kỳ lỗi nào cũng sẽ bị bắt và được xử lý giống nhau khi có mặt trong mệnh đề except [by_paragraph:python_wang_2023_p218_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p218_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "exception handling division by zero generic exception",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p233_para0",
+          "by_paragraph:python_wang_2023_p217_para6",
+          "by_paragraph:python_wang_2023_p218_para0",
+          "by_paragraph:python_wang_2023_p233_para1",
+          "by_paragraph:python_wang_2023_p217_para5"
+        ],
+        "context_chars": 2364
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 2094.75
+  },
+  {
+    "query_id": "q21",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Python 3.13 free threading GIL removal implementation",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p235_para0",
+          "by_paragraph:python_wang_2023_p199_para0",
+          "by_paragraph:python_wang_2023_p219_para3",
+          "by_paragraph:python_wang_2023_p235_para1",
+          "by_paragraph:python_wang_2023_p199_para1"
+        ],
+        "context_chars": 2007
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 2173.35
+  },
+  {
+    "query_id": "q22",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Python 3.12 generic function type parameter syntax",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p217_para4",
+          "by_paragraph:python_wang_2023_p190_para1",
+          "by_paragraph:python_wang_2023_p226_para2",
+          "by_paragraph:python_wang_2023_p217_para3"
+        ],
+        "context_chars": 2192
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 2139.45
+  }
+]

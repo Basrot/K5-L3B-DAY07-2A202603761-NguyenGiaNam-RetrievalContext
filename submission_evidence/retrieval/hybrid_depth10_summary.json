@@ -1,0 +1,16 @@
+{
+  "strategy": "hybrid_rrf",
+  "split": "dev",
+  "n": 15,
+  "candidate_depth": 10,
+  "rrf_k": 60,
+  "top_k": 3,
+  "budget_chars": 1600,
+  "candidate_hit": 13,
+  "hit1": 5,
+  "hit3": 7,
+  "context_hit": 7,
+  "avg_context_chars": 1310.53,
+  "median_ms": 6.414,
+  "service_cost_usd": 0
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark": "benchmark_test_30_v6_FROZEN.json",
+  "sha256": "8afea6f54074f6dadf2559e985f6db52d8d9ed33b48eb2bf400d256868bf52fc",
+  "total_cases": 30,
+  "answerable": 24,
+  "unanswerable": 6,
+  "corpus_records": 1006,
+  "answerable_source_review": "completed",
+  "unanswerable_labels": "provisional",
+  "test_executed": false,
+  "note": "Frozen before official V6 evaluation. No TEST-driven tuning permitted."
+}

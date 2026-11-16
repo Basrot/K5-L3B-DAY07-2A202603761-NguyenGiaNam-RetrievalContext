@@ -1,0 +1,293 @@
+{
+  "split": "dev",
+  "index_version": "v3",
+  "records": 999,
+  "all_evidence_at_3": 16,
+  "all_evidence_at_5": 18,
+  "total": 18,
+  "results": [
+    {
+      "id": "bonus_dev_001",
+      "route": "image",
+      "gold": [
+        "bonus_p17_image_0"
+      ],
+      "retrieved": [
+        "bonus_p17_image_0",
+        "bonus_p480_image_0",
+        "bonus_p481_image_0",
+        "bonus_p498_image_0",
+        "bonus_p42_image_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_002",
+      "route": "image",
+      "gold": [
+        "bonus_p42_image_0"
+      ],
+      "retrieved": [
+        "bonus_p42_image_0",
+        "bonus_p480_image_0",
+        "bonus_p46_image_0",
+        "bonus_p53_image_0",
+        "bonus_p498_image_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_003",
+      "route": "image",
+      "gold": [
+        "bonus_p46_image_0"
+      ],
+      "retrieved": [
+        "bonus_p46_image_0",
+        "bonus_p42_image_0",
+        "bonus_p480_image_0",
+        "bonus_p53_image_0",
+        "bonus_p481_image_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_004",
+      "route": "image",
+      "gold": [
+        "bonus_p480_image_0"
+      ],
+      "retrieved": [
+        "bonus_p480_image_0",
+        "bonus_p46_image_0",
+        "bonus_p42_image_0",
+        "bonus_p481_image_0",
+        "bonus_p498_image_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_005",
+      "route": "image",
+      "gold": [
+        "bonus_p481_image_0"
+      ],
+      "retrieved": [
+        "bonus_p480_image_0",
+        "bonus_p42_image_0",
+        "bonus_p481_image_0",
+        "bonus_p46_image_0",
+        "bonus_p498_image_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_006",
+      "route": "diagram",
+      "gold": [
+        "bonus_p193_diagram_0"
+      ],
+      "retrieved": [
+        "bonus_p180_diagram_0",
+        "bonus_p193_diagram_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_007",
+      "route": "chart",
+      "gold": [
+        "bonus_p469_chart_0"
+      ],
+      "retrieved": [
+        "bonus_p63_chart_0",
+        "bonus_p469_chart_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_008",
+      "route": "table",
+      "gold": [
+        "bonus_p131_table_0"
+      ],
+      "retrieved": [
+        "bonus_p131_table_0",
+        "bonus_p130_table_0",
+        "bonus_p483_table_0",
+        "bonus_p131_table_1",
+        "bonus_p208_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_009",
+      "route": "table",
+      "gold": [
+        "bonus_p131_table_1"
+      ],
+      "retrieved": [
+        "bonus_p131_table_0",
+        "bonus_p253_table_0",
+        "bonus_p132_table_0",
+        "bonus_p131_table_1",
+        "bonus_p67_table_0"
+      ],
+      "all_at_3": false,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_010",
+      "route": "table",
+      "gold": [
+        "bonus_p132_table_0"
+      ],
+      "retrieved": [
+        "bonus_p132_table_0",
+        "bonus_p131_table_1",
+        "bonus_p130_table_0",
+        "bonus_p253_table_0",
+        "bonus_p361_table_1"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_011",
+      "route": "table",
+      "gold": [
+        "bonus_p118_table_1"
+      ],
+      "retrieved": [
+        "bonus_p118_table_0",
+        "bonus_p127_table_0",
+        "bonus_p118_table_1",
+        "bonus_p193_table_0",
+        "bonus_p128_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_012",
+      "route": "table",
+      "gold": [
+        "bonus_p118_table_0"
+      ],
+      "retrieved": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p130_table_0",
+        "bonus_p124_table_0",
+        "bonus_p194_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_013",
+      "route": "table",
+      "gold": [
+        "bonus_p131_table_1",
+        "bonus_p132_table_0"
+      ],
+      "retrieved": [
+        "bonus_p132_table_0",
+        "bonus_p131_table_0",
+        "bonus_p253_table_0",
+        "bonus_p67_table_0",
+        "bonus_p131_table_1"
+      ],
+      "all_at_3": false,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_014",
+      "route": null,
+      "gold": [
+        "bonus_p70_text_0"
+      ],
+      "retrieved": [
+        "bonus_p70_text_1",
+        "bonus_p70_text_0",
+        "bonus_p229_text_1",
+        "bonus_p201_text_1",
+        "bonus_p213_text_2"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_015",
+      "route": null,
+      "gold": [
+        "bonus_p25_text_1"
+      ],
+      "retrieved": [
+        "bonus_p25_text_1",
+        "bonus_p83_text_1",
+        "bonus_p26_text_0",
+        "bonus_p24_text_1",
+        "bonus_p323_text_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_016",
+      "route": "table",
+      "gold": [
+        "bonus_p118_table_0"
+      ],
+      "retrieved": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p124_table_0",
+        "bonus_p253_table_0",
+        "bonus_p130_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_017",
+      "route": "table",
+      "gold": [
+        "bonus_p118_table_1"
+      ],
+      "retrieved": [
+        "bonus_p118_table_0",
+        "bonus_p118_table_1",
+        "bonus_p361_table_0",
+        "bonus_p253_table_0",
+        "bonus_p483_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    },
+    {
+      "id": "bonus_dev_018",
+      "route": "table",
+      "gold": [
+        "bonus_p131_table_0"
+      ],
+      "retrieved": [
+        "bonus_p131_table_0",
+        "bonus_p131_table_1",
+        "bonus_p123_table_0",
+        "bonus_p253_table_0",
+        "bonus_p110_table_0"
+      ],
+      "all_at_3": true,
+      "all_at_5": true
+    }
+  ]
+}

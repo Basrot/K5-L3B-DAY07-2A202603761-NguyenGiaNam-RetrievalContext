@@ -1,0 +1,203 @@
+[
+  {
+    "query_id": "q16",
+    "status": "answered",
+    "answer": "Lỗi ZeroDivisionError xuất hiện khi số chia của một phép chia hoặc phép toán chia lấy dư (modulo) là 0 [by_paragraph:python_wang_2023_p219_para3].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p219_para3"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "ZeroDivisionError python when does it occur",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p219_para3",
+          "by_paragraph:python_wang_2023_p218_para4",
+          "by_paragraph:python_wang_2023_p231_para1",
+          "by_paragraph:python_wang_2023_p219_para2",
+          "by_paragraph:python_wang_2023_p219_para4",
+          "by_paragraph:python_wang_2023_p218_para3"
+        ],
+        "context_chars": 2290
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 4991.27
+  },
+  {
+    "query_id": "q17",
+    "status": "answered",
+    "answer": "Lỗi IndexError xuất hiện khi chỉ số (index) của một chuỗi (sequence) nằm ngoài phạm vi cho phép [by_paragraph:python_wang_2023_p222_para0].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p222_para0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "IndexError Python error when does it occur",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p222_para0",
+          "by_paragraph:python_wang_2023_p226_para0",
+          "by_paragraph:python_wang_2023_p216_para0",
+          "by_paragraph:python_wang_2023_p222_para1",
+          "by_paragraph:python_wang_2023_p226_para1"
+        ],
+        "context_chars": 2346
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 4159.84
+  },
+  {
+    "query_id": "q18",
+    "status": "answered",
+    "answer": "Khi sử dụng một biến chưa được định nghĩa, Python sẽ báo lỗi NameError [by_paragraph:python_wang_2023_p223_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p223_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Python undefined variable error local global scope",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p227_para0",
+          "by_paragraph:python_wang_2023_p200_para1",
+          "by_paragraph:python_wang_2023_p223_para1",
+          "by_paragraph:python_wang_2023_p227_para1"
+        ],
+        "context_chars": 2112
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 6956.26
+  },
+  {
+    "query_id": "q19",
+    "status": "answered",
+    "answer": "TabError xảy ra khi việc thụt lề (indentation) bao gồm các tab và khoảng trắng không nhất quán [by_paragraph:python_wang_2023_p226_para1].",
+    "citations": [
+      "by_paragraph:python_wang_2023_p226_para1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "TabError Chapter 4 Python",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p197_para0",
+          "by_paragraph:python_wang_2023_p226_para1",
+          "by_paragraph:python_wang_2023_p216_para0",
+          "by_paragraph:python_wang_2023_p197_para1"
+        ],
+        "context_chars": 2099
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 6418.3
+  },
+  {
+    "query_id": "q20",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "finally block try except executed when Python",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p235_para1",
+          "by_paragraph:python_wang_2023_p232_para3",
+          "by_paragraph:python_wang_2023_p219_para0",
+          "by_paragraph:python_wang_2023_p235_para0",
+          "by_paragraph:python_wang_2023_p235_para2"
+        ],
+        "context_chars": 2276
+      },
+      {
+        "event": "search",
+        "query": "finally block python executed",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p235_para1",
+          "by_paragraph:python_wang_2023_p232_para3",
+          "by_paragraph:python_wang_2023_p219_para0",
+          "by_paragraph:python_wang_2023_p228_para2",
+          "by_paragraph:python_wang_2023_p235_para0"
+        ],
+        "context_chars": 2400
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 3,
+    "elapsed_ms": 12926.91
+  },
+  {
+    "query_id": "q23",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "Python 3.13 experimental JIT activation how it works",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p197_para5",
+          "by_paragraph:python_wang_2023_p223_para0",
+          "by_paragraph:python_wang_2023_p191_para0",
+          "by_paragraph:python_wang_2023_p197_para4",
+          "by_paragraph:python_wang_2023_p223_para1"
+        ],
+        "context_chars": 2285
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 4426.49
+  },
+  {
+    "query_id": "q24",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "asyncio TaskGroup handle multiple exceptions simultaneously",
+        "context_ids": [
+          "by_paragraph:python_wang_2023_p217_para6",
+          "by_paragraph:python_wang_2023_p216_para2",
+          "by_paragraph:python_wang_2023_p218_para0",
+          "by_paragraph:python_wang_2023_p217_para5",
+          "by_paragraph:python_wang_2023_p216_para1"
+        ],
+        "context_chars": 2080
+      },
+      {
+        "event": "intentional_abstain"
+      }
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "model_calls": 2,
+    "elapsed_ms": 3685.61
+  }
+]

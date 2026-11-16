@@ -1,0 +1,242 @@
+[
+  {
+    "query_id": "q01",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q02",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q03",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q04",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q05",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q06",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q07",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q08",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q09",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q10",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q11",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q12",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q13",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q14",
+    "budget": 1600,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q15",
+    "budget": 1600,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q01",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q02",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q03",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q04",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q05",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q06",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q07",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q08",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q09",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q10",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q11",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q12",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": false,
+    "seed_first_normalized": false
+  },
+  {
+    "query_id": "q13",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q14",
+    "budget": 2400,
+    "baseline_strict": true,
+    "baseline_normalized": true,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  },
+  {
+    "query_id": "q15",
+    "budget": 2400,
+    "baseline_strict": false,
+    "baseline_normalized": false,
+    "seed_first_strict": true,
+    "seed_first_normalized": true
+  }
+]
